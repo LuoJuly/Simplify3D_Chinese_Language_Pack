@@ -1,7 +1,7 @@
 @echo off
 cd /d "%~dp0"
-if exist "%~dp0Simplify3D-语言.exe" (
-    start "" "%~dp0Simplify3D-语言.exe" --zh
+if exist "%~dp0Simplify3D-CN.exe" (
+    start "" "%~dp0Simplify3D-CN.exe" --zh
     exit /b 0
 )
 where pythonw >nul 2>&1

@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""启动 Simplify3D：默认英文保持不变，选择简体中文时才在内存中挂上译文。"""
+"""启动 Simplify3D。双击启动器直接进入简体中文；--choose 才弹出语言选择。"""
 import ctypes
 import json
 import os
@@ -25,6 +25,7 @@ FROMUTF8_RVA = 0xF7EF40
 STOLEN = bytes.fromhex("5541574156415541545657534883ec78")
 
 CREATE_SUSPENDED = 0x00000004
+CREATE_UNICODE_ENVIRONMENT = 0x00000400
 MEM_COMMIT = 0x1000
 MEM_RESERVE = 0x2000
 PAGE_EXECUTE_READWRITE = 0x40
@@ -54,6 +55,8 @@ kernel32.TerminateProcess.argtypes = [wintypes.HANDLE, wintypes.UINT]
 kernel32.CloseHandle.argtypes = [wintypes.HANDLE]
 kernel32.FlushInstructionCache.argtypes = [wintypes.HANDLE, ctypes.c_void_p, ctypes.c_size_t]
 kernel32.FlushInstructionCache.restype = wintypes.BOOL
+kernel32.SetDllDirectoryW.argtypes = [wintypes.LPCWSTR]
+kernel32.SetDllDirectoryW.restype = wintypes.BOOL
 ntdll.NtQueryInformationProcess.argtypes = [
     wintypes.HANDLE, ctypes.c_ulong, ctypes.c_void_p, ctypes.c_ulong, ctypes.POINTER(ctypes.c_ulong),
 ]
@@ -425,8 +428,37 @@ SETTERS = (
 )
 
 
-def build_swap_image(resume_vas, rewrite=True, setters=SETTERS):
-    """进入时 rdx 是标题。匹配则换成静态中文 QString，再执行原来的 prologue。"""
+# 这些寄存器在比较标题时会改掉，先写进桩里的槽，不能 push。
+# 虚拟机按原函数的栈深留了一段空隙，多出来的 push 会把后面的浮点指针盖成空。
+_SPILL_STORE = {
+    "rax": b"\x48\x89\x05",
+    "rcx": b"\x48\x89\x0D",
+    "rdx": b"\x48\x89\x15",
+    "rsi": b"\x48\x89\x35",
+    "rdi": b"\x48\x89\x3D",
+    "r10": b"\x4C\x89\x15",
+    "r11": b"\x4C\x89\x1D",
+    "r12": b"\x4C\x89\x25",
+}
+_SPILL_LOAD = {
+    "rax": b"\x48\x8B\x05",
+    "rcx": b"\x48\x8B\x0D",
+    "rdx": b"\x48\x8B\x15",
+    "rsi": b"\x48\x8B\x35",
+    "rdi": b"\x48\x8B\x3D",
+    "r10": b"\x4C\x8B\x15",
+    "r11": b"\x4C\x8B\x1D",
+    "r12": b"\x4C\x8B\x25",
+}
+_SPILL_ORDER = ("rax", "rcx", "rdx", "rsi", "rdi", "r10", "r11", "r12")
+
+
+def build_swap_image(resume_vas, rewrite=True, setters=SETTERS, gate_vas=None, frame_gate=False):
+    """进入时 rdx 是标题。匹配则换成静态中文 QString，再执行原来的 prologue。
+
+    比较和替换都不使用栈。调用方（尤其是虚拟机）按原来的栈深保留空隙，
+    多出来的 push 会在导入模型时留下空的浮点指针。
+    """
     code = bytearray()
     fixups = []
     labels = {}
@@ -456,60 +488,202 @@ def build_swap_image(resume_vas, rewrite=True, setters=SETTERS):
     quality = "按Quality自动配置"
     zh_material = "按材料自动配置"
     zh_quality = "按质量自动配置"
+    if not 0 < len(material) < 128 or not 0 < len(quality) < 128:
+        raise SystemExit("标题长度超出比较指令的立即数")
+
+    def spill(kind):
+        table = _SPILL_STORE if kind == "store" else _SPILL_LOAD
+        for name in _SPILL_ORDER:
+            b(table[name])
+            rip("spill_" + name)
 
     def emit_compare(length, utf16_label, yes):
+        # r10d 是字符数，r11 是 UTF-16 数据，rdx 仍是 QString*。
         b(b"\x41\x83\xFA" + bytes([length]))  # cmp r10d, length
         jcc(b"\x0F\x85", "after_" + yes)
-        b(b"\x56\x57\x51")
-        b(b"\x4C\x89\xDE")
+        b(b"\x4C\x89\xDE")          # mov rsi, r11
         b(b"\x48\x8D\x3D")
         rip(utf16_label)
         b(b"\xB9" + struct.pack("<I", length))
-        b(b"\xFC")
-        b(b"\xF3\x66\xA7")
-        b(b"\x59\x5F\x5E")
+        b(b"\xFC")                  # cld。调用约定要求 DF 为 0，不要改成 std。
+        b(b"\xF3\x66\xA7")          # repe cmpsw
         jcc(b"\x0F\x84", yes)
         mark("after_" + yes)
 
-    for i, ((rva, stolen, resume_rva), resume_va) in enumerate(zip(setters, resume_vas)):
-        entries.append(len(code))
-        if rewrite:
-            b(b"\x53")
-            b(b"\x41\x54")
-            b(b"\x48\x89\xD3")
-            b(b"\x4C\x8D\x25")
-            rip(f"after{i}")
-            near_jmp("shared")
-            mark(f"after{i}")
-            b(b"\x41\x5C")
-            b(b"\x5B")
+    def emit_resume(stolen, resume_va):
         b(stolen)
         b(b"\xFF\x25\x00\x00\x00\x00" + struct.pack("<Q", resume_va))
 
+    def emit_flag_restore():
+        # AL 是保存的 OF。先做加法把 OF 设回去，sahf 再恢复其余标志且不动 OF。
+        b(b"\x66\x8B\x05")
+        rip("fast_ax")
+        b(b"\x04\x7F")                                  # add al, 0x7f
+        b(b"\x9E")                                      # sahf
+        b(b"\x48\x8B\x05")
+        rip("fast_rax")
+
+    def emit_frame_entry(i, stolen, resume_va, ret_off):
+        """先执行原来的 prologue，再用它自己的栈帧做比较，不额外占栈，也不写全局槽。"""
+        b(stolen)
+        b(b"\x48\x89\x44\x24\x28")                      # mov [rsp+0x28], rax
+        b(b"\x9F")                                      # lahf
+        b(b"\x0F\x90\xC0")                              # seto al
+        b(b"\x66\x89\x44\x24\x30")                      # mov [rsp+0x30], ax
+        b(b"\x48\x8B\x84\x24" + struct.pack("<I", ret_off))
+        b(b"\x48\x3B\x05")
+        rip(f"gate{i}")
+        jcc(b"\x0F\x85", f"frame_restore{i}")
+        b(b"\x48\x89\x0C\x24")                          # mov [rsp], rcx
+        b(b"\x48\x89\x74\x24\x08")                      # mov [rsp+8], rsi
+        b(b"\x48\x89\x7C\x24\x10")                      # mov [rsp+0x10], rdi
+        b(b"\x4C\x89\x54\x24\x18")                      # mov [rsp+0x18], r10
+        b(b"\x4C\x89\x5C\x24\x20")                      # mov [rsp+0x20], r11
+        b(b"\x48\x8D\x7C\x24\x40")                      # lea rdi, [rsp+0x40]
+        b(b"\x31\xC0")
+        b(b"\x66\xAB")                                  # stosw，探测进入时的 DF
+        b(b"\x48\x8D\x44\x24\x42")
+        b(b"\x48\x39\xC7")
+        b(b"\x0F\x94\x44\x24\x32")                      # sete [rsp+0x32]
+        b(b"\xFC")
+        b(b"\x48\x81\xFA\x00\x00\x01\x00")
+        jcc(b"\x0F\x82", f"frame_done{i}")
+        b(b"\x48\x89\xD0")
+        b(b"\x48\xC1\xE8\x2F")
+        jcc(b"\x0F\x85", f"frame_done{i}")
+        b(b"\x48\x8B\x02")
+        b(b"\x48\x3D\x00\x00\x01\x00")
+        jcc(b"\x0F\x82", f"frame_done{i}")
+        b(b"\x48\x89\xC1")
+        b(b"\x48\xC1\xE9\x2F")
+        jcc(b"\x0F\x85", f"frame_done{i}")
+        b(b"\x44\x8B\x50\x04")
+        b(b"\x41\x83\xFA\x01")
+        jcc(b"\x0F\x8C", f"frame_done{i}")
+        b(b"\x41\x83\xFA\x40")
+        jcc(b"\x0F\x8F", f"frame_done{i}")
+        b(b"\x4C\x8B\x58\x10")
+        b(b"\x49\x81\xFB\x00\x00\x01\x00")
+        jcc(b"\x0F\x87", f"frame_done{i}")
+        b(b"\x49\x01\xC3")
+        emit_compare(len(material), "utf16_material", f"hitm{i}")
+        emit_compare(len(quality), "utf16_quality", f"hitq{i}")
+        near_jmp(f"frame_done{i}")
+        mark(f"hitm{i}")
+        b(b"\x48\x8D\x05")
+        rip("hdr_material")
+        b(b"\x48\x89\x02")
+        near_jmp(f"frame_done{i}")
+        mark(f"hitq{i}")
+        b(b"\x48\x8D\x05")
+        rip("hdr_quality")
+        b(b"\x48\x89\x02")
+        mark(f"frame_done{i}")
+        b(b"\x4C\x8B\x5C\x24\x20")
+        b(b"\x4C\x8B\x54\x24\x18")
+        b(b"\x48\x8B\x7C\x24\x10")
+        b(b"\x48\x8B\x74\x24\x08")
+        b(b"\x48\x8B\x0C\x24")
+        b(b"\x80\x7C\x24\x32\x00")                      # cmp byte [rsp+0x32], 0
+        jcc(b"\x0F\x85", f"frame_restore{i}")
+        b(b"\xFD")                                      # 进入时 DF 为 1
+        mark(f"frame_restore{i}")
+        b(b"\x66\x8B\x44\x24\x30")
+        b(b"\x04\x7F")
+        b(b"\x9E")
+        b(b"\x48\x8B\x44\x24\x28")
+        b(b"\xFF\x25\x00\x00\x00\x00" + struct.pack("<Q", resume_va))
+
+    for i, ((rva, stolen, resume_rva), resume_va) in enumerate(zip(setters, resume_vas)):
+        entries.append(len(code))
+        if rewrite and frame_gate:
+            gate = gate_vas[i] if gate_vas is not None else 0
+            if rva == 0xCAF3C0 and gate:
+                emit_frame_entry(i, stolen, resume_va, 0x78)
+            else:
+                emit_resume(stolen, resume_va)
+            continue
+        if rewrite:
+            # 只改从控件构造函数进来的那一次。导入模型时虚拟机会直接调用这两个函数，
+            # 在那里读标题会让导入停在「正在导入」。
+            if gate_vas is not None:
+                # 不能 push：虚拟机把空隙紧挨着 rsp。也不能留下被 cmp 改过的标志。
+                b(b"\x48\x89\x05")
+                rip("fast_rax")
+                b(b"\x9F")                              # lahf
+                b(b"\x0F\x90\xC0")                      # seto al
+                b(b"\x66\x89\x05")
+                rip("fast_ax")
+                b(b"\x48\x8B\x04\x24")                  # mov rax, [rsp]
+                b(b"\x48\x3B\x05")
+                rip(f"gate{i}")
+                jcc(b"\x0F\x84", f"slow{i}")
+                emit_flag_restore()
+                emit_resume(stolen, resume_va)
+                mark(f"slow{i}")
+                emit_flag_restore()
+            spill("store")
+            b(b"\x4C\x8D\x25")      # lea r12, [rip+after]
+            rip(f"after{i}")
+            near_jmp("shared")
+            mark(f"after{i}")
+            spill("load")
+        emit_resume(stolen, resume_va)
+
     if rewrite:
         mark("shared")
-        b(b"\x48\x85\xDB")
-        jcc(b"\x0F\x84", "leave")
-        b(b"\x48\x8B\x03")
-        b(b"\x48\x85\xC0")
-        jcc(b"\x0F\x84", "leave")
-        b(b"\x44\x8B\x50\x04")          # mov r10d, [rax+4]，避开 rcx/rdx
-        b(b"\x4C\x8B\x58\x10")
-        b(b"\x49\x01\xC3")
+        # 原函数不改 DF。虚拟机会带着 DF=1 调用，比较前先记下来，离开时还原。
+        b(b"\x48\x8D\x3D")
+        rip("df_probe")
+        b(b"\x31\xC0")                              # xor eax, eax
+        b(b"\x66\xAB")                              # stosw，方向由进入时的 DF 决定
+        b(b"\x48\x8D\x05")
+        rip("df_after")
+        b(b"\x48\x39\xC7")                          # cmp rdi, rax
+        b(b"\x0F\x94\x05")
+        rip("df_clear")                             # DF 为 0 时记 1
+        b(b"\xFC")                                  # 比较本身向前走
+        # rdx 不是可读的 QString* 时直接离开，避免在桩里访问空指针。
+        b(b"\x48\x81\xFA\x00\x00\x01\x00")          # cmp rdx, 0x10000
+        jcc(b"\x0F\x82", "leave")                   # jb
+        b(b"\x48\x89\xD0")                          # mov rax, rdx
+        b(b"\x48\xC1\xE8\x2F")                      # shr rax, 47
+        jcc(b"\x0F\x85", "leave")
+        b(b"\x48\x8B\x02")                          # mov rax, [rdx]
+        b(b"\x48\x3D\x00\x00\x01\x00")              # cmp rax, 0x10000
+        jcc(b"\x0F\x82", "leave")
+        b(b"\x48\x89\xC1")                          # mov rcx, rax
+        b(b"\x48\xC1\xE9\x2F")                      # shr rcx, 47
+        jcc(b"\x0F\x85", "leave")
+        b(b"\x44\x8B\x50\x04")                      # mov r10d, [rax+4]
+        b(b"\x41\x83\xFA\x01")                      # cmp r10d, 1
+        jcc(b"\x0F\x8C", "leave")                   # jl
+        b(b"\x41\x83\xFA\x40")                      # cmp r10d, 64
+        jcc(b"\x0F\x8F", "leave")                   # jg
+        b(b"\x4C\x8B\x58\x10")                      # mov r11, [rax+0x10]
+        b(b"\x49\x81\xFB\x00\x00\x01\x00")          # cmp r11, 0x10000
+        jcc(b"\x0F\x87", "leave")                   # ja
+        b(b"\x49\x01\xC3")                          # add r11, rax
         emit_compare(len(material), "utf16_material", "use_material")
         emit_compare(len(quality), "utf16_quality", "use_quality")
         near_jmp("leave")
         mark("use_material")
         b(b"\x48\x8D\x05")
         rip("hdr_material")
-        b(b"\x48\x89\x03")
+        b(b"\x48\x89\x02")                          # mov [rdx], rax
         near_jmp("leave")
         mark("use_quality")
         b(b"\x48\x8D\x05")
         rip("hdr_quality")
-        b(b"\x48\x89\x03")
+        b(b"\x48\x89\x02")
         mark("leave")
-        b(b"\x41\xFF\xE4")
+        b(b"\x8A\x05")
+        rip("df_clear")
+        b(b"\x84\xC0")                              # test al, al
+        jcc(b"\x0F\x85", "df_ok")                   # 进入时 DF 已是 0
+        b(b"\xFD")                                  # std，还原进入时的 DF
+        mark("df_ok")
+        b(b"\x41\xFF\xE4")                          # jmp r12
         while len(code) % 8:
             code.append(0xCC)
         labels["utf16_material"] = len(code)
@@ -522,6 +696,29 @@ def build_swap_image(resume_vas, rewrite=True, setters=SETTERS):
         code += qstring_header(zh_material)
         labels["hdr_quality"] = len(code)
         code += qstring_header(zh_quality)
+        while len(code) % 8:
+            code.append(0)
+        for name in _SPILL_ORDER:
+            labels["spill_" + name] = len(code)
+            code += b"\x00" * 8
+        labels["df_base"] = len(code)
+        code += b"\x00\x00"
+        labels["df_probe"] = len(code)
+        code += b"\x00\x00"
+        labels["df_after"] = len(code)
+        code += b"\x00\x00"
+        labels["df_clear"] = len(code)
+        code += b"\x00"
+        if gate_vas is not None:
+            while len(code) % 8:
+                code.append(0)
+            labels["fast_rax"] = len(code)
+            code += b"\x00" * 8
+            labels["fast_ax"] = len(code)
+            code += b"\x00\x00"
+            for i, gate in enumerate(gate_vas):
+                labels[f"gate{i}"] = len(code)
+                code += struct.pack("<Q", 0 if gate is None else gate)
 
     for item in fixups:
         if len(item) == 2:
@@ -542,7 +739,12 @@ def install_arg_hook(process, base):
         return
     rewrite = mode != "pass"
     resumes = [base + resume for _, _, resume in SETTERS]
-    image, entries = build_swap_image(resumes, rewrite)
+    # 0xCAF290 在 0xCAF3A7 调用第一个标题函数，返回地址是 0xCAF3AC。
+    # 自动配置标题从这里送进去。另一个函数没有这条路径，保持原样。
+    gates = [base + 0xCAF3AC if rva == 0xCAF3C0 else 0 for rva, _, _ in SETTERS]
+    image, entries = build_swap_image(
+        resumes, rewrite, gate_vas=gates if rewrite else None, frame_gate=rewrite
+    )
     remote_addr = alloc_near(process, base, len(image))
     if not remote_addr:
         raise OSError("无法分配自动配置译文")
@@ -615,14 +817,102 @@ def self_test_arg():
     got = call("Hello")
     if read_text(got) != "Hello":
         raise SystemExit(f"其他标题被替换了: {read_text(got)!r}")
+
+    # 返回地址对不上时保持原文；从构造函数返回地址进来才替换。
+    gate_mem = kernel32.VirtualAlloc(None, 4096, MEM_COMMIT | MEM_RESERVE, PAGE_EXECUTE_READWRITE)
+    if not gate_mem:
+        raise OSError("VirtualAlloc failed")
+    gaddr = gate_mem if isinstance(gate_mem, int) else ctypes.cast(gate_mem, ctypes.c_void_p).value
+    call_ret = gaddr + 9
+    hook = gaddr + 32
+    image, _ = build_swap_image([gaddr], True, setters, gate_vas=[call_ret])
+    rel = hook - call_ret
+    wrapper = bytes.fromhex("4889ca") + b"\xE8" + struct.pack("<i", rel) + b"\xC3"
+    ctypes.memmove(gaddr, b"\xC3" + wrapper, 1 + len(wrapper))
+    ctypes.memmove(hook, image, len(image))
+    plain = ctypes.create_string_buffer(qstring_header("按Material自动配置"))
+    slot = ctypes.c_uint64(ctypes.addressof(plain))
+    ctypes.CFUNCTYPE(None, ctypes.c_void_p)(hook)(ctypes.addressof(slot))
+    if slot.value != ctypes.addressof(plain):
+        raise SystemExit("非构造调用也被替换了")
+    ctypes.CFUNCTYPE(None, ctypes.c_void_p)(gaddr + 1)(ctypes.addressof(slot))
+    if read_text(slot.value) != "按材料自动配置":
+        raise SystemExit(f"构造调用没有替换标题: {read_text(slot.value)!r}")
+
+    # 安装时走的路径：先执行原来的 prologue，只用函数自己的栈帧判断返回地址。
+    frame_mem = kernel32.VirtualAlloc(None, 8192, MEM_COMMIT | MEM_RESERVE, PAGE_EXECUTE_READWRITE)
+    if not frame_mem:
+        raise OSError("VirtualAlloc failed")
+    faddr = frame_mem if isinstance(frame_mem, int) else ctypes.cast(frame_mem, ctypes.c_void_p).value
+    epi = faddr
+    caller = faddr + 0x20
+    hook = faddr + 0x80
+    call_ret = caller + 8
+    epi_code = bytes.fromhex("4883c4505b5f5e415e415fc3")
+    stolen = bytes.fromhex("415741565657534883ec504889d3")
+    frame_setters = ((0xCAF3C0, stolen, 0),)
+    image, _ = build_swap_image([epi], True, frame_setters, gate_vas=[call_ret], frame_gate=True)
+    rel = hook - call_ret
+    caller_code = bytes.fromhex("4889ca") + b"\xE8" + struct.pack("<i", rel) + b"\xC3"
+    ctypes.memmove(epi, epi_code, len(epi_code))
+    ctypes.memmove(caller, caller_code, len(caller_code))
+    ctypes.memmove(hook, image, len(image))
+    plain = ctypes.create_string_buffer(qstring_header("按Material自动配置"))
+    slot = ctypes.c_uint64(ctypes.addressof(plain))
+    ctypes.CFUNCTYPE(None, ctypes.c_void_p)(hook)(ctypes.addressof(slot))
+    if slot.value != ctypes.addressof(plain):
+        raise SystemExit("直接调用标题函数也被替换了")
+    ctypes.CFUNCTYPE(None, ctypes.c_void_p)(caller)(ctypes.addressof(slot))
+    if read_text(slot.value) != "按材料自动配置":
+        raise SystemExit(f"帧内门控没有替换材料标题: {read_text(slot.value)!r}")
+    quality_hdr = ctypes.create_string_buffer(qstring_header("按Quality自动配置"))
+    slot = ctypes.c_uint64(ctypes.addressof(quality_hdr))
+    ctypes.CFUNCTYPE(None, ctypes.c_void_p)(caller)(ctypes.addressof(slot))
+    if read_text(slot.value) != "按质量自动配置":
+        raise SystemExit(f"帧内门控没有替换质量标题: {read_text(slot.value)!r}")
+    hello = ctypes.create_string_buffer(qstring_header("Hello"))
+    slot = ctypes.c_uint64(ctypes.addressof(hello))
+    ctypes.CFUNCTYPE(None, ctypes.c_void_p)(caller)(ctypes.addressof(slot))
+    if slot.value != ctypes.addressof(hello):
+        raise SystemExit("帧内门控改了其他标题")
     print("arg-hook ok")
+
+
+def child_environment():
+    """PyInstaller 把解压目录加进 DLL 搜索路径，子进程会一直占着里面的 VCRUNTIME140.dll。"""
+    meipass = getattr(sys, "_MEIPASS", None)
+    if not meipass:
+        return None
+    kernel32.SetDllDirectoryW(None)
+    skip = {"TCL_LIBRARY", "TK_LIBRARY", "_MEIPASS2", "PYTHONHOME", "PYTHONPATH", "PYTHONNOUSERSITE"}
+    needle = meipass.lower()
+    rows = []
+    for key, value in os.environ.items():
+        if key.upper() in skip:
+            continue
+        if needle in value.lower():
+            if key.upper() == "PATH":
+                value = os.pathsep.join(part for part in value.split(os.pathsep) if part and needle not in part.lower())
+            else:
+                continue
+        rows.append(f"{key}={value}")
+    return ctypes.create_unicode_buffer("\0".join(rows) + "\0\0")
+
+
+def spawn_flags(base, env):
+    return base | CREATE_UNICODE_ENVIRONMENT if env is not None else base
 
 
 def launch_english():
     si = STARTUPINFOW()
     si.cb = ctypes.sizeof(si)
     pi = PROCESS_INFORMATION()
-    ok = kernel32.CreateProcessW(EXE_PATH, None, None, None, False, 0, None, INSTALL_DIR, ctypes.byref(si), ctypes.byref(pi))
+    env = child_environment()
+    ok = kernel32.CreateProcessW(
+        EXE_PATH, None, None, None, False, spawn_flags(0, env),
+        ctypes.cast(env, ctypes.c_void_p) if env is not None else None,
+        INSTALL_DIR, ctypes.byref(si), ctypes.byref(pi),
+    )
     if not ok:
         raise OSError(f"无法启动程序 ({ctypes.get_last_error()})")
     kernel32.CloseHandle(pi.hThread)
@@ -638,9 +928,11 @@ def launch_chinese():
     si = STARTUPINFOW()
     si.cb = ctypes.sizeof(si)
     pi = PROCESS_INFORMATION()
+    env = child_environment()
     ok = kernel32.CreateProcessW(
-        EXE_PATH, None, None, None, False, CREATE_SUSPENDED, None, INSTALL_DIR,
-        ctypes.byref(si), ctypes.byref(pi),
+        EXE_PATH, None, None, None, False, spawn_flags(CREATE_SUSPENDED, env),
+        ctypes.cast(env, ctypes.c_void_p) if env is not None else None,
+        INSTALL_DIR, ctypes.byref(si), ctypes.byref(pi),
     )
     if not ok:
         raise OSError(f"无法启动程序 ({ctypes.get_last_error()})")
@@ -733,14 +1025,17 @@ def choose():
 
 
 def main(argv):
-    mode = argv[1] if len(argv) > 1 else ""
+    mode = argv[1] if len(argv) > 1 else "--zh"
     if mode == "--self-test":
         self_test()
         return 0
-    if mode not in ("--zh", "--en"):
+    if mode == "--choose":
         mode = {"zh": "--zh", "en": "--en"}.get(choose() or "", "")
         if not mode:
             return 0
+    if mode not in ("--zh", "--en"):
+        message("无法识别的启动参数。")
+        return 1
     try:
         if mode == "--zh":
             launch_chinese()
