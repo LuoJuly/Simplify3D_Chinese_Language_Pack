@@ -1,4 +1,4 @@
-# Simplify3D 简体中文 / Simplified Chinese
+# Simplify3D 简体中文 / Simplified Chinese Language Pack
 
 适用于已购买并安装的 **Simplify3D 5.1.2**。这是额外的简体中文启动方式，不替换原来的英文。
 
