@@ -1,0 +1,2255 @@
+%1 Settings	QObject
+%1 deg	QObject
+%1 mm^2 (%2 cm^2)	QObject
+%1 mm^3 (%2 cm^3)	QObject
+%1 models selected	QObject
+%1 to Edit:	QObject
+%1, %2 mm	QObject
+%1, %2, %3 mm	QObject
+&Finish	QWizard
+&Help	QWizard
+&Next	QWizard
+&Next >	QWizard
+&No	QPlatformTheme
+&Yes	QPlatformTheme
+(current size: %1 x %2 x %3 mm)	QObject
++X	CrossSectionDialogComponent
++X Direction	QObject
++X Only	QObject
++X and -X	QObject
++Y	CrossSectionDialogComponent
++Y Direction	QObject
++Y and -Y	QObject
++Y only	QObject
++Z	CrossSectionDialogComponent
+-X Direction	QObject
+-X Only	QObject
+-Y Direction	QObject
+-Y only	QObject
+1) Select the process you would like to vary:	VariableSettingsWizard
+2) Choose how the settings should be varied:	VariableSettingsWizard
+3) Configure the different variations	VariableSettingsWizard
+3D Model Files (*.stl *.obj *.3mf);;All Files (*.*)	QObject
+3D View	QObject
+3Dison Pro and H700	QObject
+3MF Files (*.3mf)	QObject
+5D Firmware (supports E-values)	QObject
+< &Back	QWizard
+A category with that name already exists.	QObject
+A list of commands that can be executed internally by Simplify3D (i.e. {REPLACE "E" "A"}) or by running the command externally in the system command prompt	QObject
+A-Axis	QObject
+A-Axis Steps Per Millimeter	QObject
+ACTION REQUIRED: Please push the button on the machine to approve this connection.	QObject
+ACTION REQUIRED: Please push the button on the machine to begin the print.	QObject
+Abort	QPlatformTheme
+Abort Sequence	QObject
+About Simplify3D	QObject
+About Simplify3D...	QObject
+Above Raft Speed	QObject
+Above Raft Speed Units	QObject
+Absolute	QObject
+Accessory Controls	MachineControlPanelDialog
+Account Details	QObject
+Account Limit Reached	QObject
+Account Login	LoginDialog
+Activation Failed	QObject
+Activation Request Files (*.acr);;All Files (*.*)	QObject
+Active Toolhead	MachineControlPanelDialog,QObject
+Adaptive Layer Height	QObject
+Adaptive Smoothing Level	QObject
+Add	CrossSectionDialogComponent,QObject,VariableSettingsWizard
+Add %1	QObject
+Add Individual Supports	QObject
+Add Manual Support	QObject
+Add Model to Group	QObject
+Add Multiple Supports	QObject
+Add New	MachineControlPanelDialog
+Add Option	QObject
+Add Process	QObject
+Add Process to Group	QObject
+Add Solid Diaphragms	QObject
+Add Support	QObject
+Add Triangle	QObject
+Add Value	QObject
+Add a new 3D printing process	QObject
+Add automatically generated support structures to the selected models	QObject
+Add new %1 option...	QObject
+Add new auto-configure category...	QObject
+Add the Z-axis positions where the settings should change	VariableSettingsWizard
+Added Z Positions	VariableSettingsWizard
+Additions	QObject
+Address	ProxySettingsComponent
+Adjust Model Units	QObject
+Adjust newly placed supports to be aligned with a uniform grid layout	QObject
+Adjust rotation center based on mouse location	QObject
+Adjust rotation center for nearby geometry	QObject
+Adjust start points to minimize the visibility of print defects and avoid problematic regions like bridges and overhangs	QObject
+Adjust the camera to the default viewing position	QObject
+Adjust the camera to view from the back	QObject
+Adjust the camera to view from the bottom	QObject
+Adjust the camera to view from the front	QObject
+Adjust the camera to view from the left	QObject
+Adjust the camera to view from the right	QObject
+Adjust the camera to view from the top	QObject
+Adjust the distance between the edge of the ironing passes and the outer boundary of the part as a percentage of the outline extrusion width	QObject
+Adjust the proxy settings used for network communication	QObject
+Adjust the vertical position of models so that they stay attached to the print bed after rotation or scaling transformations	QObject
+Adjust the vertical position of the model so that it is resting on the bed	QObject
+Adjust the view to zoom in on all selected models	QObject
+Adjust the view to zoom in on all visible models	QObject
+Advanced	QObject
+Airflow Direction	QObject
+Align Selected Model Origins	QObject
+Align model origins	MultiExtrusionWizard
+Align start points at a specific XY location	QObject
+Align the selected parts based on the coordinate system that was defined in the 3D model files	QObject
+Align with Face	CrossSectionDialogComponent
+Aligned	QObject
+Aligned Start Point X	QObject
+Aligned Start Point Y	QObject
+All At Once	QObject
+All X-values in the output file will be shifted by this amount	QObject
+All Y-values in the output file will be shifted by this amount	QObject
+All Z-values in the output file will be shifted by this amount.  Enter a negative value to move the nozzle closer to the bed.	QObject
+All imported models will be transformed using the following properties	QObject
+All processes will be printed at the same time so that the Z-position is constantly increasing	QObject
+Allow Gap Fill	QObject
+Allow Single Extrusions	QObject
+Allow zeroing of extruder axes (i.e. G92 E0)	QObject
+Allowed Perimeter Overlap	QObject
+Alternating Fill	QObject
+Always display	QObject
+Animation	PreviewNavigationComponent
+Application Preferences	QObject
+Apply	QPlatformTheme
+Apply bridging settings to perimeters	QObject
+Are you sure you want to change the current profile?  Any unsaved changes will be lost.	QObject
+Are you sure you want to delete the device "%1"?	QObject
+Are you sure you want to delete the profile "%1"?	QObject
+Are you sure you want to remove the "%1" option?	QObject
+Are you sure you want to remove the entire %1 category?	QObject
+Are you sure you want to remove the settings for "%1"?	QObject
+Are you sure you want to revert the profile "%1" back to the last saved settings?  Any unsaved changes will be lost.	QObject
+Arrange models after import	QObject
+Assign Settings	QObject
+Assign settings to categories...	QObject
+Assigned auto-configure category...	QObject
+Attempt to detect models that are being imported using the wrong unit system	QObject
+Attempting connection at %1...	QObject
+Authentication Required	QObject
+Auto-Configure Category	QObject
+Auto-Configure Options	QObject
+Auto-Configure for %1	QObject
+Auto-Stop Ooze Shield	QObject
+Auto-Stop Prime Pillar	QObject
+Automatic	QObject
+Automatic Supports	QObject
+Automatically check for updates	QObject
+Automatically detect connected printers	QObject
+Automatically detect printers connected using a USB cable or other methods	QObject
+Automatically load a virtual build preview after slicing	QObject
+Automatically load preview after slicing	QObject
+Automatically stop building the ooze shield once there are no more upcoming tool changes	QObject
+Automatically stop building the prime pillar once there are no more upcoming tool changes	QObject
+Average Edge Length	QObject
+Azimuth angle	CrossSectionDialogComponent
+B-Axis	QObject
+B-Axis Steps Per Millimeter	QObject
+Base Profile	MultiExtrusionWizard
+Base Support Infill Pattern	QObject
+Base Support Infill Percentage	QObject
+Base Support Layers	QObject
+Base Support Outlines	QObject
+Base Support Pattern Rotation	QObject
+Baud Rate	QObject
+Begin Connection Test	QObject
+Begin Printing Previewed Build File on Machine	QObject
+Begin Printing on Machine	MainWindow,QObject
+Begin increasing fan speed for layers below	QObject
+Begin reducing speed for layers below	QObject
+Begin reducing speed for perimeters below	QObject
+Begin slicing your models to generate build files for printing	QObject
+Beginning toolpath creation...	QObject
+Binary X3G File (.x3g)	QObject
+Bits from Bytes (.bfb)	QObject
+Blip fan to full power when increasing from idle	QObject
+Bottom Solid Layers	QObject
+Bottom Up (peel-based)	QObject
+Bounding Center	QObject
+Bounding Size	QObject
+Bridge	QObject
+Bridging	QObject
+Bridging Extrusion Modifier	QObject
+Bridging Fan Speed	QObject
+Bridging Infill Extra Expansion	QObject
+Bridging Perimeter Extra Overlap	QObject
+Bridging Speed Modifier	QObject
+Bridging properties will only be applied to unsupported regions larger than this threshold	QObject
+Build File Parsing Failed	QObject
+Build Files (*.%1)	QObject
+Build Files (*.gcode *.gco *.g *.gx *.g3drem *.3w *.makerbot *.bfb *.photon *.cbddlp);;All Files (*.*)	QObject
+Build Files (*.gcode *.gco *.g *.gx *.g3drem *.3w *.makerbot *.bfb);;All Files (*.*)	QObject
+Build Files (*.gcode *.gco *.g *.x3g *.gx *.g3drem *.3w *.makerbot *.bfb *.photon *.cbddlp);;All Files (*.*)	QObject
+Build Files (*.gcode *.gco *.g *.x3g *.gx *.g3drem *.3w *.makerbot *.bfb);;All Files (*.*)	QObject
+Build Size X	QObject
+Build Size Y	QObject
+Build Size Z	QObject
+Build Summary	PreviewOverviewComponent
+Build Time	QObject
+Build Volume	QObject
+Build Volume Diameter	QObject
+Build Volume Shape	QObject
+Build Volume X	QObject
+Build Volume Y	QObject
+Build Volume Z	QObject
+Build cancellation requested...	QObject
+Build volume center	QObject
+Bulk Manual Supports	QObject
+CLI File	QObject
+Calculating infill...	QObject
+Calibrating...	QObject
+Camera Control Mode	QObject
+Camera Feed	MachineControlPanelDialog,QObject
+Camera Zoom Mode	QObject
+Cancel	QObject,QPlatformTheme,QWizard
+Cancel the pending user interaction sequence	QObject
+Cannot initiate a file transfer while printing.	QObject
+Cannot initiate a print during a file transfer.	QObject
+Cannot send commands during a file transfer.	QObject
+Center	ModelTransformsDialogComponent,QObject
+Center and Arrange	MainWindow,QObject
+Center and Arrange Models	QObject
+Center of Mass	QObject
+Center of each part	ModelTransformsDialogComponent
+Change Model Type	QObject
+Change Model Type...	QObject
+Change Position	ModelTransformsDialogComponent
+Change Rotation	ModelTransformsDialogComponent
+Change Scaling	ModelTransformsDialogComponent
+Change the type for the model	QObject
+Check for Printer Profile Updates	QObject
+Check for Profile Updates	QObject
+Check for Software Updates	QObject
+Check for software and settings updates automatically	QObject
+Checksum mismatch detected.	QObject
+Checksum mismatch detected.  Retrying...	QObject
+Choose how the exterior portion of thin walls should be printed	QObject
+Choose how the interior portion of thin walls should be printed	QObject
+Choose how the sliced paths will be combined to create the final printable regions	QObject
+Choose how the software should handle any non-manifold open loops that are encountered during slicing	QObject
+Choose how the start points for each island are selected	QObject
+Choose how the thumbnail images will be encoded for compatibility with different applications and firmwares	QObject
+Choose how you will connect to your 3D printer.	QObject
+Choose if first layer properties should be entered as a percentage of nominal or absolute values	QObject
+Choose if the above raft speed should be entered as a percentage of nominal or an absolute value	QObject
+Choose if the build platform is raised (bottom up) or lowered (top down) during the print	QObject
+Choose if the temperature controller should be heated during the print	QObject
+Choose the baud rate for USB communication	QObject
+Choose the build file format accepted by the machine	QObject
+Choose the control scheme that you would like to use for manipulating the 3D view	QObject
+Choose the firmware type that runs on the machine	QObject
+Choose the flow control method for USB communication	QObject
+Choose the location that the camera should approach as you zoom into the scene	QObject
+Choose the main extruder that is used for outline perimeters and outer surfaces	QObject
+Choose the method for remembering the last used directory for each file type	QObject
+Choose the pattern for the base support structure infill	QObject
+Choose the pattern for the dense internal infill layers	QObject
+Choose the pattern for the dense support structure infill	QObject
+Choose the pattern for the external solid layers.  These patterns will always be printed at 100% density.	QObject
+Choose the pattern for the internal infill layers	QObject
+Choose the pattern for the support structure infill	QObject
+Choose the primary peel mechanism used to separate the part from the vat	QObject
+Choose the rendering mode that should be used for the 3D view	QObject
+Choose the shape that best defines the printable build volume	QObject
+Choose the shape that best defines the printable build volume of the printer	QObject
+Choose whether inner or outer perimeters will be printed first	QObject
+Choose whether parts will be rotated collectively around the center of the entire selection or individually around the center of each part	ModelTransformsDialogComponent
+Choose whether parts will be scaled from the center of the entire selection or from the center of each individual part	ModelTransformsDialogComponent
+Choose whether the XY position values above represent the center, mininum, or maximum of the part outline (Z reference is always the bottom of the part)	ModelTransformsDialogComponent
+Choose whether the temperature controller represents an extruder, heated build platform, or heated chamber	QObject
+Choose which feature types will trigger a wipe movement	QObject
+Clear All Supports	QObject
+Clear Automatic Supports	QObject
+Clear Manual Supports	QObject
+Clear Model Group	QObject
+Clear Process Group	QObject
+Clear Results	QObject
+Clear Supports	QObject
+Clear highlighted settings	QObject
+Clear the current workspace and create a new empty scene	QObject
+Click and drag to rapidly add multiple support structures to the model	QObject
+Click and drag to rapidly remove multiple support structures from the model	QObject
+Click here for more information about these settings	QObject
+Click to add a single support structure to the model	QObject
+Click to remove a single support structure from the model	QObject
+Click to select an anchor point for the support structure	QObject
+Click to select the support structure that should be removed	QObject
+Close	QPlatformTheme
+Close All Workspace Tabs	QObject
+Close Workspace Tab	QObject
+Close all workspace tabs and create a single new tab	QObject
+Close and Heal Segments	QObject
+Close the current workspace tab	QObject
+Coast at End	QObject
+Coasting Distance	QObject
+Cold extrusion prevented.  Print aborted.	QObject
+Coloring	PreviewOverviewComponent
+Combine Selected Models	QObject
+Combine all selected models into a single group	QObject
+Combine all selected processes into a single group	QObject
+Combine the selected models into a single mesh	QObject
+Combined Dense Infill Layers	QObject
+Combined Infill Layers	QObject
+Combined Support Layers	QObject
+Combining meshes...	QObject
+Command	QObject
+Commit	QWizard
+Communication	MachineControlPanelDialog
+Compare Profiles	QObject
+Compare to last saved profile	QObject
+Compare to other grouped processes	QObject
+Compare to other profile...	QObject
+Comparison Failed	QObject
+Concentric	QObject
+Configuration Assistant	QObject
+Configuration Assistant...	QObject
+Configuration Failed	QObject
+Configure the software for a new 3D printer	QObject
+Confirm Change Profile	QObject
+Confirm Delete Device	QObject
+Confirm Delete Profile	QObject
+Confirm Remove Category	QObject
+Confirm Remove Option	QObject
+Confirm Remove Settings	QObject
+Confirm Revert Profile	QObject
+Confirm Support Structures	QObject
+Connect	MachineControlPanelDialog,QObject
+Connected	QObject
+Connection Details	QObject
+Connection Failure	QObject
+Connection Manager	MachineControlPanelDialog
+Connection Method	QObject
+Connection closed.	QObject
+Connection failed.	QObject
+Connection failed.  Make sure no other programs are connected to the same IP address or port.	QObject
+Connection failed.  Make sure the device is turned on and the connection details are correct.	QObject
+Connection failed.  Make sure the device is turned on and the port name is correct.	QObject
+Connection failed.  Make sure the network is online and the IP address or hostname is correct.	QObject
+Connection refused.  Make sure the device is turned on and the connection details are correct.	QObject
+Connection successful!	QObject
+Connection timeout.  Make sure the device is turned on and the connection details are correct.	QObject
+Consistent Order	QObject
+Constrained Orbit	QObject
+Context	QObject
+Continue	QWizard
+Continue moving the nozzle around a completed loop to wipe any excess filament on that loop	QObject
+Continuous Printing (layer-by-layer)	QObject
+Contoured	QObject
+Control Options	PreviewNavigationComponent
+Controls the flow rate for extrusion movements.  Higher values will extrude more plastic.	QObject
+Convert to Support Structure	QObject
+Cooldown Extruder While Idle	QObject
+Cooldown Temperature	QObject
+Cooling	QObject
+Cooling Fan	QObject
+Copy Selected Models	QObject
+Copy Selected Processes	QObject
+Copy the selected models to the clipboard	QObject
+Copy the selected processes to the clipboard	QObject
+Copyright %1 Simplify3D, LLC. All rights reserved.	QObject
+Correct Model Units	QObject
+Creality Neo Firmware	QObject
+Create Model Group	QObject
+Create Process Group	QObject
+Create a pillar that is used to prime the extrduer after a tool change command	QObject
+Create a shell around the part to prime each extruder after a tool change and catch excess filament oozing from inactive extruders	QObject
+Create new processes for printing different models with different extruders	QObject
+Create new processes to vary the settings within different models or Z regions	QObject
+Creation Workshop File (CWS)	QObject
+Cross Section	QObject
+Cross Section List	CrossSectionDialogComponent
+Cross Section Orientation	CrossSectionDialogComponent
+Cross Section Settings	QObject
+Cross Section Visualization Options	CrossSectionDialogComponent
+Cubic	QObject
+Cupcake Gen3 XYZ, Mk5/6 + Gen4 extruder	QObject
+Cupcake Gen4 XYZ, Mk5/6 + Gen4 extruder	QObject
+Cupcake Pololu XYZ, Mk5/6 + Gen4 extruder	QObject
+Cupcake Pololu XYZ, Mk5/6 + Pololu extruder	QObject
+Cured geometry	QObject
+Current Position	MachineControlPanelDialog
+Current Process	QObject
+Current Session	QObject
+Custom	CrossSectionDialogComponent,QObject
+Custom G-Code that is inserted at the end of the build after fan and temperatures have been turned off.  Note that all speeds must be entered in mm/min.	QObject
+Custom G-Code that is inserted right after a retraction takes place.  Note that all speeds must be entered in mm/min.	QObject
+Custom G-Code that is inserted right after a tool change takes place.  Note that all speeds must be entered in mm/min.	QObject
+Custom G-Code that is inserted right after moving to a new layer.  Note that all speeds must be entered in mm/min.	QObject
+Custom G-Code that is inserted right before a retraction takes place.  Note that all speeds must be entered in mm/min.	QObject
+Custom G-Code that is inserted right before a tool change takes place.  Note that all speeds must be entered in mm/min.	QObject
+Custom G-Code that is inserted right before moving to a new layer.  Note that all speeds must be entered in mm/min.	QObject
+Custom G-Code that is inserted right before the layer from a different process begins.  Note that all speeds must be entered in mm/min.	QObject
+Custom Printer Configuration	QObject
+Custom Zones	QObject
+Custom Zones...	EditProcessDialog
+Custom support structure	QObject
+Customize Support Structures	QObject
+Cylindrical	QObject
+Dark Theme	QObject
+Deactivate Product	QObject
+Deactivate and remove the current license from this computer	QObject
+Deactivation Failed	QObject
+Deactivation Failed.  Please ensure that you are connected to the internet and then try again.	QObject
+Deactivation Successful	QObject
+Decrease Support Pillar Size	QObject
+Decrease the support pillar size that is used when adding new supports	QObject
+Default	QObject
+Default Model Color	QObject
+Default Printing Speed	QObject
+Default Rotation Center	QObject
+Default Support Color	QObject
+Default Theme	QObject
+Define the X-axis distance that this toolhead would need to move to reach the reference position (typically the position of toolhead 0)	QObject
+Define the Y-axis distance that this toolhead would need to move to reach the reference position (typically the position of toolhead 0)	QObject
+Define the region that will be printed by this process	QObject
+Delete	QObject
+Delete "%1" option	QObject
+Delete Device File	MachineControlPanelDialog
+Delete Process	QObject
+Delete Process Group	QObject
+Delete Processes	QObject
+Delete a single triangle from the mesh	QObject
+Delete current option	QObject
+Delete device	QObject
+Delete entire %1 category	QObject
+Delete profile	QObject
+Delete the selected processes from the scene	QObject
+Dense Infill	QObject
+Dense Infill Extruder	QObject
+Dense Infill Extrusion Width	QObject
+Dense Infill Layers	QObject
+Dense Infill Percentage	QObject
+Dense Internal Infill	QObject
+Dense Internal Infill Pattern	QObject
+Dense Internal Pattern Rotation	QObject
+Dense Support	QObject
+Dense Support Extra Expansion	QObject
+Dense Support Extruder	QObject
+Dense Support Infill Pattern	QObject
+Dense Support Infill Percentage	QObject
+Dense Support Layer Interval	QObject
+Dense Support Outlines	QObject
+Dense Support Pattern Rotation	QObject
+Dense Support Speed	QObject
+Dense Supports	QObject
+Description	QObject
+Deselect All Models	QObject
+Deselect All Processes	QObject
+Deselect all models in the scene	QObject
+Deselect all processes in the scene	QObject
+Detailed Statistics	PreviewOverviewComponent,QObject
+Detect incorrect unit system during import	QObject
+Determine if a new version of an installed printer profile is available	QObject
+Determine if a new version of the software is available	QObject
+Determines if all network communication should use custom proxy settings instead of the system defaults	QObject
+Determines the intensity of the smoothing that is applied to adaptive layer heights to avoid abrupt transitions	QObject
+Device Files	MachineControlPanelDialog
+Device In Use	QObject
+Device not available.	QObject
+Device not found.  Make sure the device is turned on and connected.	QObject
+Device unplugged while connected to port	QObject
+Device unplugged while connected to port.	QObject
+Devices found!  Select your device and click Next to continue.	QObject
+Different Settings for Different Models	VariableSettingsWizard
+Different Settings for Different Z-Ranges	VariableSettingsWizard
+Dimensional Adjustments	QObject
+Direction	CrossSectionDialogComponent
+Disable Motors	MachineControlPanelDialog
+Disable all transform modes and return to normal selection	QObject
+Discard	QPlatformTheme
+Discard Invalid Segments	QObject
+Disconnect	QObject
+Disconnected	QObject
+Display Normal Vectors	QObject
+Display Resolution Height	QObject
+Display Resolution Width	QObject
+Display Shaded Surface	QObject
+Display Wireframe	QObject
+Display cumulative model scale values	QObject
+Display the XYZ coordinate axes in the 3D view	QObject
+Display the meshes that represent the machine geometry	QObject
+Display the normal vectors for each triangle	QObject
+Display the printer build volume boundary	QObject
+Display the software version number and licensing agreement	QObject
+Display the solid model surface for all models	QObject
+Display the surface area, volume, size, center, and other relevant properties for the mesh	QObject
+Display the total combined scale change for each model instead of the relative scale change for that specific transformation	QObject
+Display the wireframe edges for each triangle	QObject
+Do Nothing (keep the small models)	QObject
+Do not remember any previous directories	QObject
+Dock	QObject
+Don't Save	QCocoaTheme
+Done	QWizard
+Download Build File	QObject
+Download Device File	MachineControlPanelDialog
+Download Paused	QObject
+Downloading	QObject
+Downstream timeout detected.  Discarding packet.	QObject
+Drag and drop the categories into the desired order	QObject
+Drag and drop the devices into the desired order	QObject
+Drag and drop the options into the desired order	QObject
+Drag and drop the profiles into the desired order	QObject
+Drag models into the desired groups	VariableSettingsWizard
+Drag models to the correct list based on which extruder should print each part.	MultiExtrusionWizard
+Dremel Firmware	QObject
+Drop Model to Bed	QObject
+Duet3D Firmware	QObject
+Duplicate Models	QObject
+Duplicate Models...	QObject
+Duplicate Selected Models	QObject
+Duplicate Selected Processes	QObject
+Duplicate keyboard shortcuts detected.  Duplicate commands are listed in red.	QObject
+Each model in the same group will receive the same settings	VariableSettingsWizard
+Each process will be printed one-by-one, moving the Z-axis up and down as needed.  The Z-axis movements will be limited by the clearance height below.	QObject
+Each updated profile will be saved with a new name so that the old settings are still available.	QObject
+East	QObject
+Edit	QObject
+Edit Color	QObject
+Edit Model Transforms	QObject
+Edit Process Models	QObject
+Edit Process Settings	EditProcessDialog,QObject
+Edit Process Settings...	QObject
+Edit Shortcut	KeyboardShortcutEditorComponent,QObject
+Edit the 3D printing process settings	QObject
+Edit the keyboard shortcuts for the entire application	QObject
+Edit the main application preferences	QObject
+Edit the numeric values for model position, size, and rotation	QObject
+Elapsed: %1	QObject
+Elevation angle	CrossSectionDialogComponent
+Empty Selection	QObject
+Enable Adaptive Layer Heights	QObject
+Enable Motors	MachineControlPanelDialog
+Enable cross section	CrossSectionDialogComponent
+Enable live reloading of modified 3D model files	QObject
+Enable temperature controller	QObject
+Enable this option for machines that can independently control the extruder motor using E-values	QObject
+Enable this option for machines that require explicit commands when extrusion starts, stops, or reverses	QObject
+Enable this option for machines where the prior parameter value will be retained even if it is omitted from subsequent lines	QObject
+Enable this option if the machine support resetting the current extruder axis position to zero	QObject
+Enable this option if the printer has a heated build platform that can be manually controlled	QObject
+Enable this option if your machine requires custom steps per millimeter values	QObject
+Enable this option to add a retraction anytime the nozzle is moving across an exposed top surface	QObject
+Enable this option to add a retraction anytime the nozzle will be moving to a new layer	QObject
+Enable this option to embed preview thumbnail images within the build file header	QObject
+Enable this option to generate relative E-values for each loop instead of absolute E-values that increase throughout the entire print	QObject
+Enable this option to only perform retractions if the prior extruded segment was longer than the threshold length	QObject
+Enable this option to only perform retractions when the upcoming travel movement is longer than the threshold distance	QObject
+Enabling this option will allow the software to modify travel movements to stay within the part as much as possible	QObject
+End Sequence...	QObject
+Ending	QObject
+Ending Script	QObject
+Enter Category Name	QObject
+Enter Option Name	QObject
+Enter a name for the new category	QObject
+Enter a name for the new option	QObject
+Enter a new name for the "%1" option	QObject
+Enter a new name for the %1 category	QObject
+Enter more characters to see results.	QObject
+Enter the name of your 3D printer to see matching profiles:	QObject
+Enter the new keyboard shortcut:	QObject
+Enter the new value	QObject
+Environmental	QObject
+Erase the selected 3D models from the scene	QObject
+Error	MachineControlPanelDialog
+Error Creating Directory	QObject
+Error combining meshes.	QObject
+Error creating build file with unknown file type: %1	QObject
+Error creating model with unknown file type: %1	QObject
+Error creating project with unknown file type: %1	QObject
+Error creating support structure with unknown file type: %1	QObject
+Error creating temporary directory for file: %1	QObject
+Error isolating temporary directory for file: %1	QObject
+Error opening build file with unknown file type: %1	QObject
+Error opening model with unknown file type: %1	QObject
+Error opening project with unknown file type: %1	QObject
+Error opening support structure with unknown file type: %1	QObject
+Estimated End Time: %1	QObject
+Every fan must have at least 1 fan speed setpoint.	QObject
+Every temperature controller must have at least 1 temperature setpoint.	QObject
+Excessive Infill Parameters	QObject
+Exit	QObject
+Exit Preview Mode	MainWindow,QObject
+Exit the application after executing the selected commands	QObject
+Exit the build file preview	QObject
+Export 3D Model	QObject
+Export 3MF...	QObject
+Export Activation Request File	QObject
+Export Activation Request File...	QObject
+Export Ascii STL...	QObject
+Export Binary STL...	QObject
+Export Build File to Disk	MainWindow,QObject
+Export Failed	QObject
+Export File Format	QObject
+Export Keyboard Shortcuts	QObject
+Export Keyboard Shortcuts...	QObject
+Export Models	QObject
+Export OBJ...	QObject
+Export Previewed Build File to Disk	QObject
+Export Printer Profile...	QObject
+Export Profile	QObject
+Export Support Structures	QObject
+Export Supports...	QObject
+Export all selected support structures	QObject
+Export an activation request file	QObject
+Export printer profile settings for a specific machine	QObject
+Export selected models as a 3MF file	QObject
+Export selected models as a binary STL file	QObject
+Export selected models as a plain text STL file	QObject
+Export selected models as an OBJ file	QObject
+Export selected supports as a 3MF file	QObject
+Export selected supports as a binary STL file	QObject
+Export selected supports as a plain text STL file	QObject
+Export selected supports as an OBJ file	QObject
+Exporting factory file: %1...	QObject
+Exporting model...	QObject
+Exporting model: %1...	QObject
+Exporting support structure...	QObject
+Exporting support structure: %1...	QObject
+Exposure Time	QObject
+Exposure Time (sec)	QObject
+Extend the endpoints of each single extrusion segment by this amount to increase the bond with the surrounding features	QObject
+Extends the portion of a perimeter that is modified to use bridging settings	QObject
+External Infill Pattern	QObject
+External Pattern Rotation	QObject
+External Single Extrusion	QObject
+External Thin Wall Type	QObject
+Extra Restart Distance	QObject
+Extrude	QObject
+Extruder	MachineControlPanelDialog,QObject
+Extruder %1	QObject
+Extruder %1 Only	QObject
+Extruder Acceleration	QObject
+Extruder Jerk	QObject
+Extruder Mounted	QObject
+Extruder Not Heated	QObject
+Extruder Toolhead Number	QObject
+Extruders	QObject
+Extrusion Multiplier	QObject
+Extrusion Width	QObject
+Extrusion Width Mode	QObject
+Factory Files (*.factory)	QObject
+Factory Files (*.factory);;All Files (*.*)	QObject
+Failed To Add Option	QObject
+Failed To Create Profile	QObject
+Failed To Delete Device	QObject
+Failed To Delete Profile	QObject
+Failed To Load Profile	QObject
+Failed To Remove Category	QObject
+Failed To Remove Option	QObject
+Failed To Rename Device	QObject
+Failed To Rename Option	QObject
+Failed To Rename Profile	QObject
+Failed To Select Option	QObject
+Failed to Transform Models	QObject
+Failed to access the WMI service.  Please make sure this core Windows service is functioning correctly before proceeding.	QObject
+Failed to activate software.  The software will now exit.	QObject
+Failed to add option "%1"	QObject
+Failed to add the %1 category	QObject
+Failed to approve this connection on the machine.	QObject
+Failed to authenticate connection with machine.	QObject
+Failed to authenticate with proxy server	QObject
+Failed to close file after writing.	QObject
+Failed to close file.	QObject
+Failed to compress file: %1	QObject
+Failed to confirm activation status.	QObject
+Failed to connect to activation server.  Please check your firewall and network configuration to make sure that traffic from Simplify3D is not being blocked.	QObject
+Failed to connect to device through OctoPrint.  Please verify your settings in OctoPrint and make sure the device is connected.	QObject
+Failed to connect to server	QObject
+Failed to convert file: %1	QObject
+Failed to copy current session information	QObject
+Failed to copy file: %1	QObject
+Failed to create new profile.	QObject
+Failed to create project file: %1	QObject
+Failed to create structure for project file: %1	QObject
+Failed to create working directory folder.  Please ensure the application is running with appropriate permissions.	QObject
+Failed to decode file: %1	QObject
+Failed to decompress file: %1	QObject
+Failed to delete device "%1"	QObject
+Failed to delete file.	QObject
+Failed to delete profile "%1"	QObject
+Failed to determine desired profile.  Please try again.	QObject
+Failed to download profile from server.  Please try again.	QObject
+Failed to encode file: %1	QObject
+Failed to execute post-processing commands for file: %1	QObject
+Failed to export contents for project file: %1	QObject
+Failed to export file for printing.	QObject
+Failed to export file to selected location.	QObject
+Failed to export keyboard shortcuts.	QObject
+Failed to export models for project file: %1	QObject
+Failed to export processes for project file: %1	QObject
+Failed to export supports for project file: %1	QObject
+Failed to export the printer profile "%1".	QObject
+Failed to extract 3D model data from file: %1	QObject
+Failed to generate contents for file: %1	QObject
+Failed to generate layer image for file: %1	QObject
+Failed to generate preview image for file: %1	QObject
+Failed to import information for model number %1 from factory file	QObject
+Failed to import information for process number %1 from factory file	QObject
+Failed to import keyboard shortcuts.	QObject
+Failed to import model number %1 from factory file	QObject
+Failed to import process number %1 from factory file	QObject
+Failed to import support structure number %1 from factory file	QObject
+Failed to import the selected printer profiles.	QObject
+Failed to initialize file upload.  Check the printer LCD panel for errors.	QObject
+Failed to initiate connection.	QObject
+Failed to initiate device search.	QObject
+Failed to list files.	QObject
+Failed to load custom printer settings.  Please try again.	QObject
+Failed to load profile "%1".	QObject
+Failed to load the selected profile.	QObject
+Failed to locate 3D model data within file: %1	QObject
+Failed to migrate %1 of %2 profiles	QObject
+Failed to obtain access token.	QObject
+Failed to open file for reading: %1	QObject
+Failed to open file for writing: %1	QObject
+Failed to open file.	QObject
+Failed to parse 3D model data from file: %1	QObject
+Failed to parse file: %1	QObject
+Failed to parse normal vector coordinates at byte %1 in file: %2	QObject
+Failed to parse normal vector indices at byte %1 in file: %2	QObject
+Failed to parse profile.  Please contact support@simplify3d.com.	QObject
+Failed to parse settings.	QObject
+Failed to parse vertex coordinates at byte %1 in file: %2	QObject
+Failed to parse vertex indices at byte %1 in file: %2	QObject
+Failed to perform conversion for file: %1	QObject
+Failed to perform post-processing commands for file: %1	QObject
+Failed to read data at location %1 in file: %2	QObject
+Failed to read file.	QObject
+Failed to read file: %1	QObject
+Failed to read information for project file: %1	QObject
+Failed to read line %1 during conversion.	QObject
+Failed to read line %1 from file: %2	QObject
+Failed to remove file: %1	QObject
+Failed to remove option "%1"	QObject
+Failed to remove the %1 category	QObject
+Failed to rename category from "%1" to "%2"	QObject
+Failed to rename device "%1".	QObject
+Failed to rename file: %1	QObject
+Failed to rename option "%1" to "%2"	QObject
+Failed to rename profile "%1".	QObject
+Failed to replace model geometry	QObject
+Failed to replace support structure geometry	QObject
+Failed to retrieve profiles from server.	QObject
+Failed to save custom printer settings.  Please contact support@simplify3d.com.	QObject
+Failed to save device configuration.  Please try again.	QObject
+Failed to save process settings.	QObject
+Failed to select an appropriate face.	QObject
+Failed to select an appropriate location.	QObject
+Failed to select an appropriate measurement location.	QObject
+Failed to select an appropriate surface.	QObject
+Failed to select an appropriate triangle.	QObject
+Failed to select option "%1"	QObject
+Failed to send command.  Retrying...	QObject
+Failed to update custom printer settings.  Please try again.	QObject
+Failed to update profile settings.	QObject
+Failed to upload file.	QObject
+Failed to write file.	QObject
+Fan	QObject
+Fan Number	QObject
+Fan Speed Overrides	QObject
+Fan Speed Percentage	QObject
+Fan Speed Setpoints	QObject
+Fan Type	QObject
+Fast	QObject
+Fast Honeycomb	QObject
+Feature Type	QObject
+Filament Density	QObject
+Filament Diameter	QObject
+Filament Price	QObject
+Filament Properties	QObject
+Filament empty.  Print paused.	QObject
+File	MachineControlPanelDialog,QObject
+File Selection Behavior	QObject
+File does not exist.	QObject
+File download completed!	QObject
+File download started...	QObject
+File transfer already in progress.	QObject
+File upload completed!	QObject
+File upload started...	QObject
+Files on Device	MachineControlPanelDialog
+Fill in the fields below based on your printer specifications.	QObject
+Filter Commands	KeyboardShortcutEditorComponent
+Filter Messages:	MachineControlPanelDialog
+Filter Settings:	QObject
+Filter...	KeyboardShortcutEditorComponent,QObject
+Final Heating...	QObject
+Find Setting:	QObject
+Finish Support Editing	QObject
+Finish all editing of support structures	QObject
+Firewall and network rules must be configured to allow UDP device discovery	QObject
+Firmware Type	QObject
+Firmware supports "sticky" parameters	QObject
+Firmware version %1 detected	QObject
+First Layer Height	QObject
+First Layer Settings	QObject
+First Layer Speed	QObject
+First Layer Units	QObject
+First Layer Width	QObject
+Fit All	QObject
+Fit Selection	QObject
+Fixed Bridging Infill Angle	QObject
+FlashForge Firmware	QObject
+Flip Displayed X-Axis	QObject
+Flip Displayed Y-Axis	QObject
+Flip Displayed Z-Axis	QObject
+Flip Plane	CrossSectionDialogComponent
+Flip Surface Orientation	QObject
+Flip displayed axis direction	QObject
+Flip the input direction required to magnify the view	QObject
+Flow Control	QObject
+Flow Rate	QObject
+Flow Rate (mm^3/min)	QObject
+Flow Rate (mm^3/sec)	QObject
+Force Hardware Acceleration	QObject
+Force Software Rendering	QObject
+Force retraction between layers	QObject
+Force retraction on top layers	QObject
+Form	CrossSectionDialogComponent,KeyboardShortcutEditorComponent,LoginComponent,ModelTransformsDialogComponent,PreviewNavigationComponent,PreviewOverviewComponent,ProxySettingsComponent
+Formlabs Form File	QObject
+Free Rotation	QObject
+From build platform only	QObject
+Full Honeycomb	QObject
+Full Name	QObject
+Fully increase fan speed for layers below	QObject
+Gap Fill	QObject
+General	QObject
+General Settings	QObject
+Generate Automatic Supports	QObject
+Generate Manual Supports	QObject
+Generate Supports	QObject
+Generate a virtual simulation for the selected build file	QObject
+Generating support structures for model: %1...	QObject
+Generation Failed	QObject
+Generic Open	QObject
+Global	QObject
+Global Offset	QObject
+Global Offsets	QObject
+Go Back	QWizard
+Graphics Acceleration Mode	QObject
+Grid	QObject
+Group %1	QObject
+Group Models	QObject
+Group Name:	QObject
+Group Processes	QObject
+Group models	MultiExtrusionWizard
+Gyroid	QObject
+HTTP Device	QObject
+Hardware Flow Control (RTS/CTS)	QObject
+Heated Build Platform	QObject
+Heated Chamber	QObject
+Help	QObject,QPlatformTheme,QWizard
+Hide Advanced	QObject
+Hide backside of triangles (culling)	QObject
+Hide problematic areas that had been identified on the mesh	QObject
+High	QObject
+Highlight Auto-Configure Category	QObject
+Highlight locations where a single mesh improperly intersects with itself	QObject
+Highlight mesh edges that do not have a correctly oriented neighbor	QObject
+Highlight settings based on...	QObject
+Home All	MachineControlPanelDialog
+Home X	MachineControlPanelDialog
+Home Y	MachineControlPanelDialog
+Home Z	MachineControlPanelDialog
+Homing Direction	QObject
+Homing...	QObject
+Horizontal Inner Size Compensation	QObject
+Horizontal Outer Size Compensation	QObject
+How far away from the end of a loop to stop extruding and begin coasting	QObject
+How far away the skirt outlines should be from the surface of the part.  Small values will allow the skirt to attach directly to the part creating a brim.	QObject
+How far the extruder should lift after completing each retraction movement	QObject
+How far to continue moving and wiping on top of a completed loop	QObject
+How far to expand the raft beyond the boundary of the part	QObject
+How far to reverse the filament feed during a retraction movement	QObject
+How far to reverse the filament feed during a tool change retraction movement	QObject
+How long the extruder takes to reheat and stabilize after cooling down	QObject
+How many additional layers of the ooze shield to print after there are no more upcoming tool changes	QObject
+How many additional layers of the prime pillar to print after there are no more upcoming tool changes	QObject
+How many layers of the skirt will be printed	QObject
+How much additional filament to prime on top of the original retraction amount.  Use negative values to prime less filament than was originally retracted.	QObject
+How much additional filament to prime on top of the original tool change retraction amount	QObject
+IP Address or Hostname	QObject
+Identify Bridging Regions	QObject
+Identify Non-Manifold Edges	QObject
+Identify Self-Intersections	QObject
+Identify bridging regions that are not supported from the layer below	QObject
+Idle Cooldown	QObject
+If the portion of a perimeter that crosses over a bridging region is shorter than this length, it will not be modified	QObject
+If this option is enabled, perimeters that cross over bridging regions will be modified to use bridging settings	QObject
+Ignore	QPlatformTheme
+Import	QObject
+Import 3D Models	QObject
+Import 3D models from disk	QObject
+Import Actions	QObject
+Import Failed	QObject
+Import Keyboard Shortcuts	QObject
+Import Keyboard Shortcuts...	QObject
+Import License File	QObject
+Import License File...	QObject
+Import Model	QObject
+Import Models	QObject
+Import Models...	QObject
+Import Printer Profiles...	QObject
+Import Profiles	QObject
+Import Success	QObject
+Import Support	QObject
+Import Support Structures	QObject
+Import Supports	QObject
+Import Supports...	QObject
+Import a license file	QObject
+Import printer profile settings for a new machine	QObject
+Import support structures from disk	QObject
+Importing factory file: %1...	QObject
+Importing model file: %1...	QObject
+Importing support structure file: %1...	QObject
+In automatic mode, the software will automatically determine an extrusion width based on your nozzle parameters.  Set to manual mode to enter a custom value.	QObject
+In automatic mode, the software will automatically determine the correct port based on your printer settings.  Set to manual mode to enter a custom value.	QObject
+Include M101/M102/M103 commands	QObject
+Include thumbnail images	QObject
+Incompatible Filename	QObject
+Increase Support Pillar Size	QObject
+Increase fan speed for excessively quick layers	QObject
+Increase the support pillar size that is used when adding new supports	QObject
+Individual homing commands are not supported by this printer.  Use the Home All button to home all axes.	QObject
+Infill	QObject
+Infill Extruder	QObject
+Infill Extrusion Width	QObject
+Infill Percentage	QObject
+Infill regions smaller than this threshold will be converted to solid infill for increased strength	QObject
+Info	MachineControlPanelDialog
+Initial Heating...	QObject
+Inner Perimeter	QObject
+Inner Perimeter Speed	QObject
+Inside-Out	QObject
+Instruct the printer to wait until the desired initial temperature is reached before starting the build	QObject
+Internal Infill Pattern	QObject
+Internal Pattern Rotation	QObject
+Internal Single Extrusion	QObject
+Internal Thin Wall Type	QObject
+Introduction	QObject
+Invalid Category Name	QObject
+Invalid Device Name	QObject
+Invalid Group Name	QObject
+Invalid Model Name	QObject
+Invalid Model Selection	QObject
+Invalid Models	QObject
+Invalid Option Name	QObject
+Invalid Process Group	QObject
+Invalid Process Name	QObject
+Invalid Processes	QObject
+Invalid Profile Name	QObject
+Invalid Selection	QObject
+Invalid Settings	QObject
+Invalid Shortcut	QObject
+Invalid Value	QObject
+Invalid command JSON.	QObject
+Invalid command parameters.	QObject
+Invalid command.  Discarding packet.	QObject
+Invalid custom printer settings.  Please try again.	QObject
+Invalid custom printer type.  Please try again.	QObject
+Invalid device configuration.  Please try again.	QObject
+Invalid device name.  Please try again.	QObject
+Invalid extruder count.  Please try again.	QObject
+Invalid file header: %1	QObject
+Invalid layer image for file: %1	QObject
+Invalid preview image definition: %1	QObject
+Invalid preview image for file: %1	QObject
+Invalid printer name.  Please try again.	QObject
+Invert zoom direction	QObject
+Iron Top Layers	QObject
+Ironing	QObject
+Ironing Extrusion Modifier	QObject
+Ironing Extrusion Width	QObject
+Ironing Outline Offset	QObject
+Ironing Speed Modifier	QObject
+Island Printing Order	QObject
+Keep models on bed after rotation or scaling	QObject
+Keyboard Shortcut Editor	QObject
+Keyboard Shortcut Files (*.keymap);;All Files (*.*)	QObject
+Keyboard Shortcuts...	QObject
+Klipper/Moonraker Firmware	QObject
+LABS Extruder	QObject
+Language Selection	QObject
+Laser Diameter	QObject
+Layer	PreviewNavigationComponent,QObject
+Layer Area	QObject
+Layer Area (mm^2)	QObject
+Layer Change	QObject
+Layer Count	QObject
+Layer Height	QObject
+Layer Height (mm)	QObject
+Layer Number	QObject
+Layer Range to Show	PreviewNavigationComponent,QObject
+Layer image	QObject
+Layers with a total time below this value will use the maximum quick layer fan speed	QObject
+License Agreement	QObject
+License Files (*.lic);;All Files (*.*)	QObject
+Line	PreviewNavigationComponent
+Line Range to Show	QObject
+Live Preview Tracking	PreviewOverviewComponent
+Load an existing factory file	QObject
+Location X:	QObject
+Login	LoginComponent
+Login failed.  Invalid credentials.	QObject
+Logout	QObject
+Looking for overhangs...	QObject
+Lower Dense Support Layers	QObject
+Lower Support Separation Layers	QObject
+M0/M1 command detected.  Print paused.	QObject
+Machine Background Color	QObject
+Machine Background Model	QObject
+Machine Control Panel	MachineControlPanelDialog,QObject
+Machine Definition	QObject
+Machine Orientation	QObject
+Machine error detected (%1)	QObject
+Machine error detected (%1).  Door open.	QObject
+Machine error detected (%1).  Filament missing.	QObject
+Machine has shutdown due to overheating.	QObject
+Machine is already in the process of printing.	QObject
+Main Options	QObject
+Major Grid Line Spacing	QObject
+Make a measurement by selecting different features on your 3D model	QObject
+MakerBot Machine Profile	QObject
+MakerBot Model Extruder	QObject
+MakerBot Model Material	QObject
+MakerBot Support Extruder	QObject
+MakerBot Support Material	QObject
+Manual	QObject
+Manual Connection Details	QObject
+Manufacturer	QObject
+Marlin/Repetier Firmware	QObject
+Material	QObject
+Material Cost	QObject
+Material Extrusion (FFF, FDM)	QObject
+Material Length	QObject
+Material Volume	QObject
+Material Weight	QObject
+Max	PreviewNavigationComponent,QObject
+Max Clearance Height	QObject
+Max retry attempts exceeded.  Discarding packet.	QObject
+Maximum	ModelTransformsDialogComponent
+Maximum Adaptive Layer Height	QObject
+Maximum Edge Length	QObject
+Maximum Extruder Flow Rate	QObject
+Maximum Single Extrusion Width	QObject
+Maximum Triangle Angle	QObject
+Maximum Z Height	QObject
+Maximum movement detour factor	QObject
+Maximum quick layer fan speed	QObject
+Measured distance: %1 mm	QObject
+Medium	QObject
+Merge All Boundaries	QObject
+Mesh	QObject
+Mesh Properties	QObject
+Mesh Properties...	QObject
+Mesh Reduction	QObject
+Mesh Reduction...	QObject
+Metal Powder Laser Sintering (DMLS, DLM)	QObject
+Method	QObject
+Method not supported.	QObject
+Migrate settings from prior Simplify3D versions	QObject
+Migration Assistant	QObject
+Migration Assistant...	QObject
+Migration Completed	QObject
+Migration Ready	QObject
+Min	PreviewNavigationComponent,QObject
+Minimize Print Time	QObject
+Minimize direction changes (monotonic)	QObject
+Minimize direction changes to create a consistent surface finish	QObject
+Minimum	ModelTransformsDialogComponent
+Minimum Adaptive Layer Height	QObject
+Minimum Bridging Perimeter Length	QObject
+Minimum Edge Length	QObject
+Minimum Infill Length	QObject
+Minimum Single Extrusion Length	QObject
+Minimum Single Extrusion Width	QObject
+Minimum Triangle Angle	QObject
+Minimum Z Height	QObject
+Minimum extrusion for retraction	QObject
+Minimum quick layer speed percentage	QObject
+Minimum short perimeter speed percentage	QObject
+Minimum travel for retraction	QObject
+Minimum triangle side length	QObject
+Minor Grid Line Spacing	QObject
+Mirror Along X-Axis	QObject
+Mirror Along Y-Axis	QObject
+Mirror Along Z-Axis	QObject
+Mirror Mesh	QObject
+Mirror Model	QObject
+Mirror the X-axis direction in the 3D view.  This is for visual purposes only.	QObject
+Mirror the Y-axis direction in the 3D view.  This is for visual purposes only.	QObject
+Mirror the Z-axis direction in the 3D view.  This is for visual purposes only.	QObject
+Mirror the model along the X-axis	QObject
+Mirror the model along the Y-axis	QObject
+Mirror the model along the Z-axis	QObject
+Missing required data at end of file: %1	QObject
+Model	QObject
+Model 1A	QObject
+Model 1C	QObject
+Model 1XA	QObject
+Model Count	QObject
+Model List	QObject
+Model Name:	ModelTransformsDialogComponent,QObject
+Model Transforms	QObject
+Model restriction (only overlap will be printed)	QObject
+Model subtraction (overlap will be removed)	QObject
+Models	MainWindow,QObject
+Modify output coordinates using toolhead offsets	QObject
+Modify the extrusion rate for all toolpaths within a bridging region	QObject
+Modify the extrusion rate for all top layer toolpaths	QObject
+Modify the print speed for all toolpaths within a bridging region	QObject
+Modify the print speed for ironing passes on the top layer	QObject
+Modify the rotation center based on the geometry surrounding the rotation start point	QObject
+Modify the rotation center based on the initial mouse location when the rotation begins	QObject
+Modify the thickness of each layer based on the model geometry.  Larger layer heights will be used when there are no large overhangs or complex features.	QObject
+Modify travel movements to avoid open spaces	QObject
+Move Model	QObject
+Move imported models onto the print bed instead of using the fixed coordinate system within the 3D model file itself	QObject
+Move the selected models	QObject
+Move to Point	CrossSectionDialogComponent
+Move to the next workspace tab in the list	QObject
+Move to the previous workspace tab in the list	QObject
+Move, scale, or rotate the selected models	QObject
+Movement Behavior	QObject
+Movement Controls	MachineControlPanelDialog
+Movement Speed	MachineControlPanelDialog,QObject
+Multi Extrusion	QObject
+Multi Extrusion Wizard	MultiExtrusionWizard,QObject
+Multi Extrusion Wizard...	QObject
+Multicast Group	QObject
+N&o to All	QPlatformTheme
+NOT %1	QObject
+Network	QObject
+Network Connection (Ethernet, WiFi)	QObject
+Network Port Mode	QObject
+Network Settings	LoginComponent,QObject
+Never display	QObject
+New	QObject
+New Connection Wizard	QObject
+New Printer	QObject
+New Workspace Tab	QObject
+New printer profile updates are available!	QObject
+No Categories for Assignment	QObject
+No Configured Devices	QObject
+No Flow Control	QObject
+No Gas Flow	QObject
+No Models Remaining	QObject
+No Peel	QObject
+No Recoater	QObject
+No Wiper	QObject
+No devices found.  Make sure the device is turned on and connected.	QObject
+No devices have been configured.  Please go to Tools > Machine Control Panel, and click Add New to setup a new device.	QObject
+No matches found.	QObject
+No models selected	QObject
+Non-Manifold Slicing Behavior	QObject
+Non-manifold edges have been highlighted on the selected mesh.	QObject
+Non-manifold edges have been highlighted on the selected meshes.	QObject
+None	QObject
+Normal	QObject
+Normal Selection	QObject
+North	QObject
+North-East	QObject
+North-West	QObject
+Nozzle diameter	QObject
+Number of Extruders	QObject
+Number of Settings Groups	VariableSettingsWizard
+Number of copies	QObject
+OBJ Files (*.obj)	QObject
+OK	QPlatformTheme
+Octahedral	QObject
+OctoPrint Firmware	QObject
+Off	QObject
+Once a layer has a total time below this value, the fan speed will begin increasing towards the maximum quick layer fan speed	QObject
+Once a layer has a total time below this value, the print speed will begin decreasing towards the minimum quick layer speed	QObject
+Once a perimeter has a total length below this value, the print speed will begin decreasing towards the minimum short perimeter speed	QObject
+One of the extruders used during the print does not have a temperature controller that is being heated.  Are you sure you want to continue?	QObject
+One of the models for this print is positioned outside of the printable build volume.  Are you sure you want to continue?	QObject
+One of the support structures for this print is positioned outside of the printable build volume.  Are you sure you want to continue?	QObject
+Only allow a single workspace tab	QObject
+Only display fixed center	QObject
+Only retract when crossing open spaces	QObject
+Only show	PreviewNavigationComponent
+Only show the frontside of triangles to improve graphics performance	QObject
+Only vertical lift on top layers	QObject
+Only while rotating	QObject
+Ooze Control	QObject
+Ooze Control Behavior	QObject
+Ooze Shield	QObject
+Ooze Shield Extruder	QObject
+Ooze Shield Layers After Auto-Stop	QObject
+Ooze Shield Offset	QObject
+Ooze Shield Outlines	QObject
+Ooze Shield Sidewall Angle	QObject
+Ooze Shield Sidewall Shape	QObject
+Ooze Shield Speed	QObject
+Open	QPlatformTheme
+Open Factory File	QObject
+Open Factory File...	QObject
+Open Factory Files	QObject
+Open Loop Thicken Width	QObject
+Open Machine Control Panel	QObject
+Open a generic file based on its extension	QObject
+Open a new workspace tab	QObject
+Open a recent imported or exported factory file	QObject
+Open a recently imported or exported model	QObject
+Open the Quick Start Guide documentation	QObject
+Open the custom supports dialog to edit the support structures for each model	QObject
+Open the machine control panel to monitor and control the machine	QObject
+Operation In Progress	QObject
+Optimize start points for fastest printing	QObject
+Option	QObject
+Options...	QObject
+Origin Offset	QObject
+Orthographic View	QObject
+Other	QObject
+Out of Bounds	QObject
+Out of bounds normal vertex indices encountered in file: %1	QObject
+Out of bounds vertex indices encountered in file: %1	QObject
+Outer Perimeter	QObject
+Outer Perimeter Speed	QObject
+Outline Overlap	QObject
+Outline Perimeters	QObject
+Outline Printing Order	QObject
+Output	QObject
+Outside-In	QObject
+Overhang angle	QObject
+Override fan speed for top layers	QObject
+Override fan speed while bridging	QObject
+Overwrite Current Profile	QObject
+Pack the models together and center on the middle of the build platform	QObject
+Packet transmission failed.  Retrying...	QObject
+Parsing build file: %1...	QObject
+Part Separation	QObject
+Password	LoginComponent,ProxySettingsComponent,QObject
+Paste Selected Models	QObject
+Paste Selected Processes	QObject
+Paste the selected models from the clipboard	QObject
+Paste the selected processes from the clipboard	QObject
+Pause	MachineControlPanelDialog,QObject
+Pausing print...	QObject
+Peel Type	QObject
+Per-Layer Setpoints	QObject
+Percentage	QObject
+Percentage of Total Length	QObject
+Percentage of Total Time	QObject
+Perform Tool Change Retractions	QObject
+Perform retraction during wipe movement	QObject
+Perform tool change prime on first use	QObject
+Perform tool change retract at end	QObject
+Perimeters Only	QObject
+Permission denied.  Make sure no other applications are connected to this device.	QObject
+Permission denied.  Make sure no other applications or services are connected to this device.	QObject
+Perspective View	QObject
+Place Surface on Bed	QObject
+Plane type	CrossSectionDialogComponent
+Platform Position	QObject
+Play/Pause	PreviewNavigationComponent
+Please add at least 1 process before using this wizard.	QObject
+Please add at least 1 process to the scene before editing support structures.	QObject
+Please add at least one auto-configure category first before assigning settings	QObject
+Please add at least one process before preparing to print.	QObject
+Please choose a filename that has less than 30 characters.  Longer filenames may not be compatible with the firmware for this printer.	QObject
+Please define at least 1 valid extruder in each process.	QObject
+Please ensure that all processes contain at least one layer before printing.	QObject
+Please enter a name for the new %1:	QObject
+Please enter a name for the new profile:	QObject
+Please enter a new name for the device:	QObject
+Please enter a new name for the group:	QObject
+Please enter a new name for the model:	QObject
+Please enter a new name for the process:	QObject
+Please enter a new name for the profile:	QObject
+Please enter a new name for the project:	QObject
+Please enter a valid device name.	QObject
+Please enter a valid group name.	QObject
+Please enter a valid keyboard shortcut.	QObject
+Please enter a valid model name.	QObject
+Please enter a valid name.	QObject
+Please enter a valid process name.	QObject
+Please enter a valid profile name.	QObject
+Please enter a valid value.	QObject
+Please enter your API key to authorize this connection	QObject
+Please enter your login credentials to authorize this connection	QObject
+Please enter your password to authorize this connection	QObject
+Please home the axes to enable the motors	QObject
+Please import at least 2 models before using this wizard.	QObject
+Please import at least one model before preparing to print.	QObject
+Please make sure your username has already been added to the dialout group using 'sudo usermod -aG dialout <myusername>'	QObject
+Please restart the application for theme changes to take effect	QObject
+Please restart the application to complete the reset process.	QObject
+Please restart the software to login with a different Simplify3D account	QObject
+Please restart the software to use the updated network settings	QObject
+Please select a model for the support structures first	QObject
+Please select a model to export first	QObject
+Please select a model with support structures to export first	QObject
+Please select a single model that should receive the imported support structures	QObject
+Please select a valid device configuration.	QObject
+Please select a valid device name.	QObject
+Please select a valid model from the list.	QObject
+Please select at least one process for printing.	QObject
+Please select processes from a valid scene.	QObject
+Please select the device that should be used for printing:	QObject
+Please select the models you would like to duplicate first	QObject
+Please select the new model type:	QObject
+Please select the profiles you would like to update:	QObject
+Please wait for the current operation to finish.	QObject
+Polymer Powder Laser Sintering (SLS)	QObject
+Port	ProxySettingsComponent
+Port Number	QObject
+Position	CrossSectionDialogComponent
+Positive Fill	QObject
+Post Layer Change Script	QObject
+Post Processing	QObject
+Post Processing Script	QObject
+Post Retraction Script	QObject
+Post Tool Change Script	QObject
+Pre Layer Change Script	QObject
+Pre Retraction Script	QObject
+Pre Tool Change Script	QObject
+Preferences will be initialized based on the prior Simplify3D version settings.  Uncheck this option to maintain default settings.	QObject
+Prepare to Print	MainWindow,QObject
+Preview Build File	QObject
+Preview Build File...	QObject
+Preview By	PreviewNavigationComponent
+Preview Mode	QObject
+Previewing layer %1 to %2	QObject
+Previewing layer %1 to %2 (line %3 to %4)	QObject
+Previewing line %1 to %2	QObject
+Previewing line %1 to %2 (layer %3 to %4)	QObject
+Primary Extruder	QObject
+Prime Pillar	QObject
+Prime Pillar Extruder	QObject
+Prime Pillar Infill Percentage	QObject
+Prime Pillar Layers After Auto-Stop	QObject
+Prime Pillar Location	QObject
+Prime Pillar Speed	QObject
+Prime Pillar Width	QObject
+Print	MachineControlPanelDialog,QObject
+Print Build File	QObject
+Print Completed!  Press the button on the printer when ready.	QObject
+Print Paused	QObject
+Print Range Overlap	QObject
+Print Selected File	MachineControlPanelDialog
+Print a single continuous spiraling perimeter by gradually incrementing the Z-axis.  Note: Using this option will force 0% infill with 1 perimeter only.	QObject
+Print already in progress.	QObject
+Print head detatched.  Print paused.	QObject
+Print infill before perimeters	QObject
+Printer	QObject
+Printer %1	QObject
+Printer Profiles (*.fff)	QObject
+Printer Profiles (*.fff);;All Files (*.*)	QObject
+Printer Profiles (*.sla)	QObject
+Printer Settings	QObject
+Printer has stalled while connected to port	QObject
+Printer name	QObject
+Printing	QObject
+Printing Mode	QObject
+Printing Order	QObject
+Printing...	QObject
+Process	QObject
+Process Change	QObject
+Process Change Script	QObject
+Process Count	QObject
+Process List	QObject
+Process Name	EditProcessDialog,QObject
+Process Save Failed	QObject
+Process Selection	QObject
+Process settings modification region (overlap will use different settings)	QObject
+Processes	MainWindow
+Product ID	QObject
+Profile	QObject
+Profile Database	QObject
+Profile Error	QObject
+Profile Update Failed	QObject
+Profiles from the prior Simplify3D version will be imported and converted to the latest format.	QObject
+Progress: %1%	QObject
+Prompt to reload 3D model files after they are modified	QObject
+Proxy Address	QObject
+Proxy Port	QObject
+Qidi Technology, Tronxy Firmware	QObject
+Quality	QObject
+Quick Start Guide	QObject
+Quick Start Guide...	QObject
+Quit the application	QObject
+READ: %1	QObject
+Raft	QObject
+Raft Base Layers	QObject
+Raft Extruder	QObject
+Raft Offset from Part	QObject
+Raft Separation Distance	QObject
+Raft Top Layers	QObject
+Randomize start point placement	QObject
+Read	MachineControlPanelDialog
+Read error occured (%1)	QObject
+Recent Factory Files	QObject
+Recent Models	QObject
+Recoater Direction	QObject
+Reconnecting...	QObject
+Rectangular	QObject
+Rectilinear	QObject
+Redo 	QObject
+Redo %1	QObject
+Redo the next command	QObject
+Reduce print speed for excessively high flow rates	QObject
+Reduce print speed for excessively quick layers	QObject
+Reduce print speed for short perimeters	QObject
+Reducing mesh triangles...	QObject
+Refresh Device Files	MachineControlPanelDialog
+Reheat Time	QObject
+Release Rotation Center	QObject
+Release the fixed rotation center	QObject
+Reload Modified File	QObject
+Remaining: %1	QObject
+Remember a single last used directory across all file operations	QObject
+Remember a unique last used directory for each separate file type	QObject
+Remove	CrossSectionDialogComponent,QObject,VariableSettingsWizard
+Remove %1	QObject
+Remove All Supports	QObject
+Remove Duplicate Triangles	QObject
+Remove Individual Supports	QObject
+Remove Model	QObject
+Remove Model Group	QObject
+Remove Model from Group	QObject
+Remove Models	QObject
+Remove Multiple Supports	QObject
+Remove Orphaned Triangles	QObject
+Remove Process from Group	QObject
+Remove Support	QObject
+Remove Triangle	QObject
+Remove all saved user settings and restore the software back to its default state	QObject
+Remove all selected models from any groups	QObject
+Remove all selected processes from any groups	QObject
+Remove all supports from the selected models	QObject
+Remove any duplicate triangles from the mesh	QObject
+Remove triangles that are disconnected and do not form a valid volume	QObject
+Rename "%1" option...	QObject
+Rename %1 category...	QObject
+Rename Device	QObject
+Rename Group	QObject
+Rename Model	QObject
+Rename Model Group...	QObject
+Rename Model...	QObject
+Rename Process	QObject
+Rename Process Group...	QObject
+Rename Process...	QObject
+Rename Profile	QObject
+Rename Project	QObject
+Rename current option...	QObject
+Rename device...	QObject
+Rename profile...	QObject
+Rename the selected model	QObject
+Rename the selected model group	QObject
+Rename the selected process	QObject
+Rename the selected process group	QObject
+Reorder %1 options...	QObject
+Reorder Categories	QObject
+Reorder Devices	QObject
+Reorder Models	QObject
+Reorder Options	QObject
+Reorder Processes	QObject
+Reorder Profiles	QObject
+Reorder auto-configure categories...	QObject
+Reorder device list...	QObject
+Reorder profile list...	QObject
+Reorient the model so that the selected surface is touching the bed	QObject
+Repair	QObject
+Repair Flipped Triangles	QObject
+Repair individual triangles that are not oriented correctly with their neighbors	QObject
+Replicator 1 - dual extruder	QObject
+Replicator 1 - single extruder	QObject
+Replicator 2	QObject
+Replicator 2 with HBP	QObject
+Replicator 2X	QObject
+Require minimum extrusion for retraction	QObject
+Require minimum travel for retraction	QObject
+Required Idle Time	QObject
+Requires authentication	ProxySettingsComponent
+Resending file contents	QObject
+Resending line %1	QObject
+Reset	QPlatformTheme
+Reset All Settings	QObject
+Reset All Shortcuts	KeyboardShortcutEditorComponent
+Reset All Transforms	ModelTransformsDialogComponent
+Reset Groupings	VariableSettingsWizard
+Reset In Progress	QObject
+Reset Model Transforms	QObject
+Reset Shortcut	KeyboardShortcutEditorComponent
+Reset the model translation, scaling, and rotation so that it matches the originally imported 3D model file	QObject
+Resin Full Layer Exposure (LCD, MSLA, DLP)	QObject
+Resin Laser-based Stereolithography (SLA)	QObject
+Response timeout.  Attempting to force continue...	QObject
+Restart Required	QObject
+Restore Defaults	QPlatformTheme
+Restore workspace on startup	QObject
+Restrict start points to preferred regions	QObject
+Resume	QObject
+Resuming print...	QObject
+Retract	QObject
+Retract Distance	QObject
+Retract Speed	QObject
+Retract Vertical Lift	QObject
+Retraction	QObject
+Retractions	QObject
+Retrieving available profiles...	QObject
+Retry	QPlatformTheme
+Reverse the orientation for an entire surface	QObject
+Revert to last saved profile	QObject
+Rotate	QObject
+Rotate Model	QObject
+Rotate Models	QObject
+Rotate the selected models	QObject
+Rotate/Pan Key Mappings	QObject
+Rotate: Ctrl/Cmd + Middle button, Pan: Middle button (SolidWorks)	QObject
+Rotate: Left button, Pan: Right button (default)	QObject
+Rotate: Middle button, Pan: Shift + Middle button (Blender, SketchUp)	QObject
+Rotate: Right button, Pan: Middle button (OnShape, GrabCAD)	QObject
+Rotate: Shift + Middle button, Pan: Middle button (Fusion360)	QObject
+Rotation Center	ModelTransformsDialogComponent
+Rotation Center Display	QObject
+SENT: %1	QObject
+SENT: %1 bytes	QObject
+STL Files (*.stl)	QObject
+Samples	QObject
+Save	QPlatformTheme
+Save All	QPlatformTheme
+Save As New Profile	QObject
+Save Changes	QObject
+Save Factory File	QObject
+Save Factory File As...	QObject
+Save Toolpaths to Disk	QObject
+Save any modified settings for the selected profile	EditProcessDialog
+Save as New	QObject
+Save as New...	EditProcessDialog
+Save the application state at shutdown and restore on startup	QObject
+Save the current settings as a new profile without affecting the old profile	EditProcessDialog
+Save the current workspace	QObject
+Save the current workspace as a new factory file	QObject
+Save the currently previewed build file to disk	QObject
+Scale	QObject
+Scale (%)	ModelTransformsDialogComponent
+Scale Centimeters to Millimeters	QObject
+Scale Inches to Millimeters	QObject
+Scale Model	QObject
+Scale Models	QObject
+Scale the model by 10.0x to convert from centimeters to millimeters	QObject
+Scale the model by 25.4x to convert from inches to millimeters	QObject
+Scale the model to the maximum size possible within the printer build volume	QObject
+Scale the selected models	QObject
+Scale to Maximum Size	QObject
+Scaling Center	ModelTransformsDialogComponent
+Scripts	QObject
+Search	QObject
+Search Profiles	QObject
+Search for Connections	QObject
+Search for Devices	QObject
+Search...	QObject
+Searching...	QObject
+Select All	QObject
+Select All Models	QObject
+Select All Processes	QObject
+Select Device	MachineControlPanelDialog
+Select Device for Printing	QObject
+Select Items	QObject
+Select Language	QObject
+Select Models	QObject
+Select Models...	EditProcessDialog
+Select Next Workspace Tab	QObject
+Select None	QObject
+Select Previous Workspace Tab	QObject
+Select Processes for Printing	QObject
+Select Profile	EditProcessDialog,QObject
+Select a face on the model that should be used for the cross section orientation	QObject
+Select a location on the model that should be used as the rotation center	QObject
+Select a location on the model that the cross section should intersect	QObject
+Select a triangle on the surface you would like to flip	QObject
+Select all models in the scene	QObject
+Select all processes in the scene	QObject
+Select how each profile should be updated:	QObject
+Select the auto-configure category to highlight	QObject
+Select the desired printing mode (multi process prints only):	QObject
+Select the end location for the measurement	QObject
+Select the extruder that will be used to print the dense internal infill	QObject
+Select the extruder that will be used to print the dense support structures	QObject
+Select the extruder that will be used to print the internal infill	QObject
+Select the extruder that will be used to print the ooze shield.  If "All Extruders" is selected, each active extruder will help create the ooze shield.	QObject
+Select the extruder that will be used to print the prime pillar.  If "All Extruders" is selected, each active extruder will help create the prime pillar.	QObject
+Select the extruder that will be used to print the raft	QObject
+Select the extruder that will be used to print the skirt/brim.  The "All Extruders" option will use every available extruder to prime them all at once.	QObject
+Select the extruder that will be used to print the support structures	QObject
+Select the initial printer profile to use for this process:	QObject
+Select the machine configuration that will be used to generate x3g files	QObject
+Select the models that should be printed by this process	QObject
+Select the printer profile to export	QObject
+Select the processes that should be used for this print:	QObject
+Select the profile that will be used for the comparison	QObject
+Select the start location for the measurement	QObject
+Select the surface you would like to place on the bed	QObject
+Select the theme to use for the main workspace	QObject
+Select the triangle you would like to delete from the mesh	QObject
+Select which model should receive the support structures:	QObject
+Select...	QObject
+Selected Model Color	QObject
+Selected Models	QObject
+Selected Support Color	QObject
+Selection center	ModelTransformsDialogComponent
+Self-intersecting surfaces have been highlighted on the selected mesh.	QObject
+Self-intersecting surfaces have been highlighted on the selected meshes.	QObject
+Send	MachineControlPanelDialog
+Sensor Data	MachineControlPanelDialog,QObject
+Sensor Value	QObject
+Sent	MachineControlPanelDialog
+Separate Connected Surfaces	QObject
+Sequential Printing (process-by-process)	QObject
+Serial Number	QObject
+Server Maintenance	QObject
+Server is performing maintenance.  Please try again later.	QObject
+Service Error	QObject
+Set	QObject
+Set %1	QObject
+Set Fixed Rotation Center	QObject
+Set Model Group	QObject
+Set Process Group	QObject
+Set a fixed rotation center for the 3D camera view	QObject
+Set the criteria for new supports that are generated	QObject
+Set the password for your Simplify3D Cloud Account	QObject
+Set the username for your Simplify3D Cloud Account	QObject
+Setting Name	QObject
+Setup Complete	QObject
+Shortcut	QObject
+Show Advanced	EditProcessDialog,QObject
+Show Build Volume	QObject
+Show Coordinate Axes	QObject
+Show Machine Background	QObject
+Show cross section cap	CrossSectionDialogComponent
+Show cross section gizmo	CrossSectionDialogComponent
+Show in Preview	PreviewOverviewComponent
+Show model intersection lines	CrossSectionDialogComponent
+Show plane representation	CrossSectionDialogComponent
+Simplify the mesh by removing small triangles	QObject
+Simplify3D Account	QObject
+Single Extrusion Endpoint Extension	QObject
+Single Extrusions	QObject
+Single Manual Supports	QObject
+Single Tab Mode	QObject
+Single outline corkscrew printing mode (vase mode)	QObject
+Sinusoidal	QObject
+Size (bytes)	QObject
+Size (mm)	ModelTransformsDialogComponent
+Sketch Extruder	QObject
+Skirt Extruder	QObject
+Skirt Layers	QObject
+Skirt Offset	QObject
+Skirt Outlines	QObject
+Skirt/Brim	QObject
+Slicing 3D models...	QObject
+Slicing Behavior	QObject
+Slicing Region Repair Mode	QObject
+Sliding Peel	QObject
+Smart Extruder+	QObject
+Smooth top layers using an additional ironing pass	QObject
+Snap support pillars to grid	QObject
+Snapmaker Firmware	QObject
+Software Flow Control (XON/XOFF)	QObject
+Solid Diaphragm Layers	QObject
+Solid Diaphragm Reinforcement	QObject
+Solid Diaphragm Spacing	QObject
+Solid Infill Extra Expansion	QObject
+Solid Infill Speed	QObject
+Solid Infill Threshold Area	QObject
+Solid Layer	QObject
+Solid Layers	QObject
+Solution Exceeds Build Volume	QObject
+South	QObject
+South-East	QObject
+South-West	QObject
+Sparse Internal Infill	QObject
+Sparse Support Speed	QObject
+Specify a lower extruder temperature to use during periods of inactivity to prevent oozing	QObject
+Specify the number of times to duplicate the selected models	QObject
+Speed	MachineControlPanelDialog,PreviewNavigationComponent
+Speed (mm/min)	QObject
+Speed (mm/s)	QObject
+Speed Overrides	QObject
+Speed Units	QObject
+Speeds	QObject
+Split up the mesh into separate entities for each connected surface	QObject
+Stabilize temperature controller at beginning of print	QObject
+Standard G-Code (.gcode)	QObject
+Standard printable model	QObject
+Start Point Selection	QObject
+Start Point Strategy	QObject
+Start Sequence...	QObject
+Start Time: %1	QObject
+Start printing at Z height	QObject
+Starting	QObject
+Starting Script	QObject
+Status	MachineControlPanelDialog
+Status: %1	QObject
+Stop	QObject
+Stop printing at Z height	QObject
+Stopping print...	QObject
+Successfully exported build file: %1	QObject
+Successfully exported factory file to: %1	QObject
+Successfully exported model to: %1	QObject
+Successfully exported printer profile to: %1	QObject
+Successfully exported support structure to: %1	QObject
+Successfully generated support structures with %1 triangles.	QObject
+Successfully imported factory file with %1 models.	QObject
+Successfully imported model with %1 triangles.	QObject
+Successfully imported support structure with %1 triangles.	QObject
+Successfully parsed build file: %1	QObject
+Successfully removed %1 duplicate triangles from the selected mesh.	QObject
+Successfully removed %1 duplicate triangles from the selected meshes.	QObject
+Successfully removed %1 orphaned triangles from the selected mesh.	QObject
+Successfully removed %1 orphaned triangles from the selected meshes.	QObject
+Successfully repaired %1 flipped triangles from the selected mesh.	QObject
+Successfully repaired %1 flipped triangles from the selected meshes.	QObject
+Support	QObject
+Support %1	QObject
+Support 2A	QObject
+Support 2XA	QObject
+Support Extruder	QObject
+Support Generation Failed	QObject
+Support Horizontal Offset from Part	QObject
+Support Infill Pattern	QObject
+Support Infill Percentage	QObject
+Support Inflation Distance	QObject
+Support Outlines	QObject
+Support Pattern Rotation	QObject
+Support Structure Files (*.stl *.obj *.3mf);;All Files (*.*)	QObject
+Support Structures	QObject
+Support generation failed	QObject
+Support pillar size	QObject
+Support placement	QObject
+Support structure restriction (only overlap will be printed)	QObject
+Support structure subtraction (overlap will be removed)	QObject
+Supports	QObject
+Surface Area	QObject
+Surface has been successfully placed on the bed.	QObject
+TCP Device	QObject
+TOM Mk6 - single extruder	QObject
+TOM Mk7 - dual extruder	QObject
+TOM Mk7 - single extruder	QObject
+Take Measurement	QObject
+Target	QObject
+Technology Type	QObject
+Technology type	QObject
+Temperature	QObject
+Temperature Controller	QObject
+Temperature Number	QObject
+Temperature Plot	QObject
+Temperature Setpoints	QObject
+Temperature Type	QObject
+Temporarily reverse the direction of the filament at the end of an extrusion to reduce stringing and oozing	QObject
+Test successful!  Click Next to complete the setup process.	QObject
+Testing...	QObject
+The IP address or hostname of the device on the network	QObject
+The IP address or hostname of the multicast group to join	QObject
+The X-axis distance to travel from the negative X edge of the printable build volume to the coordinate system origin	QObject
+The X-coodinate for the XY location that will be used for start point selection	QObject
+The Y-axis distance to travel from the negative Y edge of the printable build volume to the coordinate system origin	QObject
+The Y-coodinate for the XY location that will be used for start point selection	QObject
+The Z positions on this page are displayed in the 3D view for added verification	VariableSettingsWizard
+The Z-axis distance to travel from the negative Z edge of the printable build volume to the coordinate system origin	QObject
+The absolute extrusion width to use for the first layer	QObject
+The absolute layer height to use for the first layer	QObject
+The absolute speed to use for all feature types on the first layer	QObject
+The absolute speed to use for all feature types on the first part layer on top of the raft	QObject
+The additional rotation angle offset to apply to the base support infill pattern.  Use a value of 0 to match the default pattern.	QObject
+The additional rotation angle offset to apply to the dense internal infill pattern.  Use a value of 0 to match the default pattern.	QObject
+The additional rotation angle offset to apply to the dense support infill pattern.  Use a value of 0 to match the default pattern.	QObject
+The additional rotation angle offset to apply to the external infill pattern.  Use a value of 0 to match the default pattern.	QObject
+The additional rotation angle offset to apply to the internal infill pattern.  Use a value of 0 to match the default pattern.	QObject
+The additional rotation angle offset to apply to the support infill pattern.  Use a value of 0 to match the default pattern.	QObject
+The address of the proxy server	QObject
+The air gap between the top layer of the raft and the first layer of the part	QObject
+The airflow direction of the insert gas across the surface of the powder	QObject
+The automatic X-axis rotation to apply to every new model that is imported	QObject
+The automatic X-axis scaling percentage to apply to every new model that is imported	QObject
+The automatic X-axis translation to apply to every new model that is imported	QObject
+The automatic Y-axis rotation to apply to every new model that is imported	QObject
+The automatic Y-axis scaling percentage to apply to every new model that is imported	QObject
+The automatic Y-axis translation to apply to every new model that is imported	QObject
+The automatic Z-axis rotation to apply to every new model that is imported	QObject
+The automatic Z-axis scaling percentage to apply to every new model that is imported	QObject
+The automatic Z-axis translation to apply to every new model that is imported	QObject
+The automatically calculated width for a single plastic extrusion	QObject
+The average measured raw filament diameter.  This value directly affects flow rate calculations.	QObject
+The category name cannot be empty.	QObject
+The color to use for non-selected models	QObject
+The color to use for non-selected support structures	QObject
+The color to use for selected models	QObject
+The color to use for selected support structures	QObject
+The color to use for the machine background model	QObject
+The constant fan speed to use for all bridging toolpaths	QObject
+The constant fan speed to use for all top layer toolpaths	QObject
+The cost for purchasing 1kg of filament.  This value is used to provide accurate cost estimates.	QObject
+The critical angle where supports are required	QObject
+The cross section has been successfully aligned.	QObject
+The cross section has been successfully moved.	QObject
+The default location that is used for the center of rotation while adjusting the view	QObject
+The density of the infill for the interior of the prime pillar.  Smaller values can help create a larger pillar without excessive material usage.	QObject
+The depth of the printable build volume	QObject
+The description string for the USB device	QObject
+The desired density for the base support structure infill.  Lower values will cause the infill lines to be spaced further apart.	QObject
+The desired density for the dense support structure infill.  Lower values will cause the infill lines to be spaced further apart.	QObject
+The desired density for the inside of the part.  Lower values will cause the infill lines to be spaced further apart.	QObject
+The desired density for the support structure infill.  Lower values will cause the infill lines to be spaced further apart.	QObject
+The desired fan speed percentage for this layer number	QObject
+The desired temperature value for this layer number	QObject
+The desired width for a single plastic extrusion	QObject
+The device "%1" is currently in use.  Please disconnect from the device first before deleting this configuration.	QObject
+The diameter of the hole at the tip of the nozzle	QObject
+The diameter of the laser spot on the surface of the powder	QObject
+The diameter of the laser spot on the surface of the resin	QObject
+The diameter of the printable build volume	QObject
+The direction that the recoater moves across the powder between each layer	QObject
+The direction that the toolhead moves along this axis while homing	QObject
+The direction that the wiper moves across the resin between each layer	QObject
+The distance between primary grid lines in the 3D view	QObject
+The distance between secondary grid lines in the 3D view	QObject
+The distance from the boundary of the part to the inner ooze shield outline	QObject
+The distance to offset the inner holes and cutouts of the part.  Positive values will make the final holes smaller, while negative values will expand the holes.	QObject
+The distance to offset the outer boundary of the part, not including any interior holes or cutouts.  Use negative values to shrink the boundary.	QObject
+The extruder must be idle for at least this long before cooldown commands will be issued	QObject
+The fan number for the selected fan.  Used by some firmwares when issuing fan speed commands.	QObject
+The fan speeds to use at each layer of the print	QObject
+The fastest instantaneous speed that can be achieved for extruder retraction movements.  Make sure to enter values in the correct unit system.	QObject
+The fastest instantaneous speed that can be achieved in the XY direction.  Make sure to enter values in the correct unit system.	QObject
+The fastest instantaneous speed that can be achieved in the Z direction.  Make sure to enter values in the correct unit system.	QObject
+The fastest travel speed that should be used for rapid movements in the XY direction	QObject
+The fastest travel speed that should be used for rapid movements in the Z direction	QObject
+The final build file format that the printer requires for printing	QObject
+The fixed angle to use for all bridging infill lines	QObject
+The following items are available from a prior Simplify3D version.  Please select the items you wish to migrate.	QObject
+The full name for your Simplify3D Cloud account	QObject
+The height of the first layer relative to the standard primary layer height	QObject
+The height of the printable build volume	QObject
+The horizontal gap between the support structures and the part boundary	QObject
+The integer class code that defines the USB device funtionality	QObject
+The language that should be used within the application	QObject
+The largest layer height that wil be used when the model has vertical sidewalls and no complex features	QObject
+The layer number where this fan speed should be issued	QObject
+The layer number where this temperature should be issued	QObject
+The location of the prime pillar relative to the part	QObject
+The machine configuration that will be used to generate MakerBot output files	QObject
+The manufacturer string for the USB device	QObject
+The maximum allowed angle change for the ooze shield walls.  Only valid for "Waterfall" and "Contoured" sidewall shapes.	QObject
+The maximum fan speed percentage that can be used to add extra cooling for quick layers	QObject
+The maximum height that a process will print above any other processes.  This limits how far the Z-axis will need to move to avoid potential collisions.	QObject
+The maximum volumetric extrusion rate that can be achieved by this extruder	QObject
+The mesh operation was completed successfully.	QObject
+The minimum length of each infill sequence that should be printed.  Shorter infill sequences will be skipped to save print time.	QObject
+The minimum length of each single extrusion that should be printed.  Shorter single extrusions will be skipped to save print time.	QObject
+The minimum length of the extruded loop that is required before a retraction will take place	QObject
+The minimum number of loops that will be printed around the outside of the part.  If "All Extruders" is selected, each extruder will print this many loops.	QObject
+The minimum print speed percentage used to add extra time for quick layers.  This percentage is applied on top of any other prior adjustments.	QObject
+The minimum travel movement length required before a retraction will take place	QObject
+The models and processes that were last loaded in the prior Simplify3D version will be transferred to this version.	QObject
+The models within the selected group have different transforms relative to one another.  Please ungroup the models first.	QObject
+The models you have selected may require support structures, but no supports have been added.  Would you like to add additional supports now?	QObject
+The name or filepath of the 3D model that should be used to represent the machine environment	QObject
+The number of consecutive solid layers to add for each diaphragm	QObject
+The number of dense support layers to print at the bottom of the supports above upward-facing surfaces of the part	QObject
+The number of dense support layers to print at the top of the supports below the downward-facing surfaces of the part	QObject
+The number of empty layers between the top of the supports and the bottom surface of the part to allow easier separation	QObject
+The number of empty layers between the top surface of the part and the start of the supports to allow easier separation	QObject
+The number of extruders available on the printer	QObject
+The number of loops that will be printed around the base support structure boundary	QObject
+The number of loops that will be printed around the dense support structure boundary	QObject
+The number of loops that will be printed around the part by each extruder to create the ooze shield	QObject
+The number of loops that will be printed around the support structure boundary	QObject
+The number of perimeters that trace around the outline of the part	QObject
+The number of regular infill layers between each set of solid diaphragm layers	QObject
+The number of solid base layers to print at the bottom of the support sturctures on top of the build platform	QObject
+The number of solid layers to create at the bottom of the part	QObject
+The number of solid layers to create at the top of the part	QObject
+The number of stepper motor steps reqiured to move exactly 1mm along this axis	QObject
+The number of thick base layers at the bottom of the raft	QObject
+The number of thin interface layers at the top of the raft	QObject
+The operation has been aborted.	QObject
+The operation has been cancelled.	QObject
+The orientation for the surface has been successfully flipped.	QObject
+The packed models currently exceed the build volume dimensions.  Please rotate or scale the models to better fit the available space.	QObject
+The password for proxy server authentication	QObject
+The password for your Simplify3D Cloud account	QObject
+The password to use for proxy authentication	ProxySettingsComponent
+The percentage of the default printing speed that should be used for dense support structures	QObject
+The percentage of the default printing speed that should be used for inner perimeters	QObject
+The percentage of the default printing speed that should be used for standard support structures	QObject
+The percentage of the infill extrusion width that will overlap with the outline perimeters to help create a strong bond between these features	QObject
+The pixel height of the thumbnail image	QObject
+The pixel width of the thumbnail image	QObject
+The port number that the device uses for network communication	QObject
+The port to use for the proxy connection	ProxySettingsComponent
+The print speed that should be used for internal features like infill.  All other percentage based speeds are relative to this value.	QObject
+The product identifier (PID) for the USB device	QObject
+The profiles have different extruders, temperature controllers, or fans and cannot be compared.	QObject
+The proxy address to use for the connection	ProxySettingsComponent
+The rate that the speed can increase when moving in the XY direction.  Make sure to enter values in the correct unit system.	QObject
+The rate that the speed can increase when moving in the Z direction.  Make sure to enter values in the correct unit system.	QObject
+The rate that the speed can increase when performing extruder retraction movements.  Make sure to enter values in the correct unit system.	QObject
+The resolution for each thumbnail image that will be embedded in the file	QObject
+The rotation center has been successfully set.	QObject
+The selected device name already exists.  Please choose a different name.	QObject
+The selected group name already exists.  Please choose a different name.	QObject
+The selected items are ready to be migrated!  Click Finish to finalize the migration process.	QObject
+The selected items have been successfully migrated!	QObject
+The selected mesh does not contain any duplicate triangles.	QObject
+The selected mesh does not contain any flipped triangles.	QObject
+The selected mesh does not contain any non-manifold edges.	QObject
+The selected mesh does not contain any orphaned triangles.	QObject
+The selected mesh does not contain any self-intersecting surfaces.	QObject
+The selected mesh does not contain any triangles that need to be reduced.	QObject
+The selected mesh does not contain any triangles that needed to be removed.	QObject
+The selected mesh has been successfully reduced from %1 to %2 triangles.	QObject
+The selected mesh has been successfully separated into %1 separate surfaces.	QObject
+The selected mesh is already a single connected surface.	QObject
+The selected meshes are already single connected surfaces.	QObject
+The selected meshes do not contain any duplicate triangles.	QObject
+The selected meshes do not contain any flipped triangles.	QObject
+The selected meshes do not contain any non-manifold edges.	QObject
+The selected meshes do not contain any orphaned triangles.	QObject
+The selected meshes does not contain any self-intersecting surfaces.	QObject
+The selected meshes does not contain any triangles that need to be reduced.	QObject
+The selected meshes have been successfully reduced from %1 to %2 triangles.	QObject
+The selected meshes have been successfully separated into %1 separate surfaces.	QObject
+The selected model name already exists.  Please choose a different name.	QObject
+The selected models on this page are highlighted in the 3D view for extra verification.	MultiExtrusionWizard
+The selected name already exists.  Please choose a different name.	QObject
+The selected process name already exists.  Please choose a different name.	QObject
+The selected processes appear to be printing the same region twice.  Are you sure you want to continue?	QObject
+The selected processes are not compatible.  Please make sure all processes use the same machine and export settings.	QObject
+The selected processes cannot contain different manufacturing technology types.	QObject
+The selected processes have different extruders, temperature controllers, or fans and cannot be grouped.	QObject
+The selected profile name already exists.  Please choose a different name.	QObject
+The selected support structure has been successfully removed.	QObject
+The serial number for the USB device	QObject
+The shape of the ooze shield walls.  The "Waterfall" and "Contoured" options allow the shield to be closer to the part, but it may be more difficult to remove.	QObject
+The smallest layer height that will be used when the model has severe overhangs or significantly complex features	QObject
+The speed of the first layer relative to the standard speeds for each feature type	QObject
+The speed of the first part layer on top of the raft relative to the standard speeds for each feature type	QObject
+The speed of the ooze shield relative to the default feature type speeds	QObject
+The speed of the prime pillar relative to the default feature type speeds	QObject
+The speed that the filament is retracted	QObject
+The speed that the filament is retracted during a tool change	QObject
+The temperature number for the selected temperature controller.  Used by some firmwares when issuing temperature commands.	QObject
+The temperature values to use for each layer of the print	QObject
+The tool number for the selected extruder.  Will be used for tool change commands.	QObject
+The type of extruder loaded in slot 1 which will be used for printing the models	QObject
+The type of extruder loaded in slot 2 which will be used for printing the supports	QObject
+The type of material loaded in slot 1 which will be used for printing the models	QObject
+The type of material loaded in slot 2 which will be used for printing the supports	QObject
+The unit type to use when display speeds within the application	QObject
+The username for proxy server authentication	QObject
+The username for your Simplify3D Cloud account	QObject
+The username to use for proxy authentication	ProxySettingsComponent
+The value already exists.  Please choose a different value.	QObject
+The vendor identifier (VID) for the USB device	QObject
+The version of the XYZprinting 3w file that should be exported	QObject
+The weight in grams for one cubic centimeter of filament.  This value is used to provide accurate weight estimates.	QObject
+The width for a single cell of the prime pillar.  Larger values may help with stability for tall prints.	QObject
+The width of the dense infill extrusions relative to the outline perimeters	QObject
+The width of the first layer relative to the standard extrusion width	QObject
+The width of the infill extrusions relative to the outline perimeters	QObject
+The width of the ironing extrusions relative to the outline perimeters	QObject
+The width of the printable build volume	QObject
+The width of the shape that will be created from open loop paths	QObject
+The width to use each new support pillar	QObject
+Theme	QObject
+Theme Name	QObject
+Thicken Invalid Segments	QObject
+Thin Wall Behavior	QObject
+Third Party Notices	QObject
+This option determines if multiple extruders share the same E-values or if each extruder keeps track of its own independent E-values	QObject
+This option will add a series of horizontal solid layers throughout the print for increased strength	QObject
+This option will create a solid structure below the part to help with adhesion and provide a clean level surface to begin the print	QObject
+This option will print several loops around the outside of the part to print the extruder and help anchor the part to the bed	QObject
+This printer does not support stopping prints remotely.  Please use the machine LCD panel.	QObject
+This printer has a heated build platform	QObject
+This thickness for each layer of the print	QObject
+This value determines how far regular perimeters can overlap before they are converted into custom thin wall toolpaths	QObject
+This value determines the maximum length of a modified travel movement relative to the original straight-line path	QObject
+This wizard will help you establish a connection with your 3D printer.  Click next to provide the information required to initiate the connection.	QObject
+Thumbnail Encoding	QObject
+Thumbnail Image Height	QObject
+Thumbnail Image Sizes	QObject
+Thumbnail Image Width	QObject
+Tilt Peel	QObject
+Time Estimation	QObject
+Timeout error.  Retrying...	QObject
+Tool %1	QObject
+Tool 0	QObject
+Tool 1	QObject
+Tool 2	QObject
+Tool 3	QObject
+Tool 4	QObject
+Tool 5	QObject
+Tool Change	QObject
+Tool Change Extra Restart Distance	QObject
+Tool Change Retract Distance	QObject
+Tool Change Retract Speed	QObject
+Tool Change Retraction	QObject
+Toolhead	QObject
+Toolhead Number	QObject
+Toolhead Offset	QObject
+Toolhead Offsets	QObject
+Toolhead Position	QObject
+Tools	QObject
+Top Down (wiper-based)	QObject
+Top Layer Extra Expansion	QObject
+Top Layer Extrusion Modifier	QObject
+Top Layer Fan Speed	QObject
+Top Layer Speed	QObject
+Top Layers	QObject
+Top Solid Layers	QObject
+Tough Smart Extruder+	QObject
+Transfer the previewed build file to the machine and attempt to initiate the print	QObject
+Transform Model	QObject
+Transform Models	QObject
+Translate	QObject
+Translate Model	QObject
+Translate Models	QObject
+Travel	QObject
+Travel moves	QObject
+Triangle Count	QObject
+Triangle has been successfully removed from the mesh.	QObject
+Triangular	QObject
+Turn off the extruder a short distance before the end of a loop to relieve pressure in nozzle and prevent blobs	QObject
+Type	CrossSectionDialogComponent
+UDP Device	QObject
+USB Cable	QObject
+USB Class Code	QObject
+USB Device	QObject
+USB Port	QObject
+Ultimaker Firmware	QObject
+Unable to verify currently installed software version.	QObject
+Unable to verify latest profile versions from server.	QObject
+Unable to verify latest software version from server.	QObject
+Undo 	QObject
+Undo %1	QObject
+Undo the last command	QObject
+Undock	QObject
+Unexpected response during file list.	QObject
+Unexpected response during file upload.	QObject
+Ungroup Models	QObject
+Ungroup Processes	QObject
+Uniform Scaling	ModelTransformsDialogComponent
+Units: %1	QObject
+Unsupported Area Threshold	QObject
+Untitled	QObject
+Update Login Password	QObject
+Update Login Username	QObject
+Update Network Settings	QObject
+Update Profile	EditProcessDialog
+Update Proxy Settings	QObject
+Update the preview based on the machine progress printing this file	PreviewOverviewComponent
+Upload Build File	QObject
+Upload File Name	QObject
+Upload Paused	QObject
+Upload Warning	QObject
+Upload to Device	MachineControlPanelDialog
+Uploading	QObject
+Upper Dense Support Layers	QObject
+Upper Support Separation Layers	QObject
+Use Compatibility Mode	QObject
+Use Ooze Shield	QObject
+Use Prime Pillar	QObject
+Use Raft	QObject
+Use Retraction	QObject
+Use Skirt/Brim	QObject
+Use a orthographic camera view so that all objects appear the same size	QObject
+Use a parallel projection so that objects are the same size regardless of how far away they are from the camera	QObject
+Use a realistic perspective camera view so that objects further away appear smaller	QObject
+Use authentication	QObject
+Use custom retraction settings when switching tools.  This can help prevent oozing while the tool is inactive.	QObject
+Use custom steps per millimeter values	QObject
+Use default system settings	ProxySettingsComponent
+Use fixed bridging infill angle	QObject
+Use independent extruder axes	QObject
+Use manual proxy settings	ProxySettingsComponent,QObject
+Use orthographic camera with no perspective	QObject
+Use relative extrusion distances	QObject
+Use the options below to initiate a test connection with the 3D printer.	QObject
+Use the provided credentials for manual proxy authentication	QObject
+Use this option for fans that tend to get stuck at low speeds.  The fan will run at full power temporarily, then reduce to the lower speed once it's moving.	QObject
+Use this option to automatically decrease the print speed if the extrusion rate exceeds the maximum value for each extruder	QObject
+Use this option to cooldown the extruder before a long period of inactivty to prevent excessive oozing	QObject
+Use this option to decrease the print speed for small layers that print too quickly for adequate cooling	QObject
+Use this option to decrease the print speed for small loops that may become deformed by printing too quickly	QObject
+Use this option to enforce a constant fan speed for all bridging toolpaths	QObject
+Use this option to enforce a constant fan speed for all top layer toolpaths	QObject
+Use this option to expand the bridging infill regions to provide increased overlap with the layer below	QObject
+Use this option to expand the dense support structure regions within the existing support structure boundary to create larger dense surfaces	QObject
+Use this option to expand the overall support structure boundary to create more stable and supportive structures	QObject
+Use this option to expand the solid infill regions within the print to provide increased strength for neighboring features	QObject
+Use this option to expand the top layer regions to provide increased overlap with the layer above	QObject
+Use this option to increase the fan speed for small layers that print too quickly for adequate cooling	QObject
+Use this setting to print multiple dense infill layers at once for faster print times	QObject
+Use this setting to print multiple dense support layers at once for faster print times	QObject
+Use this setting to print multiple infill layers at once for faster print times	QObject
+Use this setting to print multiple support layers at once for faster print times	QObject
+User Language	QObject
+Username	LoginComponent,ProxySettingsComponent,QObject
+Username and password cannot be empty	QObject
+Variable Settings Wizard	QObject,VariableSettingsWizard
+Variable Settings Wizard...	QObject
+Vendor ID	QObject
+Verify Connection	QObject
+Version %1	QObject
+Version 1	QObject
+Version 2	QObject
+Version 3	QObject
+Version 5	QObject
+Vertical	QObject
+Vertical Peel	QObject
+View	QObject
+View Account	QObject
+View Back	QObject
+View Bottom	QObject
+View Default	QObject
+View Front	QObject
+View Left	QObject
+View Right	QObject
+View Top	QObject
+View change animation duration	QObject
+View clipping plane settings that are used to cross section the models	QObject
+Visible geometry center	QObject
+Volume	QObject
+Warning	KeyboardShortcutEditorComponent,MachineControlPanelDialog
+Waterfall	QObject
+Web Socket Device	QObject
+Weedo Firmware	QObject
+West	QObject
+When the wizard is finished, the models for this process will be aligned based on their original coordinate system	MultiExtrusionWizard
+When the wizard is finished, the models for this process will be grouped so that they stay locked together for easy manipulation	MultiExtrusionWizard
+When to display the rotation center used by the camera	QObject
+Whether or not the proxy requires authentication	ProxySettingsComponent
+Wiggle	QObject
+Window	QObject
+Wipe All Features	QObject
+Wipe Inner and Outer Perimeters	QObject
+Wipe Nozzle	QObject
+Wipe Outer Perimeters Only	QObject
+Wiper Direction	QObject
+Wiping Distance	QObject
+Wiping Mode	QObject
+Wizard Failed	QObject
+Would you like to save the changes you made to "%1" before proceeding?	QObject
+Would you like to save the current workspace before proceeding?	QObject
+Write error occured (%1)	QObject
+Writing toolpaths...	QObject
+X Position	ModelTransformsDialogComponent
+X Rotation	ModelTransformsDialogComponent
+X-Axis	MachineControlPanelDialog,QObject
+X-Axis Global Offset	QObject
+X-Axis Homing Direction	QObject
+X-Axis Import Action Rotation	QObject
+X-Axis Import Action Scaling	QObject
+X-Axis Import Action Translation	QObject
+X-Axis Origin Offset	QObject
+X-Axis Steps Per Millimeter	QObject
+X-Axis Toolhead Offset	QObject
+X3G Machine Profile	QObject
+XY Acceleration	QObject
+XY Jerk	QObject
+XY Reference	ModelTransformsDialogComponent
+XY Travel Speed	QObject
+XYZ 3w File Format Version	QObject
+XYZprinting V2 Firmware	QObject
+XYZprinting V3 Firmware	QObject
+Y Position	ModelTransformsDialogComponent
+Y Rotation	ModelTransformsDialogComponent
+Y-Axis	MachineControlPanelDialog,QObject
+Y-Axis Global Offset	QObject
+Y-Axis Homing Direction	QObject
+Y-Axis Import Action Rotation	QObject
+Y-Axis Import Action Scaling	QObject
+Y-Axis Import Action Translation	QObject
+Y-Axis Origin Offset	QObject
+Y-Axis Steps Per Millimeter	QObject
+Y-Axis Toolhead Offset	QObject
+Yes to &All	QPlatformTheme
+You cannot add or remove extruders, temperature controllers, or fans for grouped processes.  Please ungroup the processes first before making this change.	QObject
+You cannot combine models that are already within a group.  Please ungroup the models first.	QObject
+You do not have any saved printer profiles.  Use the option at the bottom to manually configure your printer settings.	QObject
+You do not have any saved profiles that support dual extrusion.	QObject
+You must select a device file from the list.	QObject
+Your license has been successfully deactivated.  The software will now exit.	QObject
+Your printer has been successfully configured!  Enter a name for your 3D printer and click Finish to complete the setup process.	QObject
+Your profiles are up to date!	QObject
+Your software is up to date!	QObject
+Z Acceleration	QObject
+Z Jerk	QObject
+Z Position	ModelTransformsDialogComponent,VariableSettingsWizard
+Z Rotation	ModelTransformsDialogComponent
+Z Travel Speed	QObject
+Z-Axis	MachineControlPanelDialog,QObject
+Z-Axis Global Offset	QObject
+Z-Axis Homing Direction	QObject
+Z-Axis Import Action Rotation	QObject
+Z-Axis Import Action Scaling	QObject
+Z-Axis Import Action Translation	QObject
+Z-Axis Origin Offset	QObject
+Z-Axis Steps Per Millimeter	QObject
+ZIP Archive (folder of images)	QObject
+Zero X	MachineControlPanelDialog
+Zero Y	MachineControlPanelDialog
+Zero Z	MachineControlPanelDialog
+Zone %1	QObject
+Zoom to center screen	QObject
+Zoom to mouse position	QObject
+additional layers	QObject
+after	QObject
+bits/sec	QObject
+calculating	QObject
+cm	QObject
+cm/sec	QObject
+cm/sec^2	QObject
+cm^2	QObject
+cm^3	QObject
+connected	QObject
+days	QObject
+deg	CrossSectionDialogComponent,ModelTransformsDialogComponent,QObject
+ft	QObject
+ft/sec	QObject
+ft/sec^2	QObject
+g	QObject
+grams/cm^3	QObject
+hrs	QObject
+in	QObject
+in/sec	QObject
+in/sec^2	QObject
+in^2	QObject
+in^3	QObject
+kg/in^3	QObject
+layers	PreviewNavigationComponent,QObject
+lb	QObject
+lines	QObject
+m	QObject
+m/sec	QObject
+m/sec^2	QObject
+m^2	QObject
+m^3	QObject
+min	QObject
+mm	QObject
+mm/min	MachineControlPanelDialog,QObject
+mm/sec	QObject
+mm/sec^2	QObject
+mm^3/sec	QObject
+modified	QObject
+ms	QObject
+pixels	QObject
+plus %1 more	QObject
+price/kg	QObject
+sec	QObject
+steps/mm	QObject
+unsaved	QObject

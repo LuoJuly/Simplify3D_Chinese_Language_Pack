@@ -1,0 +1,912 @@
+505	Invalid command parameters.
+35	Please wait for the current operation to finish.
+33	Failed to send command.  Retrying...
+31	Failed to open file.
+22	Failed to open file for reading: %1
+22	Failed to read file.
+22	File does not exist.
+18	File upload started...
+15	Cannot send commands during a file transfer.
+15	Method not supported.
+15	READ: %1
+12	Failed to open file for writing: %1
+12	Pausing print...
+12	Resuming print...
+12	SENT: %1
+11	Stopping print...
+9	mm
+9	Unknown error
+8	File upload completed!
+8	SENT: %1 bytes
+6	Attempting connection at %1...
+6	Connection closed.
+6	Connection failed.
+6	Connection successful!
+6	Delete
+6	Failed to close file after writing.
+6	Failed to parse vertex coordinates at byte %1 in file: %2
+6	Failed to pause.
+6	Failed to upload file.
+6	Network session error.
+5	+
+5	Failed to create structure for project file: %1
+5	Failed to decode file: %1
+5	Host not found
+5	Invalid file header: %1
+5	Missing required data at end of file: %1
+5	Process failed to start
+5	Syntax error
+4	Background request not allowed.
+4	Cannot override FINAL property
+4	Error creating build file with unknown file type: %1
+4	Failed to parse normal vector coordinates at byte %1 in file: %2
+4	Failed to read line %1 from file: %2
+4	Failed to remove file: %1
+4	Feature Type
+4	File download completed!
+4	File download started...
+4	Illegal namespace declaration.
+4	Invalid alias target
+4	Invalid Processes
+4	My Computer
+4	No program defined
+4	Operation canceled
+4	Operation on socket is not supported
+3	Active Toolhead
+3	Add Support
+3	All Files (*)
+3	Begin Printing on Machine
+3	Cannot assign a value directly to a grouped property
+3	Cannot open %1: Path is a directory
+3	Center and Arrange
+3	Close
+3	Connection failed.  Make sure no other programs are connected to the same IP address or port.
+3	Connection failed.  Make sure the network is online and the IP address or hostname is correct.
+3	Connection refused
+3	Connection refused.  Make sure the device is turned on and the connection details are correct.
+3	Entity '%1' not declared.
+3	Error opening %1: %2
+3	Error when setting the OpenSSL configuration (%1)
+3	Exit Preview Mode
+3	Export Build File to Disk
+3	Failed to generate contents for file: %1
+3	Failed to get image from provider: %1
+3	Failed to initiate device search.
+3	Failed to parse file: %1
+3	Failed to read file: %1
+3	Failed to rename file: %1
+3	Flow Rate
+3	Host %1 not found
+3	Introduction
+3	Invalid alias target location: %1
+3	Invalid module URI
+3	Invalid or empty cipher list (%1)
+3	Invalid property assignment: "%1" is a read-only property
+3	Layer Height
+3	Machine error detected (%1).  Filament missing.
+3	module "%1" is not installed
+3	module "%1" version %2.%3 is not installed
+3	Movement Speed
+3	Non-existent attached object
+3	Premature end of document.
+3	Prepare to Print
+3	Property value set multiple times
+3	Remove
+3	Remove Support
+3	Select All
+3	TLS initialization failed
+3	Toolhead
+3	Unexpected response during file upload.
+2	"%1" version %2.%3 is defined more than once in module "%4"
+2	"%1.%2" is not available due to component versioning.
+2	"%1.%2" is not available in %3 %4.%5.
+2	%1
+Directory not found.
+Please verify the correct directory name was given.
+2	&Copy
+2	&Paste
+2	&Redo
+2	<b>The name "%1" cannot be used.</b><p>Try using another name, with fewer characters or no punctuation marks.
+2	Add
+2	Add Triangle
+2	Alt
+2	Back
+2	Begin Connection Test
+2	Cannot anchor to a null item.
+2	Cannot anchor to an item that isn't a parent or sibling.
+2	Cannot assign primitives to lists
+2	Cannot assign to non-existent property "%1"
+2	Cannot open: %1
+2	Cannot set properties on %1 as it is null
+2	Checksum mismatch detected.
+2	Combining meshes...
+2	Connection closed
+2	Create New Folder
+2	createObject: value is not an object
+2	Ctrl
+2	Cu&t
+2	Current Process
+2	Custom Printer Configuration
+2	Cyclic alias
+2	Demi Bold
+2	Destination file exists
+2	Detail View
+2	Device not found.  Make sure the device is turned on and connected.
+2	Duplicate default property
+2	Duplicate method name: invalid override of property change signal or superclass signal
+2	Duplicate signal name: invalid override of property change signal or superclass signal
+2	Edit Process Models
+2	Edit Process Settings
+2	Encountered incorrectly encoded content.
+2	Error combining meshes.
+2	Error creating support structure with unknown file type: %1
+2	Error creating temporary directory for file: %1
+2	Error decoding: %1
+2	Error isolating temporary directory for file: %1
+2	Error opening model with unknown file type: %1
+2	Error opening support structure with unknown file type: %1
+2	Error while reading: %1
+2	Expected token `%1'
+2	Expected type name
+2	Extra content at end of document.
+2	Failed to authenticate connection with machine.
+2	Failed to compress file: %1
+2	Failed to delete file.
+2	Failed to encode file: %1
+2	Failed to initialize file upload.  Check the printer LCD panel for errors.
+2	Failed to parse normal vector indices at byte %1 in file: %2
+2	Failed to parse vertex indices at byte %1 in file: %2
+2	Failed to read data at location %1 in file: %2
+2	Failed to select an appropriate surface.
+2	File import requires a qualifier
+2	Files
+2	Fill in the fields below based on your printer specifications.
+2	Forward
+2	Fully Dynamic types cannot declare new functions.
+2	Fully dynamic types cannot declare new properties.
+2	Illegal property name
+2	Import
+2	Individual homing commands are not supported by this printer.  Use the Home All button to home all axes.
+2	Invalid command JSON.
+2	Invalid document.
+2	Invalid filename
+2	Invalid preview image for file: %1
+2	Invalid Process Name
+2	Invalid property type
+2	Invalid Settings
+2	Invalid signal parameter type: %1
+2	Invalid UTF-8 code encountered.
+2	j
+2	Light
+2	List View
+2	local directory
+2	Machine error detected (%1)
+2	Machine error detected (%1).  Door open.
+2	Medium
+2	Meta
+2	Module import requires a qualifier
+2	No such file or directory
+2	No suitable proxy found
+2	Num
+2	Oblique
+2	Out of Bounds
+2	Out of bounds normal vertex indices encountered in file: %1
+2	Out of bounds vertex indices encountered in file: %1
+2	Parent Directory
+2	Permission denied.  Make sure no other applications are connected to this device.
+2	Process failed to start: %1
+2	Process Save Failed
+2	QT_LAYOUT_DIRECTION
+2	QWebSocketPrivate::processHandshake: Unknown error condition encountered. Aborting connection.
+2	Reconnecting...
+2	Reducing mesh triangles...
+2	Response timeout.  Attempting to force continue...
+2	Retrieving available profiles...
+2	Script %1 unavailable
+2	Search for Connections
+2	Search for Devices
+2	Select...
+2	Setup Complete
+2	Shift
+2	Show Details...
+2	Signal parameter "%1" hides global variable.
+2	Signal uses unnamed parameter followed by named parameter.
+2	Socket is not connected
+2	Temporary network failure.
+2	The mesh operation was completed successfully.
+2	The selected mesh does not contain any triangles that needed to be removed.
+2	The selected mesh has been successfully reduced from %1 to %2 triangles.
+2	The shared library was not found.
+2	Travel moves
+2	Trying to connect while connection is in progress
+2	Type %1 unavailable
+2	Unexpected response during file list.
+2	Unknown address type
+1	 - Assigning null to incompatible properties in QML is deprecated. This will become a compile error in future versions of Qt.
+1	"%1" cannot operate on "%2"
+1	"%1" is ambiguous. Found in %2 and in %3
+1	"%1": no such directory
+1	"block" makes the debugger and some services wait for clients to be connected and ready before the first QML engine starts.
+1	"file:" can be used to specify the name of a file the debugger will try to connect to using a QLocalSocket. If "file:" is given any "host:" and"port:" arguments will be ignored.
+1	"host:" and "port:" can be used to specify an address and a single port or a range of ports the debugger will try to bind to with a QTcpServer.
+1	%1
+File not found.
+Please verify the correct file name was given.
+1	%1 %2
+1	%1 - [%2]
+1	%1 already exists.
+Do you want to replace it?
+1	%1 File
+1	%1 is an invalid encoding name.
+1	%1 is an invalid processing instruction name.
+1	%1 is an invalid PUBLIC identifier.
+1	%1 or '%2'
+1	%1 x %2 in
+1	%1, '%2'
+1	%1, or '%2'
+1	%1: Access denied
+1	%1: Invalid name
+1	%1: Unknown error %2
+1	&Add to Custom Colors
+1	&Basic colors
+1	&Custom colors
+1	&Delete
+1	&Green:
+1	&HTML:
+1	&New Folder
+1	&Next >
+1	&Pick Screen Color
+1	&Red:
+1	&Rename
+1	&Sat:
+1	&Select All
+1	&Step up
+1	&Undo
+1	&Val:
+1	'%1'
+1	'%1' is write protected.
+Do you want to delete it anyway?
+1	(Untitled)
+1	*
+1	+X
+1	+Y
+1	+Z
+1	- %1 is neither a type nor a namespace
+1	- %1 is not a namespace
+1	- %1 is not a type
+1	- [%1]
+1	- nested namespaces not allowed
+1	-X
+1	-Y
+1	-Z
+1	4/w
+1	<h3>About Qt</h3><p>This program uses Qt version %1.</p>
+1	[options]
+1	A&lpha channel:
+1	A)
+1	About Qt
+1	About Simplify3D
+1	Accept-Key received from server %1 does not match the client key %2.
+1	ACTION REQUIRED: Please push the button on the machine to begin the print.
+1	Add Model to Group
+1	Add new auto-configure category...
+1	Add Process to Group
+1	Additional plugins to load, can be specified multiple times.
+1	Address type not supported
+1	All files (*)
+1	All processes will be printed at the same time so that the Z-position is constantly increasing
+1	Allows the client to delay the starting and stopping of
+		  QML engines until other services are ready. QtCreator
+		  uses this service with the QML profiler in order to
+		  profile multiple QML engines at the same time.
+1	Alt+Left
+1	Alt+Right
+1	Alt+Up
+1	An error occurred attempting to set %1 to %2
+1	Application Configuration
+1	Application Preferences
+1	Are you sure you want to delete '%1'?
+1	Arguments:
+1	Assign settings to categories...
+1	Assigned auto-configure category...
+1	At least one binary digit is required after '0%1'
+1	At least one octal digit is required after '0%1'
+1	Attached properties cannot be used here
+1	Attempted to use an unsupported protocol.
+1	Attribute '%1' redefined.
+1	Authentication required
+1	Baseline anchor cannot be used in conjunction with top, bottom, or verticalCenter anchors.
+1	Bl&ue:
+1	Black
+1	Bold
+1	Bridge
+1	Build cancellation requested...
+1	Bytes written %1 != %2.
+1	Camera not ready for capture
+1	Cancel
+1	Cannot assign an object to signal property %1
+1	Cannot assign multiple values to a singular property
+1	Cannot assign object of type "%1" to property of type "%2" as the former is neither the same as the latter nor a sub-class of it.
+1	Cannot assign object to list property "%1"
+1	Cannot assign object type %1 with no default method
+1	Cannot assign to non-existent default property
+1	Cannot assign to property of unknown type "%1".
+1	Cannot assign value %1 to property %2
+1	Cannot assign value of type "%1" to property "%2", expecting "%3"
+1	Cannot assign value of type "%1" to property "%2", expecting an object
+1	Cannot connect mismatched signal/slot %1 vs %2
+1	Cannot create %1 for output
+1	Cannot create empty component specification
+1	Cannot create presentation descriptor.
+1	Cannot install %1 '%2' into protected module '%3' version '%4'
+1	Cannot load library %1: %2
+1	Cannot open %1 for input
+1	Cannot open %1: is a directory
+1	Cannot open destination file: %1
+1	Cannot open device for writing: %1
+1	Cannot open for output: %1
+1	Cannot provide a certificate with no key, %1
+1	Cannot remove source file
+1	Cannot set a duration of < 0
+1	Cannot specify left, right, and horizontalCenter anchors at the same time.
+1	Cannot unload library %1: %2
+1	Cannot update qmldir content for '%1'
+1	Change to detail view mode
+1	Change to list view mode
+1	Checksum mismatch detected.  Retrying...
+1	Child mode of state machine '%1' is not 'ExclusiveStates'.
+1	Choose how you will connect to your 3D printer.
+1	Circular alias reference detected
+1	Clear Automatic Supports
+1	Clear highlighted settings
+1	Clear Manual Supports
+1	Clear Supports
+1	Click here for more information about these settings
+1	Click to select an anchor point for the support structure
+1	Click to select the support structure that should be removed
+1	Client-side sockets do not send OCSP responses
+1	Close Tab
+1	Closes the dock widget
+1	Command
+1	Compare to last saved profile
+1	Compare to other grouped processes
+1	Compare to other profile...
+1	Component elements may not contain properties other than id
+1	Component objects cannot declare new signals.
+1	Composite Singleton Type %1 is not creatable
+1	Composite Singleton Type %1 is not creatable.
+1	Configuration Assistant
+1	Confirm Support Structures
+1	connected
+1	Connected to host %1
+1	Connection Details
+1	Connection failed.  Make sure the device is turned on and the connection details are correct.
+1	Connection failed.  Make sure the device is turned on and the port name is correct.
+1	Connection Method
+1	Connection not allowed by SOCKSv5 server
+1	Connection reset by peer
+1	Connection timed out
+1	Connection timed out to host %1
+1	Connection timeout.  Make sure the device is turned on and the connection details are correct.
+1	Connection to proxy closed prematurely
+1	Connection to proxy refused
+1	Connection to proxy timed out
+1	Continuous Printing (layer-by-layer)
+1	Control frames cannot be fragmented
+1	Copy &Link Location
+1	Copyright %1 Simplify3D, LLC. All rights reserved.
+1	Could not delete directory.
+1	Could not open input redirection for reading
+1	Could not open output redirection for writing
+1	Could not read footer
+1	Could not read image data
+1	Could not reset to read data
+1	could not resolve all plugins for module "%1"
+1	Could not save image to file.
+1	Could not seek to image read footer
+1	Create a New Folder
+1	Current Session
+1	Cursor at %1, %2
+Press ESC to cancel
+1	Custom (%1CC x %2CC)
+1	Custom (%1DD x %2DD)
+1	Custom baud rate direction is unsupported
+1	Data Connection refused
+1	Date Modified
+1	Decimal numbers can't start with '0'
+1	Default window icon.
+1	Delete profile
+1	Demi
+1	Dense Infill
+1	Dense Support
+1	Description
+1	Destination file is the same file.
+1	Detected function "%1" in Connections element. This is probably intended to be a signal handler but no signal of the target matches the name.
+1	Device is not open
+1	Device not writable
+1	Device unplugged while connected to port.
+1	Did not receive HTTP response from proxy
+1	Diffie-Hellman parameters are not valid
+1	Directories
+1	Downstream timeout detected.  Discarding packet.
+1	Drive
+1	Duplicate keyboard shortcuts detected.  Duplicate commands are listed in red.
+1	Duplicate method name
+1	Duplicate scoped enum name
+1	Duplicate signal name
+1	Each process will be printed one-by-one, moving the Z-axis up and down as needed.  The Z-axis movements will be limited by the clearance height below.
+1	Element is not creatable.
+1	Encoding %1 is unsupported
+1	Enum names must begin with an upper case letter
+1	Enum value out of range
+1	Envelope You 4
+1	Error communicating with HTTP proxy
+1	Error Creating Directory
+1	Error creating model with unknown file type: %1
+1	Error creating project with unknown file type: %1
+1	Error creating SSL context (%1)
+1	Error creating SSL session: %1
+1	Error decoding: %1: %2
+1	Error during SSL handshake: %1
+1	Error occurred while reading from the network: %1
+1	Error occurred while reading header from the network: %1
+1	Error opening %1
+1	Error opening build file with unknown file type: %1
+1	Error opening project with unknown file type: %1
+1	Error parsing authentication request from proxy
+1	Error reading from process
+1	Error when setting the elliptic curves (%1)
+1	Error while reading from the network: %1.
+1	Error while setting the maximum protocol version
+1	Error while uploading %1: %2
+1	Error writing bytes to socket: %1.
+1	Error writing to process
+1	Every fan must have at least 1 fan speed setpoint.
+1	Every temperature controller must have at least 1 temperature setpoint.
+1	Excessive Infill Parameters
+1	Existing file %1 is not writable
+1	Expected %1, but got '%2'.
+1	Expected character data.
+1	Expected parameter type
+1	Expected property type
+1	Expecting QByteArray for %1
+1	Export Keyboard Shortcuts...
+1	External Single Extrusion
+1	Extra
+1	Extra Bold
+1	Extra Light
+1	Extruder Not Heated
+1	F%1
+1	Failed to close file.
+1	Failed to configure preview format
+1	Failed to connect capture graph and filter graph
+1	Failed to connect to device through OctoPrint.  Please verify your settings in OctoPrint and make sure the device is connected.
+1	Failed to convert file: %1
+1	Failed to copy file: %1
+1	Failed to create graph builder
+1	Failed to create null renderer
+1	Failed to create project file: %1
+1	Failed to create topology.
+1	Failed to create working directory folder.  Please ensure the application is running with appropriate permissions.
+1	Failed to decode a SingleResponse from OCSP status response
+1	Failed to decode OCSP response
+1	Failed to decompress file: %1
+1	Failed to enable OCSP stapling
+1	Failed to export contents for project file: %1
+1	Failed to export models for project file: %1
+1	Failed to export processes for project file: %1
+1	Failed to export supports for project file: %1
+1	Failed to extract 'this update time' from the SingleResponse
+1	Failed to extract basic OCSP response
+1	Failed to extract plugin meta data from '%1'
+1	Failed to get stream control
+1	Failed to get texture from provider: %1
+1	Failed to import information for model number %1 from factory file
+1	Failed to import information for process number %1 from factory file
+1	Failed to import model number %1 from factory file
+1	Failed to import process number %1 from factory file
+1	Failed to import support structure number %1 from factory file
+1	Failed to list files.
+1	Failed to load source.
+1	Failed to locate 3D model data within file: %1
+1	Failed to parse 3D model data from file: %1
+1	Failed to perform conversion for file: %1
+1	Failed to perform post-processing commands for file: %1
+1	Failed to read information for project file: %1
+1	Failed to read line %1 during conversion.
+1	Failed to save process settings.
+1	Failed to seek.
+1	Failed to select an appropriate measurement location.
+1	Failed to select an appropriate triangle.
+1	Failed to start
+1	failed to start playback
+1	Failed to stop
+1	Failed to stop.
+1	Failed to write file.
+1	Failure to write block
+1	False
+1	File &name:
+1	File name case mismatch for "%1"
+1	File not found
+1	Filename refers to a directory
+1	Files of type:
+1	Firewall and network rules must be configured to allow UDP device discovery
+1	Firmware version %1 detected
+1	Float
+1	Gap Fill
+1	Generate Automatic Supports
+1	Generate Manual Supports
+1	Generate Supports
+1	Go back
+1	Go forward
+1	Go to the parent directory
+1	Goes to the next page
+1	Handshake: Server requests a version that we don't support: %1.
+1	Help
+1	helps to see if a translated text
+		  will result in an elided text
+		  in QML elements.
+1	Hide Details...
+1	Highest bit of payload length is not 0.
+1	Highlight settings based on...
+1	Hu&e:
+1	ID illegally masks global JavaScript property
+1	id is not unique
+1	Illegal signal name
+1	Illegal syntax for exponential number
+1	Illegal unicode escape sequence
+1	Image is empty
+1	Image type (non-TrueVision 2.0) not supported
+1	Implicitly defined onFoo properties in Connections are deprecated. Use this syntax instead: function onFoo(<arguments>) { ... }
+1	import "%1" has no qmldir and no namespace
+1	Import Keyboard Shortcuts...
+1	Imported file must be a script
+1	Incorrectly specified signal assignment
+1	Infill
+1	Inner Perimeter
+1	Insecure redirect
+1	Insert Unicode control character
+1	Internal Single Extrusion
+1	Invalid alias reference. An alias reference must be specified as <id>, <id>.<property> or <id>.<value property>.<property>
+1	Invalid alias reference. Unable to find id "%1"
+1	Invalid attached object assignment
+1	Invalid attribute in XML declaration.
+1	Invalid close code %1 detected.
+1	Invalid command.  Discarding packet.
+1	Invalid component id specification
+1	Invalid configuration.
+1	Invalid device
+1	Invalid empty ID
+1	Invalid empty URL
+1	Invalid entity value.
+1	Invalid grouped property access
+1	Invalid grouped property access: Property "%1" with primitive type "%2".
+1	Invalid image provider: %1
+1	Invalid import qualifier
+1	Invalid import qualifier ID
+1	Invalid Models
+1	Invalid opcode detected: %1
+1	Invalid property assignment: Enum value "%1" cannot start with a lowercase letter
+1	Invalid property assignment: script expected
+1	Invalid property assignment: unknown enumeration
+1	Invalid property assignment: unsupported type "%1"
+1	Invalid property assignment: url or array of urls expected
+1	Invalid property type modifier
+1	Invalid QML %1 name "%2"
+1	Invalid QML %1 name "%2"; type names must begin with an uppercase letter
+1	Invalid regular expression flag '%0'
+1	Invalid resource name.
+1	Invalid signal parameter type: 
+1	Invalid statusline in response: %1.
+1	Invalid stream source.
+1	Invalid URI: %1
+1	Invalid URL.
+1	Invalid use of id property
+1	Invalid use of id property with a value type
+1	Invalid XML character.
+1	Invalid XML version string.
+1	Ironing
+1	is ambiguous. Found in %1 and in %2
+1	is ambiguous. Found in %1 in version %2.%3 and %4.%5
+1	is not a type
+1	Italic
+1	JavaScript declaration outside Script element
+1	Keyboard Shortcut Editor
+1	Lengths smaller than 126 must be expressed as one byte.
+1	Library import requires a version
+1	Linear PCM audio data
+1	List of places and bookmarks
+1	Logging in to %1 failed: authentication required
+1	Look in:
+1	M0/M1 command detected.  Print paused.
+1	Machine has shutdown due to overheating.
+1	Machine is already in the process of printing.
+1	Malformed header in response: %1.
+1	Manual Connection Details
+1	Max Clearance Height
+1	Max retry attempts exceeded.  Discarding packet.
+1	Maximize
+1	Maximum framesize exceeded.
+1	Measured distance: %1 mm
+1	Media session non-fatal error.
+1	Media session serious error.
+1	Menu
+1	Migration Assistant
+1	Migration Ready
+1	Minimize
+1	Missing default state in history state '%1'
+1	Missing initial state in compound state '%1'
+1	Missing value after '%1'.
+1	Models
+1	modified
+1	module "%1" plugin "%2" not found
+1	module does not support the designer "%1"
+1	Module import requires a minor version (missing dot)
+1	Module import requires a minor version (missing number)
+1	Module import requires a version
+1	Namespace %1 cannot be used as a type
+1	Namespace prefix '%1' not declared
+1	NDATA in parameter entity declaration.
+1	Network Connection (Ethernet, WiFi)
+1	New Connection Wizard
+1	New Folder
+1	New Printer
+1	No certificate verification store, cannot verify OCSP response
+1	No common ancestor for targets and source of transition from state '%1'
+1	No Configured Devices
+1	No datagram available for reading
+1	No devices have been configured.  Please go to Tools > Machine Control Panel, and click Add New to setup a new device.
+1	no error
+1	No file engine available
+1	No file engine available or engine does not support UnMapExtension
+1	No host name given
+1	No matching type found, pragma Singleton files cannot be used by QQmlComponent.
+1	No prior Simplify3D versions were detected on this computer.
+
+To download new profiles for this version, please go to Help > Configuration Assistant.
+1	No property alias location
+1	Normal
+1	Not connected
+1	Object or context destroyed during incubation
+1	One of the extruders used during the print does not have a temperature controller that is being heated.  Are you sure you want to continue?
+1	One of the models for this print is positioned outside of the printable build volume.  Are you sure you want to continue?
+1	One of the support structures for this print is positioned outside of the printable build volume.  Are you sure you want to continue?
+1	Ooze Shield
+1	Open
+1	Open the combo box selection popup
+1	Options:
+1	Outer Perimeter
+1	Packet transmission failed.  Retrying...
+1	Path to the platform plugins.
+1	Payload of close frame is too small.
+1	Permission denied.  Make sure no other applications or services are connected to this device.
+1	Place Surface on Bed
+1	Platform theme.
+1	Please add at least one process before preparing to print.
+1	Please define at least 1 valid extruder in each process.
+1	Please enter a valid process name.
+1	Please home the axes to enable the motors
+1	Please import at least one model before preparing to print.
+1	Please restart the application to complete the reset process.
+1	Please select a valid device name.
+1	Please select the device that should be used for printing:
+1	plugin cannot be loaded for module "%1": %2
+1	Possible anchor loop detected on centerIn.
+1	Possible anchor loop detected on fill.
+1	Possible anchor loop detected on horizontal anchor.
+1	Possible anchor loop detected on vertical anchor.
+1	Pragma requires a valid qualifier
+1	pragma Singleton used with a non composite singleton type %1
+1	Preferences will be initialized based on the prior Simplify3D version settings.  Uncheck this option to maintain default settings.
+1	Previewing layer %1 to %2
+1	Previewing layer %1 to %2 (line %3 to %4)
+1	Previewing line %1 to %2
+1	Previewing line %1 to %2 (layer %3 to %4)
+1	Prime Pillar
+1	Print Range Overlap
+1	Printer
+1	Printer name
+1	Printer Settings
+1	Printing Mode
+1	Private key does not certify public key, %1
+1	Process crashed
+1	Process Selection
+1	Processes
+1	Profile Database
+1	Profiles from the prior Simplify3D version will be imported and converted to the latest format.
+1	Property assignment expected
+1	Protocol "%1" is unknown
+1	Proxy authentication failed
+1	Proxy authentication failed: %1
+1	Proxy connection closed prematurely
+1	Proxy connection refused
+1	Proxy denied connection
+1	Proxy host not found
+1	Proxy server connection timed out
+1	Proxy server not found
+1	QML Debugger: Ignoring "-qmljsdebugger=%1".
+1	QML Debugger: Invalid argument "%1" detected. Ignoring the same.
+1	qmldir defines type as singleton, but no pragma Singleton found in type %1.
+1	QPA plugin. See QGuiApplication documentation for available options for each plugin.
+1	QSaveFile cannot open '%1' without direct write fallback enabled.
+1	QWebSocketPrivate::processHandshake: Connection closed while reading header.
+1	QWebSocketPrivate::processHandshake: Invalid statusline in response: %1.
+1	QWebSocketPrivate::processHandshake: Unhandled http status code: %1 (%2).
+1	Raft
+1	Read error occured (%1)
+1	Read error reading from %1: %2
+1	Received Continuation frame, while there is nothing to continue.
+1	Received message is too big.
+1	Recent Places
+1	Reference to external entity '%1' in attribute value.
+1	Reference to unparsed entity '%1'.
+1	Remove Model from Group
+1	Remove Process from Group
+1	Remove Triangle
+1	Rename profile...
+1	Reorder auto-configure categories...
+1	Reorder Models
+1	Reorder Processes
+1	Reorder profile list...
+1	Resending file contents
+1	Resending line %1
+1	Reset All Settings
+1	Reset In Progress
+1	Restore Down
+1	Restores the application from an earlier session.
+1	Retractions
+1	Revert to last saved profile
+1	Rsv field is non-zero
+1	Scoped enum names must begin with an upper case letter
+1	Script import requires a qualifier
+1	Scroll here
+1	Scroll Left
+1	Scroll Right
+1	Search
+1	Search Profiles
+1	Select Color
+1	Select Device for Printing
+1	Select Items
+1	Select None
+1	Select Processes for Printing
+1	Select Profile
+1	Select the desired printing mode (multi process prints only):
+1	Select the processes that should be used for this print:
+1	Select the profile that best represents the machine you are trying to connect.  If you do not have a saved profile for this printer, use the option at the bottom to manually configure your printer settings.
+1	Self-referencing entity detected.
+1	Sends qDebug() and similar messages over the QML debug
+		  connection. QtCreator uses this for showing debug
+		  messages in the debugger console.
+1	Sequence ']]>' not allowed in content.
+1	Sequential Printing (process-by-process)
+1	Sets the application's layout direction to Qt::RightToLeft (debugging helper).
+1	Shade
+1	Shortcut
+1	Show 
+1	Show &hidden files
+1	Sidebar
+1	Signal names cannot begin with an upper case letter
+1	Simplify3D
+1	Skirt/Brim
+1	Socket operation timed out
+1	SOCKS version 5 protocol error
+1	Solid Layer
+1	Some serious error occurred while reading from the network.
+1	Something went wrong during reading from the network.
+1	Source file does not exist.
+1	SSL Sockets are not supported on this platform.
+1	SSL_CONF_CTX_new() failed
+1	Standalone accepts only yes or no.
+1	Start tag expected.
+1	static plugin for module "%1" with name "%2" cannot be loaded: %3
+1	static plugin for module "%1" with name "%2" has no metadata URI
+1	Step &down
+1	Stray newline in string literal
+1	Support
+1	Surface has been successfully placed on the bed.
+1	The certificate's status is unknown
+1	The device supports only the ignoring policy
+1	The file '%1' is not a valid Qt plugin.
+1	The following items are available from a prior Simplify3D version.  Please select the items you wish to migrate.
+1	The format is "-qmljsdebugger=[file:<file>|port:<port_from>][,<port_to>][,host:<ip address>][,block][,services:<service>][,<service>]*"
+1	The maximum height that a process will print above any other processes.  This limits how far the Z-axis will need to move to avoid potential collisions.
+1	The models and processes that were last loaded in the prior Simplify3D version will be transferred to this version.
+1	The models you have selected may require support structures, but no supports have been added.  Would you like to add additional supports now?
+1	The orientation for the surface has been successfully flipped.
+1	The plugin '%1' uses incompatible Qt library. (%2.%3.%4) [%5]
+1	The plugin '%1' uses incompatible Qt library. (Cannot mix debug and release libraries.)
+1	The plugin was not loaded.
+1	The protocols attribute contains newlines. Possible attack detected.
+1	The QML debugger
+1	The QML inspector
+1	The QML profiler
+1	The rotation center has been successfully set.
+1	The selected infill pattern works best at infill percentages below 70%.  Higher values can create extremely large build files.  Are you sure you want to continue?
+1	The selected items are ready to be migrated!  Click Finish to finalize the migration process.
+1	The selected process name already exists.  Please choose a different name.
+1	The selected processes appear to be printing the same region twice.  Are you sure you want to continue?
+1	The selected processes are not compatible.  Please make sure all processes use the same machine and export settings.
+1	The selected processes cannot contain different manufacturing technology types.
+1	The software can now be successfully configured for your 3D printer!  Click Finish to finalize the setup process.
+
+Happy Printing!
+1	The specified configuration cannot be used.
+1	The standalone pseudo attribute must appear after the encoding.
+1	The TLS/SSL connection has been closed
+1	The V4 debugger
+1	Thin
+1	Third Party Notices
+1	This action will remove all saved user settings and restore the software to its default state.
+
+Are you sure you want to continue?
+1	This printer does not support stopping prints remotely.  Please use the machine LCD panel.
+1	This wizard will help you configure the software for your 3D printer.  Click next to retrieve a list of available profiles and select the best one for your machine.
+1	This wizard will help you establish a connection with your 3D printer.  Click next to provide the information required to initiate the connection.
+1	Timeout error.  Retrying...
+1	Timeout when reading data from socket.
+1	Title of the first window.
+1	TLS certificate unexpectedly changed during renegotiation!
+1	Toolhead Position
+1	Travel
+1	Triangle has been successfully removed from the mesh.
+1	True
+1	TTL expired
+1	Type
+1	Type %1 has no inline component type called %2
+1	Unable to create mediasession.
+1	Unable to create object of type %1
+1	Unable to decrypt data: %1
+1	Unable to init SSL Context: %1
+1	Unable to play any stream.
+1	Unable to play.
+1	Unable to pull session events.
+1	Unable to read image data
+1	Unable to send a datagram
+1	Unable to write data: %1
+1	Unclosed string at end of line
+1	Undocks and re-attaches the dock widget
+1	Unexpected '%1'.
+1	Unexpected character '%1' in public id literal.
+1	Unexpected object definition
+1	Unexpected token '.'
+1	Unexpected token `%1'
+1	Unexpected value after '%1'.
+1	Unknown option '%1'.
+1	Unknown options: %1.
+1	Unknown protocol specified
+1	Unknown SOCKSv5 proxy error code 0x%1
+1	Unknown stream type.
+1	Unrecognized command %1 = %2
+1	Unreported error adding script import to import database
+1	Unshade
+1	Unsupported image format
+1	Unsupported media type.
+1	Unsupported media, a codec is missing.
+1	Unsupported open mode
+1	unsupported protocol
+1	Unsupported WebSocket scheme: %1
+1	Unsupported XML version.
+1	Unterminated regular expression literal
+1	Usage: %1
+1	USB Cable
+1	Use the options below to initiate a test connection with the 3D printer.
+1	Verify Connection
+1	Version %1
+1	Waiting for more data from socket.
+1	WAV file format
+1	What's This?
+1	Will not rename sequential file using block copy
+1	Window geometry for the main window, using the X11-syntax, like 100x100+50+50.
+1	Write error occured (%1)
+1	Write error writing to %1: %2
+1	Writing canceled by application
+1	Wrong value for %1 (%2)
+1	X
+1	X: %1
+1	Y
+1	Y: %1
+1	You cannot add or remove extruders, temperature controllers, or fans for grouped processes.  Please ungroup the processes first before making this change.
+1	You do not have any saved printer profiles.  Use the option at the bottom to manually configure your printer settings.
+1	Your printer has been successfully configured!  Enter a name for your 3D printer and click Finish to complete the setup process.
+1	Z
+1	Z: %1

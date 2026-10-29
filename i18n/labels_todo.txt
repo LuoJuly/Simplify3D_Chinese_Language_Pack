@@ -1,0 +1,1198 @@
+%1
+%1 Settings
+%1 deg
+%1 mm^2 (%2 cm^2)
+%1 mm^3 (%2 cm^3)
+%1 models selected
+%1, %2 mm
+%1, %2, %3 mm
+(click item to edit settings)
+(current size: %1 x %2 x %3 mm)
+)
++X Direction
++X Only
++X and -X
++Y Direction
++Y and -Y
++Y only
+-X Direction
+-X Only
+-Y Direction
+-Y only
+3D Model Files (*.stl *.obj *.3mf);;All Files (*.*)
+3D View
+3Dison Pro and H700
+3MF Files (*.3mf)
+5D Firmware (supports E-values)
+>
+A-Axis
+A-Axis Steps Per Millimeter
+Above Raft Speed
+Above Raft Speed Units
+Absolute
+Account Details
+Account Limit Reached
+Activation Failed
+Activation Request Files (*.acr);;All Files (*.*)
+Adaptive Layer Height
+Adaptive Smoothing Level
+Add %1
+Add Manual Support
+Add Option
+Add Solid Diaphragms
+Add Value
+Add a new 3D printing process
+Add automatically generated support structures to the selected models
+Additions
+Adjust Model Units
+Adjust newly placed supports to be aligned with a uniform grid layout
+Adjust rotation center based on mouse location
+Adjust rotation center for nearby geometry
+Adjust the camera to the default viewing position
+Adjust the camera to view from the back
+Adjust the camera to view from the bottom
+Adjust the camera to view from the front
+Adjust the camera to view from the left
+Adjust the camera to view from the right
+Adjust the camera to view from the top
+Adjust the proxy settings used for network communication
+Adjust the view to zoom in on all selected models
+Adjust the view to zoom in on all visible models
+Advanced
+Airflow Direction
+Align start points at a specific XY location
+Aligned
+Aligned Start Point X
+Aligned Start Point Y
+All At Once
+All X-values in the output file will be shifted by this amount
+All Y-values in the output file will be shifted by this amount
+All imported models will be transformed using the following properties
+Allow Gap Fill
+Allow Single Extrusions
+Allow zeroing of extruder axes (i.e. G92 E0)
+Allowed Perimeter Overlap
+Alternating Fill
+Always display
+Apply bridging settings to perimeters
+Arrange models after import
+Assign Settings
+Authentication Required
+Auto-Configure Category
+Auto-Configure Options
+Auto-Configure for %1
+Auto-Stop Ooze Shield
+Auto-Stop Prime Pillar
+Automatic
+Automatic Supports
+Automatically check for updates
+Automatically detect connected printers
+Automatically load a virtual build preview after slicing
+Automatically load preview after slicing
+Average Edge Length
+B-Axis
+B-Axis Steps Per Millimeter
+Base Support Infill Pattern
+Base Support Infill Percentage
+Base Support Layers
+Base Support Outlines
+Base Support Pattern Rotation
+Baud Rate
+Begin increasing fan speed for layers below
+Begin reducing speed for layers below
+Begin reducing speed for perimeters below
+Begin slicing your models to generate build files for printing
+Binary X3G File (.x3g)
+Bits from Bytes (.bfb)
+Blip fan to full power when increasing from idle
+Bottom Solid Layers
+Bottom Up (peel-based)
+Bounding Center
+Bounding Size
+Bridging
+Bridging Extrusion Modifier
+Bridging Fan Speed
+Bridging Infill Extra Expansion
+Bridging Perimeter Extra Overlap
+Bridging Speed Modifier
+Build File Parsing Failed
+Build Files (*.%1)
+Build Size X
+Build Size Y
+Build Size Z
+Build Time
+Build Volume
+Build Volume Diameter
+Build Volume Shape
+Build Volume X
+Build Volume Y
+Build Volume Z
+Build volume center
+Bulk Manual Supports
+CLI File
+Camera Control Mode
+Camera Feed
+Camera Zoom Mode
+Cancel the pending user interaction sequence
+Center
+Center of Mass
+Change Model Type
+Change the type for the model
+Check for Profile Updates
+Check for software and settings updates automatically
+Choose how the exterior portion of thin walls should be printed
+Choose how the interior portion of thin walls should be printed
+Choose how the start points for each island are selected
+Choose if the temperature controller should be heated during the print
+Choose the baud rate for USB communication
+Choose the build file format accepted by the machine
+Choose the firmware type that runs on the machine
+Choose the flow control method for USB communication
+Choose the pattern for the base support structure infill
+Choose the pattern for the dense internal infill layers
+Choose the pattern for the dense support structure infill
+Choose the pattern for the internal infill layers
+Choose the pattern for the support structure infill
+Choose the rendering mode that should be used for the 3D view
+Choose the shape that best defines the printable build volume
+Choose whether inner or outer perimeters will be printed first
+Choose which feature types will trigger a wipe movement
+Clear All Supports
+Clear Model Group
+Clear Process Group
+Clear the current workspace and create a new empty scene
+Click and drag to rapidly add multiple support structures to the model
+Click to add a single support structure to the model
+Click to remove a single support structure from the model
+Close all workspace tabs and create a single new tab
+Close and Heal Segments
+Close the current workspace tab
+Coast at End
+Coasting Distance
+Combine all selected models into a single group
+Combine all selected processes into a single group
+Combine the selected models into a single mesh
+Combined Dense Infill Layers
+Combined Infill Layers
+Combined Support Layers
+Compare Profiles
+Comparison Failed
+Concentric
+Configuration Failed
+Configure the software for a new 3D printer
+Confirm Change Profile
+Confirm Delete Device
+Confirm Delete Profile
+Confirm Remove Category
+Confirm Remove Option
+Confirm Remove Settings
+Confirm Revert Profile
+Connect
+Connected
+Connection Failure
+Consistent Order
+Constrained Orbit
+Context
+Contoured
+Convert to Support Structure
+Cooldown Extruder While Idle
+Cooldown Temperature
+Cooling
+Cooling Fan
+Copy the selected models to the clipboard
+Copy the selected processes to the clipboard
+Correct Model Units
+Creality Neo Firmware
+Create Model Group
+Create Process Group
+Creation Workshop File (CWS)
+Cross Section
+Cubic
+Cupcake Gen3 XYZ, Mk5/6 + Gen4 extruder
+Cupcake Gen4 XYZ, Mk5/6 + Gen4 extruder
+Cupcake Pololu XYZ, Mk5/6 + Gen4 extruder
+Cupcake Pololu XYZ, Mk5/6 + Pololu extruder
+Cured geometry
+Custom
+Custom Zones
+Custom support structure
+Cylindrical
+Dark Theme
+Deactivate and remove the current license from this computer
+Deactivation Failed
+Deactivation Successful
+Decrease the support pillar size that is used when adding new supports
+Default
+Default Model Color
+Default Printing Speed
+Default Rotation Center
+Default Support Color
+Default Theme
+Define the region that will be printed by this process
+Delete "%1" option
+Delete Process
+Delete Process Group
+Delete a single triangle from the mesh
+Delete current option
+Delete device
+Delete entire %1 category
+Delete the selected processes from the scene
+Dense Infill Extruder
+Dense Infill Extrusion Width
+Dense Infill Layers
+Dense Infill Percentage
+Dense Internal Infill
+Dense Internal Infill Pattern
+Dense Internal Pattern Rotation
+Dense Support Extra Expansion
+Dense Support Extruder
+Dense Support Infill Pattern
+Dense Support Infill Percentage
+Dense Support Layer Interval
+Dense Support Outlines
+Dense Support Pattern Rotation
+Dense Support Speed
+Dense Supports
+Deselect all models in the scene
+Deselect all processes in the scene
+Detailed Statistics
+Detect incorrect unit system during import
+Determine if a new version of the software is available
+Device In Use
+Device unplugged while connected to port
+Dimensional Adjustments
+Disable all transform modes and return to normal selection
+Discard Invalid Segments
+Disconnect
+Disconnected
+Display Resolution Height
+Display Resolution Width
+Display cumulative model scale values
+Display the XYZ coordinate axes in the 3D view
+Display the meshes that represent the machine geometry
+Display the normal vectors for each triangle
+Display the printer build volume boundary
+Display the software version number and licensing agreement
+Display the solid model surface for all models
+Display the wireframe edges for each triangle
+Do Nothing (keep the small models)
+Do not remember any previous directories
+Dock
+Download Build File
+Download Paused
+Downloading
+Drag and drop the categories into the desired order
+Drag and drop the devices into the desired order
+Drag and drop the options into the desired order
+Drag and drop the profiles into the desired order
+Dremel Firmware
+Duet3D Firmware
+Duplicate Selected Models
+Duplicate Selected Processes
+East
+Edit Color
+Edit Shortcut
+Edit the 3D printing process settings
+Edit the keyboard shortcuts for the entire application
+Edit the main application preferences
+Edit the numeric values for model position, size, and rotation
+Elapsed: %1
+Empty Selection
+Enable Adaptive Layer Heights
+Enable live reloading of modified 3D model files
+Enable temperature controller
+Ending
+Ending Script
+Enter Category Name
+Enter Option Name
+Enter a name for the new category
+Enter a name for the new option
+Enter a new name for the "%1" option
+Enter a new name for the %1 category
+Enter the new value
+Environmental
+Erase the selected 3D models from the scene
+Estimated End Time: %1
+Exit
+Exit the application after executing the selected commands
+Exit the build file preview
+Export 3D Model
+Export Activation Request File
+Export Failed
+Export File Format
+Export Keyboard Shortcuts
+Export Models
+Export Profile
+Export Support Structures
+Export all selected support structures
+Export an activation request file
+Export printer profile settings for a specific machine
+Export selected models as a 3MF file
+Export selected models as a binary STL file
+Export selected models as a plain text STL file
+Export selected models as an OBJ file
+Export selected supports as a 3MF file
+Export selected supports as a binary STL file
+Export selected supports as a plain text STL file
+Export selected supports as an OBJ file
+Exposure Time
+Exposure Time (sec)
+External Infill Pattern
+External Pattern Rotation
+External Thin Wall Type
+Extra Restart Distance
+Extrude
+Extruder
+Extruder %1
+Extruder %1 Only
+Extruder Acceleration
+Extruder Jerk
+Extruder Mounted
+Extruder Toolhead Number
+Extruders
+Extrusion Multiplier
+Extrusion Width
+Extrusion Width Mode
+Factory Files (*.factory)
+Factory Files (*.factory);;All Files (*.*)
+Failed To Add Option
+Failed To Create Profile
+Failed To Delete Device
+Failed To Delete Profile
+Failed To Load Profile
+Failed To Remove Category
+Failed To Remove Option
+Failed To Rename Device
+Failed To Rename Option
+Failed To Rename Profile
+Failed To Select Option
+Failed to Transform Models
+Failed to add option "%1"
+Failed to add the %1 category
+Failed to authenticate with proxy server
+Failed to connect to server
+Failed to copy current session information
+Failed to delete device "%1"
+Failed to delete profile "%1"
+Failed to execute post-processing commands for file: %1
+Failed to extract 3D model data from file: %1
+Failed to generate layer image for file: %1
+Failed to generate preview image for file: %1
+Failed to migrate %1 of %2 profiles
+Failed to remove option "%1"
+Failed to remove the %1 category
+Failed to rename category from "%1" to "%2"
+Failed to rename option "%1" to "%2"
+Failed to replace model geometry
+Failed to replace support structure geometry
+Failed to select option "%1"
+Fan
+Fan Number
+Fan Speed Overrides
+Fan Speed Percentage
+Fan Speed Setpoints
+Fan Type
+Fast
+Fast Honeycomb
+Filament Density
+Filament Diameter
+Filament Price
+Filament Properties
+File Selection Behavior
+Finish all editing of support structures
+Firmware Type
+Firmware supports "sticky" parameters
+First Layer Height
+First Layer Settings
+First Layer Speed
+First Layer Units
+First Layer Width
+Fixed Bridging Infill Angle
+FlashForge Firmware
+Flip Displayed X-Axis
+Flip Displayed Y-Axis
+Flip Displayed Z-Axis
+Flip displayed axis direction
+Flip the input direction required to magnify the view
+Flow Control
+Flow Rate (mm^3/min)
+Flow Rate (mm^3/sec)
+Force Hardware Acceleration
+Force Software Rendering
+Force retraction between layers
+Force retraction on top layers
+Formlabs Form File
+Free Rotation
+From build platform only
+Full Honeycomb
+Full Name
+Full Name: %2
+Fully increase fan speed for layers below
+General
+General Settings
+Generate a virtual simulation for the selected build file
+Generation Failed
+Generic Open
+Global
+Global Offset
+Global Offsets
+Graphics Acceleration Mode
+Grid
+Group %1
+Gyroid
+HTTP Device
+Happy Printing!
+Hardware Flow Control (RTS/CTS)
+Heated Build Platform
+Heated Chamber
+Hide Advanced
+Hide backside of triangles (culling)
+Hide problematic areas that had been identified on the mesh
+High
+Highlight Auto-Configure Category
+Highlight mesh edges that do not have a correctly oriented neighbor
+Homing Direction
+Horizontal Inner Size Compensation
+Horizontal Outer Size Compensation
+How far to continue moving and wiping on top of a completed loop
+How far to expand the raft beyond the boundary of the part
+How far to reverse the filament feed during a retraction movement
+How long the extruder takes to reheat and stabilize after cooling down
+How many layers of the skirt will be printed
+IP Address or Hostname
+Identify Bridging Regions
+Identify bridging regions that are not supported from the layer below
+Idle Cooldown
+Import 3D Models
+Import 3D models from disk
+Import Actions
+Import Failed
+Import Keyboard Shortcuts
+Import License File
+Import Model
+Import Models
+Import Profiles
+Import Success
+Import Support
+Import Support Structures
+Import Supports
+Import a license file
+Import printer profile settings for a new machine
+Import support structures from disk
+Include M101/M102/M103 commands
+Include thumbnail images
+Incompatible Filename
+Increase fan speed for excessively quick layers
+Increase the support pillar size that is used when adding new supports
+Infill Extruder
+Infill Extrusion Width
+Infill Percentage
+Inner Perimeter Speed
+Inside-Out
+Internal Infill Pattern
+Internal Pattern Rotation
+Internal Thin Wall Type
+Invalid Category Name
+Invalid Device Name
+Invalid Group Name
+Invalid Model Name
+Invalid Model Selection
+Invalid Option Name
+Invalid Process Group
+Invalid Profile Name
+Invalid Selection
+Invalid Shortcut
+Invalid Value
+Invalid layer image for file: %1
+Invalid preview image definition: %1
+Invert zoom direction
+Iron Top Layers
+Ironing Extrusion Modifier
+Ironing Extrusion Width
+Ironing Outline Offset
+Ironing Speed Modifier
+Island Printing Order
+Keep models on bed after rotation or scaling
+Keyboard Shortcut Files (*.keymap);;All Files (*.*)
+Klipper/Moonraker Firmware
+LABS Extruder
+Language Selection
+Laser Diameter
+Layer
+Layer Area
+Layer Area (mm^2)
+Layer Change
+Layer Count
+Layer Height (mm)
+Layer Number
+Layer Range to Show
+Layer image
+License Agreement
+License Files (*.lic);;All Files (*.*)
+Line Range to Show
+Load an existing factory file
+Logout
+Lower Dense Support Layers
+Lower Support Separation Layers
+Machine Background Color
+Machine Background Model
+Machine Control Panel
+Machine Definition
+Machine Orientation
+Main Options
+Major Grid Line Spacing
+Make a measurement by selecting different features on your 3D model
+MakerBot Machine Profile
+MakerBot Model Extruder
+MakerBot Model Material
+MakerBot Support Extruder
+MakerBot Support Material
+Manual
+Manufacturer
+Marlin/Repetier Firmware
+Material
+Material Cost
+Material Extrusion (FFF, FDM)
+Material Length
+Material Volume
+Material Weight
+Max
+Maximum Adaptive Layer Height
+Maximum Edge Length
+Maximum Extruder Flow Rate
+Maximum Single Extrusion Width
+Maximum Triangle Angle
+Maximum Z Height
+Maximum movement detour factor
+Maximum quick layer fan speed
+Medium
+Merge All Boundaries
+Mesh Properties
+Mesh Reduction
+Metal Powder Laser Sintering (DMLS, DLM)
+Method
+Migrate settings from prior Simplify3D versions
+Migration Completed
+Min
+Minimize Print Time
+Minimize direction changes (monotonic)
+Minimize direction changes to create a consistent surface finish
+Minimum Adaptive Layer Height
+Minimum Bridging Perimeter Length
+Minimum Edge Length
+Minimum Infill Length
+Minimum Single Extrusion Length
+Minimum Single Extrusion Width
+Minimum Triangle Angle
+Minimum Z Height
+Minimum extrusion for retraction
+Minimum quick layer speed percentage
+Minimum short perimeter speed percentage
+Minimum travel for retraction
+Minimum triangle side length
+Minor Grid Line Spacing
+Mirror Mesh
+Mirror Model
+Mirror the model along the X-axis
+Mirror the model along the Y-axis
+Mirror the model along the Z-axis
+Model
+Model 1A
+Model 1C
+Model 1XA
+Model Count
+Model List
+Model Transforms
+Model restriction (only overlap will be printed)
+Model subtraction (overlap will be removed)
+Modify output coordinates using toolhead offsets
+Modify the extrusion rate for all toolpaths within a bridging region
+Modify the extrusion rate for all top layer toolpaths
+Modify the print speed for all toolpaths within a bridging region
+Modify the print speed for ironing passes on the top layer
+Modify travel movements to avoid open spaces
+Move Model
+Move the selected models
+Move to the next workspace tab in the list
+Move to the previous workspace tab in the list
+Move, scale, or rotate the selected models
+Movement Behavior
+Multi Extrusion
+Multi Extrusion Wizard
+Multicast Group
+NOT %1
+Network
+Network Port Mode
+Network Settings
+Never display
+New printer profile updates are available!
+No Categories for Assignment
+No Flow Control
+No Gas Flow
+No Models Remaining
+No Peel
+No Recoater
+No Wiper
+No models selected
+Non-Manifold Slicing Behavior
+None
+Normal
+North
+North-East
+North-West
+Nozzle diameter
+Number of Extruders
+Number of copies
+OBJ Files (*.obj)
+Octahedral
+OctoPrint Firmware
+Off
+Only allow a single workspace tab
+Only display fixed center
+Only retract when crossing open spaces
+Only show the frontside of triangles to improve graphics performance
+Only vertical lift on top layers
+Only while rotating
+Ooze Control
+Ooze Control Behavior
+Ooze Shield Extruder
+Ooze Shield Layers After Auto-Stop
+Ooze Shield Offset
+Ooze Shield Outlines
+Ooze Shield Sidewall Angle
+Ooze Shield Sidewall Shape
+Ooze Shield Speed
+Open Factory File
+Open Factory Files
+Open Loop Thicken Width
+Open a generic file based on its extension
+Open a new workspace tab
+Open a recent imported or exported factory file
+Open a recently imported or exported model
+Open the Quick Start Guide documentation
+Open the machine control panel to monitor and control the machine
+Operation In Progress
+Optimize start points for fastest printing
+Option
+Origin Offset
+Other
+Outer Perimeter Speed
+Outline Overlap
+Outline Perimeters
+Outline Printing Order
+Output
+Outside-In
+Overhang angle
+Override fan speed for top layers
+Override fan speed while bridging
+Overwrite Current Profile
+Part Separation
+Password
+Paste the selected models from the clipboard
+Paste the selected processes from the clipboard
+Pause
+Peel Type
+Per-Layer Setpoints
+Percentage
+Percentage of Total Length
+Percentage of Total Time
+Perform Tool Change Retractions
+Perform retraction during wipe movement
+Perform tool change prime on first use
+Perform tool change retract at end
+Perimeters Only
+Platform Position
+Please enter your API key to authorize this connection
+Please enter your login credentials to authorize this connection
+Please enter your password to authorize this connection
+Please restart the application for theme changes to take effect
+Please restart the software to use the updated network settings
+Please select a model for the support structures first
+Please select a model to export first
+Please select a model with support structures to export first
+Please select the models you would like to duplicate first
+Polymer Powder Laser Sintering (SLS)
+Port Number
+Positive Fill
+Post Layer Change Script
+Post Processing
+Post Processing Script
+Post Retraction Script
+Post Tool Change Script
+Pre Layer Change Script
+Pre Retraction Script
+Pre Tool Change Script
+Preview Build File
+Preview Mode
+Primary Extruder
+Prime Pillar Extruder
+Prime Pillar Infill Percentage
+Prime Pillar Layers After Auto-Stop
+Prime Pillar Location
+Prime Pillar Speed
+Prime Pillar Width
+Print
+Print Build File
+Print Paused
+Print infill before perimeters
+Printer %1
+Printer Profiles (*.fff)
+Printer Profiles (*.fff);;All Files (*.*)
+Printer Profiles (*.sla)
+Printer has stalled while connected to port
+Printing
+Printing Order
+Process
+Process Change
+Process Change Script
+Process Count
+Process List
+Process Name
+Product ID
+Profile
+Profile Error
+Profile Update Failed
+Progress: %1%
+Prompt to reload 3D model files after they are modified
+Proposed name: %2
+Proxy Address
+Proxy Port
+Qidi Technology, Tronxy Firmware
+Quality
+Quick Start Guide
+Quit the application
+Raft Base Layers
+Raft Extruder
+Raft Offset from Part
+Raft Separation Distance
+Raft Top Layers
+Randomize start point placement
+Read error occured (%1)
+Recoater Direction
+Rectangular
+Rectilinear
+Redo 
+Redo %1
+Redo the next command
+Reduce print speed for excessively high flow rates
+Reduce print speed for excessively quick layers
+Reduce print speed for short perimeters
+Reheat Time
+Release the fixed rotation center
+Reload Modified File
+Remaining: %1
+Remember a single last used directory across all file operations
+Remember a unique last used directory for each separate file type
+Remove %1
+Remove Model
+Remove Model Group
+Remove all selected models from any groups
+Remove all selected processes from any groups
+Remove all supports from the selected models
+Remove any duplicate triangles from the mesh
+Remove triangles that are disconnected and do not form a valid volume
+Rename Device
+Rename Group
+Rename Model
+Rename Process
+Rename Profile
+Rename Project
+Rename the selected model
+Rename the selected model group
+Rename the selected process
+Rename the selected process group
+Reorder Categories
+Reorder Devices
+Reorder Options
+Reorder Profiles
+Reorient the model so that the selected surface is touching the bed
+Replicator 1 - dual extruder
+Replicator 1 - single extruder
+Replicator 2
+Replicator 2 with HBP
+Replicator 2X
+Require minimum extrusion for retraction
+Require minimum travel for retraction
+Required Idle Time
+Resin Full Layer Exposure (LCD, MSLA, DLP)
+Resin Laser-based Stereolithography (SLA)
+Restart Required
+Restore workspace on startup
+Restrict start points to preferred regions
+Resume
+Retract
+Retract Distance
+Retract Speed
+Retract Vertical Lift
+Retraction
+Reverse the orientation for an entire surface
+Rotate
+Rotate Model
+Rotate the selected models
+Rotate/Pan Key Mappings
+Rotate: Ctrl/Cmd + Middle button, Pan: Middle button (SolidWorks)
+Rotate: Left button, Pan: Right button (default)
+Rotate: Middle button, Pan: Shift + Middle button (Blender, SketchUp)
+Rotate: Right button, Pan: Middle button (OnShape, GrabCAD)
+Rotate: Shift + Middle button, Pan: Middle button (Fusion360)
+Rotation Center Display
+STL Files (*.stl)
+Samples
+Save As New Profile
+Save Changes
+Save Toolpaths to Disk
+Save as New
+Save the application state at shutdown and restore on startup
+Save the current workspace
+Save the current workspace as a new factory file
+Save the currently previewed build file to disk
+Scale
+Scale Model
+Scale the model by 10.0x to convert from centimeters to millimeters
+Scale the model by 25.4x to convert from inches to millimeters
+Scale the selected models
+Scripts
+Select Language
+Select Models
+Select a location on the model that the cross section should intersect
+Select a triangle on the surface you would like to flip
+Select all models in the scene
+Select all processes in the scene
+Select the auto-configure category to highlight
+Select the end location for the measurement
+Select the extruder that will be used to print the internal infill
+Select the extruder that will be used to print the raft
+Select the extruder that will be used to print the support structures
+Select the models that should be printed by this process
+Select the printer profile to export
+Select the profile that will be used for the comparison
+Select the start location for the measurement
+Select the surface you would like to place on the bed
+Select the theme to use for the main workspace
+Select the triangle you would like to delete from the mesh
+Selected Model Color
+Selected Models
+Selected Support Color
+Sensor Data
+Sensor Value
+Serial Number
+Server Maintenance
+Service Error
+Set
+Set %1
+Set Model Group
+Set Process Group
+Set a fixed rotation center for the 3D camera view
+Set the criteria for new supports that are generated
+Set the password for your Simplify3D Cloud Account
+Set the username for your Simplify3D Cloud Account
+Setting Name
+Show Advanced
+Simplify the mesh by removing small triangles
+Simplify3D Account
+Single Extrusion Endpoint Extension
+Single Extrusions
+Single Manual Supports
+Single Tab Mode
+Single outline corkscrew printing mode (vase mode)
+Sinusoidal
+Size (bytes)
+Sketch Extruder
+Skirt Extruder
+Skirt Layers
+Skirt Offset
+Skirt Outlines
+Slicing Behavior
+Slicing Region Repair Mode
+Sliding Peel
+Smart Extruder+
+Smooth top layers using an additional ironing pass
+Snap support pillars to grid
+Snapmaker Firmware
+Software Flow Control (XON/XOFF)
+Solid Diaphragm Layers
+Solid Diaphragm Reinforcement
+Solid Diaphragm Spacing
+Solid Infill Extra Expansion
+Solid Infill Speed
+Solid Infill Threshold Area
+Solid Layers
+Solution Exceeds Build Volume
+South
+South-East
+South-West
+Sparse Internal Infill
+Sparse Support Speed
+Specify the number of times to duplicate the selected models
+Speed (mm/min)
+Speed (mm/s)
+Speed Overrides
+Speed Units
+Speeds
+Split up the mesh into separate entities for each connected surface
+Stabilize temperature controller at beginning of print
+Standard G-Code (.gcode)
+Standard printable model
+Start Point Selection
+Start Point Strategy
+Start Time: %1
+Start printing at Z height
+Starting
+Starting Script
+Status: %1
+Stop
+Stop printing at Z height
+Successfully exported build file: %1
+Successfully exported factory file to: %1
+Successfully exported model to: %1
+Successfully exported printer profile to: %1
+Successfully exported support structure to: %1
+Successfully parsed build file: %1
+Support %1
+Support 2A
+Support 2XA
+Support Extruder
+Support Generation Failed
+Support Horizontal Offset from Part
+Support Infill Pattern
+Support Infill Percentage
+Support Inflation Distance
+Support Outlines
+Support Pattern Rotation
+Support Structure Files (*.stl *.obj *.3mf);;All Files (*.*)
+Support Structures
+Support generation failed
+Support pillar size
+Support placement
+Support structure restriction (only overlap will be printed)
+Support structure subtraction (overlap will be removed)
+Surface Area
+TCP Device
+TOM Mk6 - single extruder
+TOM Mk7 - dual extruder
+TOM Mk7 - single extruder
+Take Measurement
+Target
+Technology Type
+Technology type
+Temperature
+Temperature Controller
+Temperature Number
+Temperature Plot
+Temperature Setpoints
+Temperature Type
+The IP address or hostname of the device on the network
+The IP address or hostname of the multicast group to join
+The absolute extrusion width to use for the first layer
+The absolute layer height to use for the first layer
+The absolute speed to use for all feature types on the first layer
+The address of the proxy server
+The automatically calculated width for a single plastic extrusion
+The color to use for non-selected models
+The color to use for non-selected support structures
+The color to use for selected models
+The color to use for selected support structures
+The color to use for the machine background model
+The constant fan speed to use for all bridging toolpaths
+The constant fan speed to use for all top layer toolpaths
+The critical angle where supports are required
+The depth of the printable build volume
+The description string for the USB device
+The desired fan speed percentage for this layer number
+The desired temperature value for this layer number
+The desired width for a single plastic extrusion
+The diameter of the hole at the tip of the nozzle
+The diameter of the laser spot on the surface of the powder
+The diameter of the laser spot on the surface of the resin
+The diameter of the printable build volume
+The direction that the toolhead moves along this axis while homing
+The direction that the wiper moves across the resin between each layer
+The distance between primary grid lines in the 3D view
+The distance between secondary grid lines in the 3D view
+The fan speeds to use at each layer of the print
+The final build file format that the printer requires for printing
+The fixed angle to use for all bridging infill lines
+The full name for your Simplify3D Cloud account
+The height of the printable build volume
+The integer class code that defines the USB device funtionality
+The language that should be used within the application
+The layer number where this fan speed should be issued
+The layer number where this temperature should be issued
+The location of the prime pillar relative to the part
+The manufacturer string for the USB device
+The number of consecutive solid layers to add for each diaphragm
+The number of extruders available on the printer
+The number of perimeters that trace around the outline of the part
+The number of solid layers to create at the bottom of the part
+The number of solid layers to create at the top of the part
+The number of thick base layers at the bottom of the raft
+The number of thin interface layers at the top of the raft
+The password for proxy server authentication
+The password for your Simplify3D Cloud account
+The pixel height of the thumbnail image
+The pixel width of the thumbnail image
+The port number that the device uses for network communication
+The product identifier (PID) for the USB device
+The selected items have been successfully migrated!
+The serial number for the USB device
+The speed that the filament is retracted
+The speed that the filament is retracted during a tool change
+The temperature values to use for each layer of the print
+The unit type to use when display speeds within the application
+The username for proxy server authentication
+The username for your Simplify3D Cloud account
+The vendor identifier (VID) for the USB device
+The version of the XYZprinting 3w file that should be exported
+The width of the first layer relative to the standard extrusion width
+The width of the infill extrusions relative to the outline perimeters
+The width of the ironing extrusions relative to the outline perimeters
+The width of the printable build volume
+The width of the shape that will be created from open loop paths
+The width to use each new support pillar
+Theme
+Theme Name
+Thicken Invalid Segments
+Thin Wall Behavior
+This printer has a heated build platform
+This thickness for each layer of the print
+Thumbnail Encoding
+Thumbnail Image Height
+Thumbnail Image Sizes
+Thumbnail Image Width
+Tilt Peel
+Time Estimation
+Tool %1
+Tool 0
+Tool 1
+Tool 2
+Tool 3
+Tool 4
+Tool 5
+Tool Change
+Tool Change Extra Restart Distance
+Tool Change Retract Distance
+Tool Change Retract Speed
+Tool Change Retraction
+Toolhead Number
+Toolhead Offset
+Toolhead Offsets
+Top Down (wiper-based)
+Top Layer Extra Expansion
+Top Layer Extrusion Modifier
+Top Layer Fan Speed
+Top Layer Speed
+Top Layers
+Top Solid Layers
+Tough Smart Extruder+
+Translate
+Translate Model
+Triangle Count
+Triangular
+UDP Device
+USB Class Code
+USB Device
+USB Port
+Ultimaker Firmware
+Undo 
+Undo %1
+Undo the last command
+Undock
+Units: %1
+Unsupported Area Threshold
+Untitled
+Update Network Settings
+Upload Build File
+Upload File Name
+Upload Paused
+Upload Warning
+Uploading
+Upper Dense Support Layers
+Upper Support Separation Layers
+Use Compatibility Mode
+Use Ooze Shield
+Use Prime Pillar
+Use Raft
+Use Retraction
+Use Skirt/Brim
+Use authentication
+Use custom steps per millimeter values
+Use fixed bridging infill angle
+Use independent extruder axes
+Use manual proxy settings
+Use orthographic camera with no perspective
+Use relative extrusion distances
+Use the provided credentials for manual proxy authentication
+User Language
+Username
+Username and password cannot be empty
+Variable Settings Wizard
+Vendor ID
+Version 1
+Version 2
+Version 3
+Version 5
+Vertical
+Vertical Peel
+View Account
+View change animation duration
+View clipping plane settings that are used to cross section the models
+Visible geometry center
+Volume
+Waterfall
+Web Socket Device
+Weedo Firmware
+West
+When to display the rotation center used by the camera
+Wiggle
+Window
+Wipe All Features
+Wipe Inner and Outer Perimeters
+Wipe Nozzle
+Wipe Outer Perimeters Only
+Wiper Direction
+Wiping Distance
+Wiping Mode
+Wizard Failed
+Write error occured (%1)
+X-Axis
+X-Axis Global Offset
+X-Axis Homing Direction
+X-Axis Import Action Rotation
+X-Axis Import Action Scaling
+X-Axis Import Action Translation
+X-Axis Origin Offset
+X-Axis Steps Per Millimeter
+X-Axis Toolhead Offset
+X3G Machine Profile
+XY Acceleration
+XY Jerk
+XY Travel Speed
+XYZ 3w File Format Version
+XYZprinting V2 Firmware
+XYZprinting V3 Firmware
+Y-Axis
+Y-Axis Global Offset
+Y-Axis Homing Direction
+Y-Axis Import Action Rotation
+Y-Axis Import Action Scaling
+Y-Axis Import Action Translation
+Y-Axis Origin Offset
+Y-Axis Steps Per Millimeter
+Y-Axis Toolhead Offset
+Your profiles are up to date!
+Your software is up to date!
+Z Acceleration
+Z Jerk
+Z Travel Speed
+Z-Axis
+Z-Axis Global Offset
+Z-Axis Homing Direction
+Z-Axis Import Action Rotation
+Z-Axis Import Action Scaling
+Z-Axis Import Action Translation
+Z-Axis Origin Offset
+Z-Axis Steps Per Millimeter
+ZIP Archive (folder of images)
+Zone %1
+Zoom to center screen
+Zoom to mouse position
