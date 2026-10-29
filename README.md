@@ -27,7 +27,7 @@ The Start Menu shortcut and `Simplify3D.exe` in `C:\Program Files\Simplify3D-5.1
 ## 说明
 
 - 不修改安装目录里的任何文件。中文只存在于这一次启动的进程中，退出后消失。
-- 主菜单、模型、工艺、支撑、工具栏和机器控制面板已收录中文。喷嘴、回抽、线宽、外墙、搭桥、熨烫等名称与 OrcaSlicer 简体中文一致。引料柱、渗料防护罩仍用 Simplify3D 自己的叫法。
+- 主菜单、模型、工艺、支撑、工具栏和机器控制面板已收录中文。喷嘴、回抽、线宽、外墙、搭桥、熨烫等名称与 OrcaSlicer 简体中文一致。引料柱称为擦料塔，渗料防护罩称为风挡。
 - 工艺里两个分组标题是「按材料自动配置」和「按质量自动配置」。配置文件里保存的名称保持原样。
 - 选项中的「界面语言」仍是程序自带的 English 到 Spanish。简体中文由启动器提供，不会写成程序不认识的语言设置。
 - 单位 mm、sec、mm/min，以及 Extruder 1、Fast / Medium / High、PLA / ABS / PETG 保持原文。尚未收录的句子仍显示英文。
@@ -37,7 +37,7 @@ The Start Menu shortcut and `Simplify3D.exe` in `C:\Program Files\Simplify3D-5.1
 ## Notes
 
 - Nothing under the installation directory is modified. Chinese exists only in that running process and is gone after you exit.
-- Menus, models, processes, supports, toolbars, and the machine control panel are translated. Nozzle, retraction, line width, outer wall, bridge, ironing, and similar terms follow OrcaSlicer’s Simplified Chinese. Prime pillar and ooze shield keep the Simplify3D wording used in this pack (引料柱, 渗料防护罩).
+- Menus, models, processes, supports, toolbars, and the machine control panel are translated. Nozzle, retraction, line width, outer wall, bridge, ironing, and similar terms follow OrcaSlicer’s Simplified Chinese. Prime pillar is 擦料塔, and ooze shield is 风挡.
 - The two process group headings read 「按材料自动配置」 and 「按质量自动配置」. Names stored in your profiles are left unchanged.
 - The in-app User Language list remains the official set, from English through Spanish. Simplified Chinese comes from the launcher, so the saved language setting stays one the English program understands.
 - Units (mm, sec, mm/min) and names such as Extruder 1, Fast / Medium / High, and PLA / ABS / PETG stay as written. Strings that are not in the table still appear in English.
