@@ -8,19 +8,23 @@ Optional Simplified Chinese for an installed, licensed copy of **Simplify3D 5.1.
 
 ## 用法
 
-1. 确认已安装 Simplify3D 5.1.2，并且本机有 64 位 Python。
+1. 确认已安装 Simplify3D 5.1.2。
 2. 进入 `汉化包`。
 3. 双击 `选择语言.bat`，再选「简体中文」或「English（默认）」。
 4. 也可以双击 `简体中文.bat`，这一次直接用中文启动。
+
+这两个 bat 会启动同目录的 `Simplify3D-语言.exe`，不需要安装 Python。只有直接运行 `launch_zh.py` 时才需要 64 位 Python。
 
 开始菜单里的 Simplify3D，以及 `C:\Program Files\Simplify3D-5.1.2\Simplify3D.exe`，直接打开仍然是英文。
 
 ## How to use
 
-1. Install Simplify3D 5.1.2 and 64-bit Python.
+1. Install Simplify3D 5.1.2.
 2. Open the `汉化包` folder.
 3. Double-click `选择语言.bat`, then choose Simplified Chinese or English (the default).
 4. Or double-click `简体中文.bat` to start this session in Chinese.
+
+Both batch files start `Simplify3D-语言.exe` in the same folder. Python is not required. 64-bit Python is only needed if you run `launch_zh.py` directly.
 
 The Start Menu shortcut and `Simplify3D.exe` in `C:\Program Files\Simplify3D-5.1.2` stay English when opened directly.
 
@@ -48,6 +52,7 @@ The Start Menu shortcut and `Simplify3D.exe` in `C:\Program Files\Simplify3D-5.1
 
 | 路径 | 内容 |
 | --- | --- |
+| `汉化包/Simplify3D-语言.exe` | 免 Python 启动器 |
 | `汉化包/简体中文.bat` | 直接以中文启动 |
 | `汉化包/选择语言.bat` | 选择中文或英文 |
 | `汉化包/zh_table.py` | 中英对照 |
@@ -58,6 +63,7 @@ The Start Menu shortcut and `Simplify3D.exe` in `C:\Program Files\Simplify3D-5.1
 
 | Path | Contents |
 | --- | --- |
+| `汉化包/Simplify3D-语言.exe` | Launcher that does not need Python |
 | `汉化包/简体中文.bat` | Start this session in Chinese |
 | `汉化包/选择语言.bat` | Choose Chinese or English |
 | `汉化包/zh_table.py` | English-to-Chinese table |

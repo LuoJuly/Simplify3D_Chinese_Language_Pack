@@ -1,4 +1,6 @@
 __pycache__/
 *.pyc
+build/
+dist/
 Simplify3D-5.1.2-windows-x64-installer.zip
 _title_*.png

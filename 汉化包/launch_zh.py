@@ -11,6 +11,11 @@ from ctypes import wintypes
 
 from zh_table import T
 
+if sys.stdout is None:
+    sys.stdout = open(os.devnull, "w", encoding="utf-8")
+if sys.stderr is None:
+    sys.stderr = open(os.devnull, "w", encoding="utf-8")
+
 INSTALL_DIR = r"C:\Program Files\Simplify3D-5.1.2"
 EXE_PATH = os.path.join(INSTALL_DIR, "Simplify3D.exe")
 LOG_PATH = os.path.join(os.environ.get("LOCALAPPDATA", "."), "Simplify3D", "zh-launch.log")
