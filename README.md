@@ -4,7 +4,7 @@
 
 Optional Simplified Chinese launcher for an installed, licensed Simplify3D. The installed English program is left unchanged.
 
-![简体中文界面](images/ui-window.png)
+![简体中文界面](images/ui-main.png)
 
 ## 用法
 
