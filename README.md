@@ -1,32 +1,32 @@
 # Simplify3D 简体中文 / Simplified Chinese Language Pack
 
-适用于已购买并安装的 **Simplify3D 5.1.2**。这是额外的简体中文启动方式，不替换原来的英文。
+适用于已购买并安装的 Simplify3D。这是可选的简体中文启动方式，已安装的英文程序保持原样。
 
-Optional Simplified Chinese for an installed, licensed copy of **Simplify3D 5.1.2**. It does not replace the English program.
+Optional Simplified Chinese launcher for an installed, licensed Simplify3D. The installed English program is left unchanged.
 
 ![简体中文界面](images/ui-window.png)
 
 ## 用法
 
-1. 确认已安装 Simplify3D 5.1.2。
+1. 确认已安装已授权的 Simplify3D。
 2. 进入 `汉化包`。
 3. 双击 `Simplify3D-CN.exe`，直接打开简体中文，不再询问语言。
 4. `简体中文.bat` 同样直接用中文启动。要这一次改用英文，双击 `选择语言.bat`。
 
 启动器不需要安装 Python。只有直接运行 `launch_zh.py` 时才需要 64 位 Python。
 
-开始菜单里的 Simplify3D，以及 `C:\Program Files\Simplify3D-5.1.2\Simplify3D.exe`，直接打开仍然是英文。
+开始菜单里的 Simplify3D，以及安装目录中的 `Simplify3D.exe`，直接打开仍然是英文。
 
 ## How to use
 
-1. Install Simplify3D 5.1.2.
+1. Install a licensed copy of Simplify3D.
 2. Open the `汉化包` folder.
 3. Double-click `Simplify3D-CN.exe` to open Simplified Chinese directly, with no language prompt.
 4. `简体中文.bat` does the same. Double-click `选择语言.bat` when you want to pick English for that session.
 
 The launcher does not need Python. 64-bit Python is only needed if you run `launch_zh.py` directly.
 
-The Start Menu shortcut and `Simplify3D.exe` in `C:\Program Files\Simplify3D-5.1.2` stay English when opened directly.
+The Start Menu shortcut and `Simplify3D.exe` in the installation folder stay English when opened directly.
 
 ## 说明
 
@@ -36,7 +36,7 @@ The Start Menu shortcut and `Simplify3D.exe` in `C:\Program Files\Simplify3D-5.1
 - 选项中的「界面语言」仍是程序自带的 English 到 Spanish。简体中文由启动器提供，不会写成程序不认识的语言设置。
 - 单位 mm、sec、mm/min，以及 Extruder 1、Fast / Medium / High、PLA / ABS / PETG 保持原文。尚未收录的句子仍显示英文。
 - 杀毒软件可能提示启动脚本向程序内存写入数据。安装目录中的程序没有被改过。
-- 若安装的不是 5.1.2，启动器会提示版本不匹配并取消启动。
+- 内存钩子地址与制作本语言包时的 5.1.2 构建一致。程序代码对不上这些地址时，启动器仍会打开程序，不会因此取消启动。
 
 ## Notes
 
@@ -46,7 +46,7 @@ The Start Menu shortcut and `Simplify3D.exe` in `C:\Program Files\Simplify3D-5.1
 - The in-app User Language list remains the official set, from English through Spanish. Simplified Chinese comes from the launcher, so the saved language setting stays one the English program understands.
 - Units (mm, sec, mm/min) and names such as Extruder 1, Fast / Medium / High, and PLA / ABS / PETG stay as written. Strings that are not in the table still appear in English.
 - Antivirus software may warn that the launcher writes into the program’s memory. The installed program file is not changed.
-- If the installed build is not 5.1.2, the launcher reports a version mismatch and does not start it.
+- Memory-hook addresses match the 5.1.2 build this pack was made from. If the installed program does not match those addresses, the launcher still starts it.
 
 ## 目录
 

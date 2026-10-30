@@ -756,10 +756,14 @@ def install_arg_hook(process, base):
         site = base + rva
         got = ctypes.create_string_buffer(len(stolen))
         read = ctypes.c_size_t(0)
-        if not kernel32.ReadProcessMemory(process, ctypes.c_void_p(site), got, len(stolen), ctypes.byref(read)):
-            raise OSError("无法读取自动配置标题函数")
-        if got.raw != stolen:
-            raise OSError("自动配置标题函数和 5.1.2 不一致，已取消，没有改动已安装的文件。")
+        # 入口对不上时不取消启动，只跳过这一处标题改写。
+        if (
+            not kernel32.ReadProcessMemory(process, ctypes.c_void_p(site), got, len(stolen), ctypes.byref(read))
+            or read.value != len(stolen)
+            or got.raw != stolen
+        ):
+            log(f"heading-hook site {rva:#x} does not match; leaving that heading unchanged")
+            continue
         patch = b"\xFF\x25\x00\x00\x00\x00" + struct.pack("<Q", remote_addr + off)
         patch += b"\x90" * (len(stolen) - len(patch))
         if len(patch) != len(stolen):
@@ -945,37 +949,42 @@ def launch_chinese():
             raise OSError(f"程序映像无效: {base:#x}")
         target = base + TRANSLATE_RVA
         got = ctypes.create_string_buffer(len(STOLEN))
-        if not kernel32.ReadProcessMemory(pi.hProcess, ctypes.c_void_p(target), got, len(STOLEN), ctypes.byref(read)):
-            raise OSError("无法读取程序代码")
-        if got.raw != STOLEN:
-            raise OSError("这不是 Simplify3D 5.1.2 的对应版本，已取消，没有改动已安装的文件。")
-        fromutf8 = base + FROMUTF8_RVA
-        resume = target + len(STOLEN)
-        image, _ = build_image(pairs, fromutf8, resume, tramp_is_ret=False)
-        remote = kernel32.VirtualAllocEx(pi.hProcess, None, len(image), MEM_COMMIT | MEM_RESERVE, PAGE_EXECUTE_READWRITE)
-        if not remote:
-            raise OSError("无法分配译文内存")
-        remote_addr = remote if isinstance(remote, int) else ctypes.cast(remote, ctypes.c_void_p).value
-        written = ctypes.c_size_t(0)
-        buf = (ctypes.c_char * len(image)).from_buffer_copy(bytes(image))
-        if not kernel32.WriteProcessMemory(pi.hProcess, ctypes.c_void_p(remote_addr), buf, len(image), ctypes.byref(written)):
-            raise OSError("写入译文失败")
-        if written.value != len(image):
-            raise OSError("译文没有完整写入")
-        patch = b"\xFF\x25\x00\x00\x00\x00" + struct.pack("<Q", remote_addr) + b"\x90\x90"
-        if len(patch) != len(STOLEN):
-            raise OSError("补丁长度不对")
-        old = wintypes.DWORD(0)
-        if not kernel32.VirtualProtectEx(pi.hProcess, ctypes.c_void_p(target), len(patch), PAGE_EXECUTE_READWRITE, ctypes.byref(old)):
-            raise OSError("无法修改程序代码页")
-        patch_buf = ctypes.create_string_buffer(patch)
-        if not kernel32.WriteProcessMemory(pi.hProcess, ctypes.c_void_p(target), patch_buf, len(patch), ctypes.byref(written)):
-            raise OSError("无法挂上中文钩子")
-        kernel32.VirtualProtectEx(pi.hProcess, ctypes.c_void_p(target), len(patch), old, ctypes.byref(old))
-        kernel32.FlushInstructionCache(pi.hProcess, ctypes.c_void_p(target), len(patch))
-        kernel32.FlushInstructionCache(pi.hProcess, ctypes.c_void_p(remote_addr), len(image))
+        # 入口字节对不上时不取消启动，只跳过译文钩子。
+        prologue_ok = (
+            kernel32.ReadProcessMemory(pi.hProcess, ctypes.c_void_p(target), got, len(STOLEN), ctypes.byref(read))
+            and read.value == len(STOLEN)
+            and got.raw == STOLEN
+        )
+        if prologue_ok:
+            fromutf8 = base + FROMUTF8_RVA
+            resume = target + len(STOLEN)
+            image, _ = build_image(pairs, fromutf8, resume, tramp_is_ret=False)
+            remote = kernel32.VirtualAllocEx(pi.hProcess, None, len(image), MEM_COMMIT | MEM_RESERVE, PAGE_EXECUTE_READWRITE)
+            if not remote:
+                raise OSError("无法分配译文内存")
+            remote_addr = remote if isinstance(remote, int) else ctypes.cast(remote, ctypes.c_void_p).value
+            written = ctypes.c_size_t(0)
+            buf = (ctypes.c_char * len(image)).from_buffer_copy(bytes(image))
+            if not kernel32.WriteProcessMemory(pi.hProcess, ctypes.c_void_p(remote_addr), buf, len(image), ctypes.byref(written)):
+                raise OSError("写入译文失败")
+            if written.value != len(image):
+                raise OSError("译文没有完整写入")
+            patch = b"\xFF\x25\x00\x00\x00\x00" + struct.pack("<Q", remote_addr) + b"\x90\x90"
+            if len(patch) != len(STOLEN):
+                raise OSError("补丁长度不对")
+            old = wintypes.DWORD(0)
+            if not kernel32.VirtualProtectEx(pi.hProcess, ctypes.c_void_p(target), len(patch), PAGE_EXECUTE_READWRITE, ctypes.byref(old)):
+                raise OSError("无法修改程序代码页")
+            patch_buf = ctypes.create_string_buffer(patch)
+            if not kernel32.WriteProcessMemory(pi.hProcess, ctypes.c_void_p(target), patch_buf, len(patch), ctypes.byref(written)):
+                raise OSError("无法挂上中文钩子")
+            kernel32.VirtualProtectEx(pi.hProcess, ctypes.c_void_p(target), len(patch), old, ctypes.byref(old))
+            kernel32.FlushInstructionCache(pi.hProcess, ctypes.c_void_p(target), len(patch))
+            kernel32.FlushInstructionCache(pi.hProcess, ctypes.c_void_p(remote_addr), len(image))
+            log(f"chinese hook base={base:#x} remote={remote_addr:#x} strings={len(pairs)}")
+        else:
+            log("string-hook prologue does not match; starting without that hook")
         install_arg_hook(pi.hProcess, base)
-        log(f"chinese hook base={base:#x} remote={remote_addr:#x} strings={len(pairs)}")
         if kernel32.ResumeThread(pi.hThread) == 0xFFFFFFFF:
             raise OSError(f"无法继续运行程序 ({ctypes.get_last_error()})")
     except Exception:
