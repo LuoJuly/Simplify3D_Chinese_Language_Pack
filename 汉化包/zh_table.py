@@ -326,6 +326,8 @@ T = {
     "One of the extruders used during the print does not have a temperature controller that is being heated.  Are you sure you want to continue?": "本次打印使用的某个挤出机没有正在加热的温度控制器。确定要继续吗？",
     "One of the models for this print is positioned outside of the printable build volume.  Are you sure you want to continue?": "本次打印的某个模型位于可打印范围之外。确定要继续吗？",
     "One of the support structures for this print is positioned outside of the printable build volume.  Are you sure you want to continue?": "本次打印的某个支撑结构位于可打印范围之外。确定要继续吗？",
+    "Solution Exceeds Build Volume": "超出构建体积",
+    "The packed models currently exceed the build volume dimensions.  Please rotate or scale the models to better fit the available space.": "当前排布的模型超出了构建体积尺寸。请旋转或缩放模型，使其更好地放入可用空间。",
     "Ooze Shield": "风挡",
     "Open": "打开",
     "Outer Perimeter": "外轮廓",

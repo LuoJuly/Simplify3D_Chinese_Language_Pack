@@ -4,7 +4,7 @@
 
 Optional Simplified Chinese for an installed, licensed copy of **Simplify3D 5.1.2**. It does not replace the English program.
 
-![简体中文界面](images/ui-zh.png)
+![简体中文界面](images/ui-bed.png)
 
 ## 用法
 
