@@ -28,6 +28,36 @@ The launcher does not need Python. 64-bit Python is only needed if you run `laun
 
 The Start Menu shortcut and `Simplify3D.exe` in the installation folder stay English when opened directly.
 
+## 打包 exe
+
+源码已经在仓库里：`汉化包/launch_zh.py`、`汉化包/zh_table.py`、`汉化包/Simplify3D-CN.spec`、`汉化包/Simplify3D.ico`。需要 64 位 Python，并安装 PyInstaller。
+
+在 `汉化包` 目录中执行：
+
+```powershell
+python -m pip install pyinstaller
+python launch_zh.py --self-test
+python -m PyInstaller --noconfirm --clean Simplify3D-CN.spec
+Copy-Item -Force dist\Simplify3D-CN.exe .\Simplify3D-CN.exe
+```
+
+`Simplify3D-CN.spec` 会打成无控制台窗口的单文件程序，并带上 Simplify3D 图标。生成的 `dist\Simplify3D-CN.exe` 复制回 `汉化包` 后，双击即可使用。`build` 和 `dist` 是打包中间文件，不必提交。
+
+## Build the exe
+
+The sources are already in the repo: `汉化包/launch_zh.py`, `汉化包/zh_table.py`, `汉化包/Simplify3D-CN.spec`, and `汉化包/Simplify3D.ico`. You need 64-bit Python and PyInstaller.
+
+From the `汉化包` folder:
+
+```powershell
+python -m pip install pyinstaller
+python launch_zh.py --self-test
+python -m PyInstaller --noconfirm --clean Simplify3D-CN.spec
+Copy-Item -Force dist\Simplify3D-CN.exe .\Simplify3D-CN.exe
+```
+
+`Simplify3D-CN.spec` builds a windowed, one-file executable with the Simplify3D icon. Copy `dist\Simplify3D-CN.exe` back into `汉化包` and double-click it. The `build` and `dist` folders are intermediate output and do not need to be committed.
+
 ## 说明
 
 - 不修改安装目录里的任何文件。中文只存在于这一次启动的进程中，退出后消失。
@@ -53,9 +83,12 @@ The Start Menu shortcut and `Simplify3D.exe` in the installation folder stay Eng
 | 路径 | 内容 |
 | --- | --- |
 | `汉化包/Simplify3D-CN.exe` | 免 Python 启动器，双击即中文 |
+| `汉化包/launch_zh.py` | 启动器源码 |
+| `汉化包/zh_table.py` | 中英对照 |
+| `汉化包/Simplify3D-CN.spec` | PyInstaller 打包配置 |
+| `汉化包/Simplify3D.ico` | 程序图标 |
 | `汉化包/简体中文.bat` | 直接以中文启动 |
 | `汉化包/选择语言.bat` | 选择中文或英文 |
-| `汉化包/zh_table.py` | 中英对照 |
 | `汉化包/使用说明.txt` | 简短中文说明 |
 | `i18n/` | 整理界面原文时用到的脚本和列表 |
 
@@ -64,8 +97,11 @@ The Start Menu shortcut and `Simplify3D.exe` in the installation folder stay Eng
 | Path | Contents |
 | --- | --- |
 | `汉化包/Simplify3D-CN.exe` | Launcher that does not need Python; double-click opens Chinese |
+| `汉化包/launch_zh.py` | Launcher source |
+| `汉化包/zh_table.py` | English-to-Chinese table |
+| `汉化包/Simplify3D-CN.spec` | PyInstaller build spec |
+| `汉化包/Simplify3D.ico` | Application icon |
 | `汉化包/简体中文.bat` | Start this session in Chinese |
 | `汉化包/选择语言.bat` | Choose Chinese or English |
-| `汉化包/zh_table.py` | English-to-Chinese table |
 | `汉化包/使用说明.txt` | Short Chinese notes |
 | `i18n/` | Scripts and source lists used while collecting interface text |
